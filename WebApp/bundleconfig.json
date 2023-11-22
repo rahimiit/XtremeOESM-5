@@ -1,0 +1,38 @@
+[
+  {
+    "outputFileName": "JS/ScriptController.min.js",
+    "inputFiles": [
+      "JS/ScriptController.js"
+    ]
+  },
+  {
+    "outputFileName": "JS/popper.min.js",
+    "inputFiles": [
+      "JS/popper.js"
+    ]
+  },
+  {
+    "outputFileName": "JS/Commands.min.js",
+    "inputFiles": [
+      "JS/Commands.js"
+    ]
+  },
+  {
+    "outputFileName": "JS/ConstantsLabels.min.js",
+    "inputFiles": [
+      "JS/ConstantsLabels.js"
+    ]
+  },
+  {
+    "outputFileName": "JS/Common.min.js",
+    "inputFiles": [
+      "JS/Common.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/Home/Index.min.js",
+    "inputFiles": [
+      "Scripts/Home/Index.js"
+    ]
+  }
+]
