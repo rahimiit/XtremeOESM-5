@@ -11,7 +11,6 @@ namespace WebApp.Controllers
         // GET: Home
         public ActionResult Index()
         { 
-
             @ViewBag.UserId = 12000255;
             return View();
         }
