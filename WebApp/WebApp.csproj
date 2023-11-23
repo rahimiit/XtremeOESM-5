@@ -185,6 +185,44 @@
     <Content Include="JS\popper.min.js">
       <DependentUpon>popper.js</DependentUpon>
     </Content>
+    <Content Include="JS\themeJS\assets\css\font-awesome.min.css" />
+    <Content Include="JS\themeJS\assets\css\material-dashboard.min6c54.css" />
+    <Content Include="JS\themeJS\assets\demo\demo.css" />
+    <Content Include="JS\themeJS\assets\demo\jquery.sharrre.js" />
+    <Content Include="JS\themeJS\assets\img\apple-icon.png" />
+    <Content Include="JS\themeJS\assets\img\default-avatar.png" />
+    <Content Include="JS\themeJS\assets\img\faces\avatar.jpg" />
+    <Content Include="JS\themeJS\assets\img\favicon.png" />
+    <Content Include="JS\themeJS\assets\img\image_placeholder.jpg" />
+    <Content Include="JS\themeJS\assets\img\opt_mdp_thumbnail.jpg" />
+    <Content Include="JS\themeJS\assets\img\placeholder.jpg" />
+    <Content Include="JS\themeJS\assets\img\sidebar-1.jpg" />
+    <Content Include="JS\themeJS\assets\img\sidebar-2.jpg" />
+    <Content Include="JS\themeJS\assets\img\sidebar-3.jpg" />
+    <Content Include="JS\themeJS\assets\img\sidebar-4.jpg" />
+    <Content Include="JS\themeJS\assets\js\core\bootstrap-material-design.min.js" />
+    <Content Include="JS\themeJS\assets\js\core\buttons.js" />
+    <Content Include="JS\themeJS\assets\js\core\core.js" />
+    <Content Include="JS\themeJS\assets\js\core\email-decode.min.js" />
+    <Content Include="JS\themeJS\assets\js\core\jquery.min.js" />
+    <Content Include="JS\themeJS\assets\js\core\popper.min.js" />
+    <Content Include="JS\themeJS\assets\js\material-dashboard.min6c54.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\arrive.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\bootstrap-datetimepicker.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\bootstrap-selectpicker.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\bootstrap-tagsinput.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\chartist.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\fullcalendar.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\jasny-bootstrap.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\jquery-jvectormap.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\jquery.bootstrap-wizard.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\jquery.dataTables.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\jquery.validate.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\moment.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\nouislider.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\perfect-scrollbar.min.js" />
+    <Content Include="JS\themeJS\assets\js\plugins\sweetalert2.js" />
     <Content Include="Libraries\Newtonsoft.Json.dll" />
     <Content Include="bin\System.Net.Http.Formatting.dll" />
     <Content Include="bin\System.Web.Helpers.dll" />
@@ -5445,6 +5483,8 @@
     <Content Include="theme\vendors\typicons\typicons.eot" />
     <Content Include="theme\vendors\typicons\typicons.ttf" />
     <Content Include="theme\vendors\typicons\typicons.woff" />
+    <Content Include="Views\Shared\_XtremeLayout.cshtml" />
+    <Content Include="Views\Home\XtremeDashboard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
