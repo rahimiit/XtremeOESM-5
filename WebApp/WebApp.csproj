@@ -5485,6 +5485,10 @@
     <Content Include="theme\vendors\typicons\typicons.woff" />
     <Content Include="Views\Shared\_XtremeLayout.cshtml" />
     <Content Include="Views\Home\XtremeDashboard.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Shared\_SidebarView.cshtml" />
+    <Content Include="Views\Shared\_HeaderView.cshtml" />
+    <Content Include="Views\Shared\_FooterView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

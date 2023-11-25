@@ -14,7 +14,11 @@ namespace WebApp.Controllers
             @ViewBag.UserId = 12000255;
             return View();
         }
-
+        public ActionResult Login()
+        {
+            @ViewBag.UserId = 12000255;
+            return View();
+        }
         public ActionResult XtremeDashboard()
         {
        
