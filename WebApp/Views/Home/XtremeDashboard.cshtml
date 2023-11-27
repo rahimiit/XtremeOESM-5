@@ -1,0 +1,343 @@
+﻿
+@{
+    ViewBag.Title = "XtremeDashboard";
+    Layout = "~/Views/Shared/_XtremeLayout.cshtml";
+}
+
+@section SideBarSection{
+    @Html.Partial("_SideBarView")
+}
+
+@section HeaderSection{
+    @Html.Partial("_HeaderView")
+}
+ 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">content_copy</i>
+                        </div>
+                        <p class="card-category">Total Teacher</p>
+                        <h3 class="card-title">
+                            10
+                          
+                        </h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            @*<i class="material-icons text-danger">warning</i>
+                            <a href="javascript:;">Get More Space...</a>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">store</i>
+                        </div>
+                        <p class="card-category">Total Students</p>
+                        <h3 class="card-title">800</h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            @*<i class="material-icons">date_range</i> Last 24 Hours*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-danger card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">info_outline</i>
+                        </div>
+                        <p class="card-category">Exam in Progress</p>
+                        <h3 class="card-title">75</h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            @*<i class="material-icons">local_offer</i> Tracked from Github*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="card card-stats">
+                    <div class="card-header card-header-info card-header-icon">
+                        <div class="card-icon">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <p class="card-category">Exam Completed</p>
+                        <h3 class="card-title">+245</h3>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            @*<i class="material-icons">update</i> Just Updated*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+ 
+    </div>
+ 
+ 
+
+
+@*<div class="col-md-12">
+        <div class="card ">
+            <div class="card-header card-header-rose card-header-text">
+                <div class="card-text">
+                    <h4 class="card-title">User Management</h4>
+                </div>
+            </div>
+            <div class="card-body ">
+                <form method="get" action="https://demos.creative-tim.com/" class="form-horizontal">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <label class="col-sm-2 col-form-label">User Name</label>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                    <span class="bmd-help">User Name.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="col-sm-2 col-form-label">Full Name</label>
+                            <div class="col-sm-10">
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                    <span class="bmd-help">Full Name.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="col-sm-2 col-form-label">Email Address</label>
+                            <div class="col-sm-10">
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                    <span class="bmd-help">Email Name.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <div class="form-group">
+                                    <input type="text" class="form-control">
+                                    <span class="bmd-help">Status.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label">Full Name</label>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control">
+                                <span class="bmd-help">Full Name.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label">Placeholder</label>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="placeholder">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label">Disabled</label>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="Disabled input here.." disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label">Static control</label>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <p class="form-control-static"><a href="https://demos.creative-tim.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f474a4343406f4c5d4a4e5b46594a025b4642014c4042">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label label-checkbox">Checkboxes and radios</label>
+                        <div class="col-sm-10 checkbox-radios">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value> First Checkbox
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value> Second Checkbox
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" value="option2" checked> First Radio
+                                    <span class="circle">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" value="option1"> Second Radio
+                                    <span class="circle">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-sm-2 col-form-label label-checkbox">Inline checkboxes</label>
+                        <div class="col-sm-10 checkbox-radios">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value> a
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value> b
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value> c
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>*@
+
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<div class="col-md-6">
+        <div class="card ">
+            <div class="card-header card-header-rose card-header-icon">
+                <div class="card-icon">
+                    <i class="material-icons">contacts</i>
+                </div>
+                <h4 class="card-title">Horizontal Form</h4>
+            </div>
+            <div class="card-body ">
+                <form class="form-horizontal">
+                    <div class="row">
+                        <label class="col-md-3 col-form-label">Email</label>
+                        <div class="col-md-9">
+                            <div class="form-group has-default">
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3 col-form-label">Password</label>
+                        <div class="col-md-9">
+                            <div class="form-group">
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3"></label>
+                        <div class="col-md-9">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value> Remember me
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer ">
+                <div class="row">
+                    <div class="col-md-9">
+                        <button type="submit" class="btn btn-fill btn-rose">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
