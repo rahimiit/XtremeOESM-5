@@ -46,7 +46,7 @@
             </div>
         </div>
         <ul class="nav">
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">
                     <i class="material-icons">dashboard</i>
                     <p> Dashboard </p>
@@ -64,75 +64,34 @@
                 <div class="collapse" id="pagesExamples">
                     <ul class="nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="https://demos.creative-tim.com/material-dashboard-pro-bs4/examples/pages/pricing.html">
+                            <a class="nav-link" href="#">
                                 <span class="sidebar-mini"> P </span>
                                 <span class="sidebar-normal"> Test </span>
                             </a>
                         </li>
-                     
+
                     </ul>
                 </div>
             </li>
+       
             <li class="nav-item ">
-                <a class="nav-link" data-toggle="collapse" href="#componentsExamples">
+                <a class="nav-link" href="@Url.Action("Index", "OESClass")">
                     <i class="material-icons">apps</i>
                     <p>
-
                         Class Management
-                        <b class="caret"></b>
                     </p>
                 </a>
-                <div class="collapse" id="componentsExamples">
-                    <ul class="nav">
-                        <li class="nav-item ">
-                            <a class="nav-link" data-toggle="collapse" href="#componentsCollapse">
-                                <span class="sidebar-mini"> MLT </span>
-                                <span class="sidebar-normal">
-                                   Test
-                                    <b class="caret"></b>
-                                </span>
-                            </a>
-                            <div class="collapse" id="componentsCollapse">
-                                <ul class="nav">
-                                    <li class="nav-item ">
-                                        <a class="nav-link" href="#0">
-                                            <span class="sidebar-mini"> E </span>
-                                            <span class="sidebar-normal"> Example </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-              
-                    </ul>
-                </div>
             </li>
-            <li class="nav-item active ">
-                <a class="nav-link" data-toggle="collapse" href="#formsExamples" aria-expanded="true">
+            <li class="nav-item ">
+                <a class="nav-link" href="@Url.Action("Index", "OESUsers")">
                     <i class="material-icons">content_paste</i>
                     <p>
-
                         User Management
-                        <b class="caret"></b>
                     </p>
                 </a>
-                <div class="collapse  " id="formsExamples">
-                    @*<div class="collapse show" id="formsExamples">*@
-                    <ul class="nav">
-                        <li class="nav-item active ">
-                            @*<li class="nav-item active ">*@
-                            <a class="nav-link" href="regular.html">
-                                <span class="sidebar-mini"> RF </span>
-                                <span class="sidebar-normal"> Regular Forms </span>
-                            </a>
-                        </li>
-                   
-                    </ul>
-                </div>
             </li>
-
             <li class="nav-item ">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="@Url.Action("Index", "OESSubject")">
                     <i class="material-icons">widgets</i>
                     <p>
                         Subject Management
@@ -140,7 +99,7 @@
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="@Url.Action("Index", "OESQuestionsBank")">
                     <i class="material-icons">timeline</i>
                     <p>
                         Question Management
@@ -148,7 +107,7 @@
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="@Url.Action("Index", "OESExam")">
                     <i class="material-icons">date_range</i>
                     <p>
                         Exam Management
@@ -156,7 +115,7 @@
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="@Url.Action("Index", "OESExam")">
                     <i class="material-icons">widgets</i>
                     <p>
                         Exam Result
@@ -167,7 +126,7 @@
                 <a class="nav-link" href="#">
                     <i class="material-icons">widgets</i>
                     <p>
-                       Login History
+                        Login History
                     </p>
                 </a>
             </li>

@@ -4129,6 +4129,11 @@
     <Compile Include="Controllers\api\XtremeController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OESClassController.cs" />
+    <Compile Include="Controllers\OESExamController.cs" />
+    <Compile Include="Controllers\OESQuestionsBankController.cs" />
+    <Compile Include="Controllers\OESSubjectController.cs" />
+    <Compile Include="Controllers\OESUsersController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -5489,6 +5494,15 @@
     <Content Include="Views\Shared\_SidebarView.cshtml" />
     <Content Include="Views\Shared\_HeaderView.cshtml" />
     <Content Include="Views\Shared\_FooterView.cshtml" />
+    <Content Include="Views\OESUsers\AddUsers.cshtml" />
+    <Content Include="Views\OESUsers\Index.cshtml" />
+    <Content Include="Views\OESClass\Index.cshtml" />
+    <Content Include="Views\OESClass\AddClass.cshtml" />
+    <Content Include="Views\OESQuestionsBank\Index.cshtml" />
+    <Content Include="Views\OESQuestionsBank\AddQuestions.cshtml" />
+    <Content Include="Views\OESSubject\Index.cshtml" />
+    <Content Include="Views\OESExam\Index.cshtml" />
+    <Content Include="Views\OESExam\AddExam.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_XtremeLayout.cshtml";
+}
+
+@section SideBarSection{
+    @Html.Partial("_SideBarView")
+}
+
+@section HeaderSection{
+    @Html.Partial("_HeaderView")
+}
+ 
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="pagetitle mb-sm-0 fw600">User Management</h4>
+        </div>
+    </div>
+    <section class="section dashboard mt-3">
+        <div class="bg-white rounded p-3 shadow">
+            <div class="pb-2">
+                <a class="btn form-btn btn-primary hover-boxshadow hover-moveup hover-bg-primarycolor" href="/user/edit">  Add New Record</a>
+ 
+ 
+                <span onclick="exportToPdf('user', 'Please wait. Table is still loading. Click this after table is loaded.')" data-bs-toggle="tooltip" data-bs-placement="right" title="" class="btn form-btn btn-secondary hover-boxshadow cursor-pointer hover-moveup" data-bs-original-title="You can control what you want to export to PDF before clicking this. For example, if you wish to export all the records, click &quot;Show All&quot; at the drop-down button below before clicking &quot;Export to PDF.&quot;"><i class="fa-solid fa-file-pdf pe-1"></i> Export to Pdf</span>
+            </div>
+            <div id="user-partialview">
+          
+                <div id="user-table-wrapper">
+                    <div class="table-responsive overflow-auto">
+                        <div id="renderImage"></div>
+                    </div>
+                  
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+ 
+        <script>
+            // Define your data and rendering function
+            var data = [
+            {name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63, imageUrl: 'https://avatars0.githubusercontent.com/u/7895451?s=460&v=4' },
+            {name: 'Zerya Betül', surname: 'Baran', birthYear: 2017, birthCity: 34, imageUrl: 'https://avatars0.githubusercontent.com/u/7895451?s=460&v=4' },
+            ];
+
+            function renderImage() {
+                $('#renderImage').materialTable({
+                    title: 'Render Image Preview',
+                    columns: [
+                        { title: 'Avatar', field: 'imageUrl', render: function (data) { return '<img src="' + data.imageUrl + '" style="width: 40px; border-radius: 50%;" />'; } },
+                        { title: 'Name', field: 'name' },
+                        { title: 'Surname', field: 'surname' },
+                        { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
+                        { title: 'Birth Place', field: 'birthCity', lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' } },
+                    ],
+                    data: data
+                });
+            }
+
+            // Call the rendering function
+            renderImage();
+    </script>
+ 
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}
