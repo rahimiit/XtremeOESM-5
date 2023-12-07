@@ -11,7 +11,32 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
+<div class="col-12">
+    <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+        <h4 class="pagetitle mb-sm-0 fw600">Subject Management</h4>
+    </div>
+</div>
+<section class="section dashboard mt-3">
+    <div class="bg-white rounded p-3 shadow">
+        <div class="pb-2">
+            <a class="btn form-btn btn-primary hover-boxshadow hover-moveup hover-bg-primarycolor" href="~/OESSubject/AddSubjects">  Add New Record</a>
 
+
+            <span onclick="exportToPdf('user', 'Please wait. Table is still loading. Click this after table is loaded.')" data-bs-toggle="tooltip" data-bs-placement="right" title="" class="btn form-btn btn-secondary hover-boxshadow cursor-pointer hover-moveup" data-bs-original-title="You can control what you want to export to PDF before clicking this. For example, if you wish to export all the records, click &quot;Show All&quot; at the drop-down button below before clicking &quot;Export to PDF.&quot;"><i class="fa-solid fa-file-pdf pe-1"></i> Export to Pdf</span>
+        </div>
+        <div id="user-partialview">
+
+            <div id="user-table-wrapper">
+                <div class="table-responsive overflow-auto">
+                    <div id="renderImage"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
 
 @section FooterSection{
     @Html.Partial("_FooterView")

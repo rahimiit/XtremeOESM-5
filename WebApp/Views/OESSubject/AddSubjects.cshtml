@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "AddClass";
+    ViewBag.Title = "AddSubjects";
     Layout = "~/Views/Shared/_XtremeLayout.cshtml";
 }
 
@@ -11,17 +11,16 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
- 
     <div class="col-12">
         <div style="--bs-breadcrumb-divider: '>';">
             <ol class="breadcrumb m-0">
-                <li class="breadcrumb-item fw-normal"><a class="color-primarycolor opacity-50" href="~/OESClass/Index">Class Management</a></li>
-                <li class="breadcrumb-item fw-normal active">Add Class</li>
+                <li class="breadcrumb-item fw-normal"><a class="color-primarycolor opacity-50" href="~/OESSubject/index">Subject Management</a></li>
+                <li class="breadcrumb-item fw-normal active">Add Subject</li>
             </ol>
         </div>
-        
+
     </div>
- 
+
     <div class="col-12">
         <form action="/classhub/edit" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
             <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
@@ -35,25 +34,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="mb-3 text-break">
-                            <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm" type="button">
-                                    Status
-                                </button>
-                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                     
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">Active</a>
-                                    <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">InActive</a>
-                             
-                                     
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                 
                 </div>
             </div>
             <div class="row mt-4">
@@ -65,16 +46,8 @@
             <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OJ0N0MQ0flFiaYaawsus7PLz24xiBgJkkrum87DJJwxOacdg892CR-57JyrElU7vbGdEHWeiH-55bZORS_rTMOHFopJ1nw6WdHLSE0B9Op8RwJGhPpKHIZJWNX8guP5ucEwiwStmqAt6BvX4883JzOHho0_9nN589logQNnNqUUJVmpplYlDK48UPdRDYoxOA">
         </form>
     </div>
-    <script>
-        var defaultValue = "Active";
-        $(".btn-secondary").text(defaultValue);
 
-        function updateSelectedValue(element) {
-            var selectedValue = $(element).text();
-            $(".btn-secondary").text(selectedValue);
-        }
-    </script>
-        @section FooterSection{
-            @Html.Partial("_FooterView")
-        }
+    @section FooterSection{
+        @Html.Partial("_FooterView")
+    }
 

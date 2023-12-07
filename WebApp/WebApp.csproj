@@ -5503,6 +5503,7 @@
     <Content Include="Views\OESSubject\Index.cshtml" />
     <Content Include="Views\OESExam\Index.cshtml" />
     <Content Include="Views\OESExam\AddExam.cshtml" />
+    <Content Include="Views\OESSubject\AddSubjects.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
