@@ -11,6 +11,29 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
+<style>
+    .mat-table {
+        display: block;
+        font-family: Tahoma, Verdana;
+    }
+
+    .mat-row,
+    .mat-header-row {
+        display: flex;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 24px;
+    }
+
+    .mat-cell,
+    .mat-header-cell {
+        flex: 1;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+</style>
  
     <div class="col-12">
         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -38,31 +61,85 @@
             </div>
         </div>
     </section>
- 
-        <script>
-            // Define your data and rendering function
-            var data = [
-            {name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63, imageUrl: 'https://avatars0.githubusercontent.com/u/7895451?s=460&v=4' },
-            {name: 'Zerya Betül', surname: 'Baran', birthYear: 2017, birthCity: 34, imageUrl: 'https://avatars0.githubusercontent.com/u/7895451?s=460&v=4' },
-            ];
-
-            function renderImage() {
-                $('#renderImage').materialTable({
-                    title: 'Render Image Preview',
-                    columns: [
-                        { title: 'Avatar', field: 'imageUrl', render: function (data) { return '<img src="' + data.imageUrl + '" style="width: 40px; border-radius: 50%;" />'; } },
-                        { title: 'Name', field: 'name' },
-                        { title: 'Surname', field: 'surname' },
-                        { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
-                        { title: 'Birth Place', field: 'birthCity', lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' } },
-                    ],
-                    data: data
-                });
-            }
-
-            // Call the rendering function
-            renderImage();
-    </script>
+    <div class="col-12">
+        <div class="bg-white rounded p-3 shadow">
+            <div class="mat-table">
+                <div class="mat-header-row">
+                    <div class="mat-header-cell">Username</div>
+                    <div class="mat-header-cell">Full Name</div>
+                    <div class="mat-header-cell">Email Address</div>
+                    <div class="mat-header-cell">Status </div>
+                    <div class="mat-header-cell">Role</div>
+                    <div class="mat-header-cell">Phone number</div>
+                    <div class="mat-header-cell">Country</div>
+                    <div class="mat-header-cell">Full Address</div>
+                    <div class="mat-header-cell">Created on</div>
+                    <div class="mat-header-cell">Action</div>
+                </div>
+                <div class="mat-row">
+                    <div class="mat-cell">rahimiit</div>
+                    <div class="mat-cell">Syed Rahim</div>
+                    <div class="mat-cell">rahimiit44@gmail.com</div>
+                    <div class="mat-cell">Active</div>
+                    <div class="mat-cell">Admin</div>
+                    <div class="mat-cell">0552248970</div>
+                    <div class="mat-cell">Pakistan</div>
+                    <div class="mat-cell">2023-01-01</div>
+                    <div class="mat-cell">Active</div>
+                    <div class="mat-cell">
+                        <div class="d-flex text-breakspaces">
+                            <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
+                            <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
+                                <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
+                                   data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    @*<div class="col-12">
+        <div class="bg-white rounded p-3 shadow">
+            <div class="mat-table">
+                <div class="mat-header-row">
+                    <div class="mat-header-cell">Username</div>
+                    <div class="mat-header-cell">Full Name</div>
+                    <div class="mat-header-cell">Email Address</div>
+                    <div class="mat-header-cell">Status</div>
+                    <div class="mat-header-cell">Role</div>
+                    <div class="mat-header-cell">Phone Number</div>
+                    <div class="mat-header-cell">Country</div>
+                    <div class="mat-header-cell">Full Address</div>
+                    <div class="mat-header-cell">Created on</div>
+                    <div class="mat-header-cell">Action</div>
+                </div>
+                <div class="mat-row">
+                    <div class="mat-cell">rahimiit</div>
+                    <div class="mat-cell">Syed Rahim</div>
+                    <div class="mat-cell">rahimiit44@gmail.com</div>
+                    <div class="mat-cell">Active</div>
+                    <div class="mat-cell">Admin</div>
+                    <div class="mat-cell">0552248970</div>
+                    <div class="mat-cell">Pakistan</div>
+                    <div class="mat-cell">Kohat</div>
+                    <div class="mat-cell">2022-01-01</div>
+                  
+                    <div class="mat-cell">
+                        <div class="d-flex text-breakspaces">
+                            <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
+                            <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
+                                <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
+                                   data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>*@  
  
 @section FooterSection{
     @Html.Partial("_FooterView")
