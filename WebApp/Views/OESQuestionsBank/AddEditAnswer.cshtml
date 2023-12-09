@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "AddEditAnswer";
+    Layout = "~/Views/Shared/_XtremeLayout.cshtml";
+}
+
+@section SideBarSection{
+    @Html.Partial("_SideBarView")
+}
+@section HeaderSection{
+    @Html.Partial("_HeaderView")
+}
+
+
+
+
+<section class="section">
+    <form action="/answer/edit/e2dc9fec-53fa-40ad-9272-00464c2076eb" class="form-horizontal" enctype="multipart/form-data" method="post" role="form">
+        <input id="Id" name="Id" type="hidden" value="e2dc9fec-53fa-40ad-9272-00464c2076eb"><input id="QuestionId" name="QuestionId" type="hidden" value="e2dc9fec-53fa-40ad-9272-00464c2076eb"><input id="QuestionTypeCode" name="QuestionTypeCode" type="hidden" value="SA"><input id="QuestionTitle" name="QuestionTitle" type="hidden" value="asd"><input id="QuestionTypeName" name="QuestionTypeName" type="hidden" value="Short Answer">        <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
+            <h2 class="fs-20 fw600 mb-4">Question Information</h2>
+            <div class="row">
+                <div class="mb-3 text-break">
+                    <div class="form-group">
+                        <div><label class="form-label fw600" for="QuestionTitle">Question Title</label></div>
+                        <div>  asd</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 text-break">
+                    <div class="form-group">
+                        <div><label class="form-label fw600" for="QuestionTypeName">Question Type</label></div>
+                        <div>  Short Answer</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h2 class="fs-20 fw600 pt-2 mb-4">Answer Information</h2>
+            <div class="row mb-2">
+                <div class="form-group">
+                    <div class="fw600">Note:</div>
+                    <ul class="text-info mb-0">
+                        <li>Empty answer option will be ignored.</li>
+                        <li>Uppercase or lowercase doesn't matter, it will not affect the matching of the student's answer and the provided answer.</li>
+                        <li>Fill in all the correct answers for the short answer question. When a student's answer matches one of the following answers, the student is considered to have answered correctly.</li>
+                        <li>If there are existing students who took the exam that contains this question and you change the answer text or change the correct answer now, their result will be recalculated. This is to solve the problem of the teacher's mistake of selecting the wrong answer.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-danger">
+                <div class="validation-summary-valid" data-valmsg-summary="true">
+                    <ul>
+                        <li style="display:none"></li>
+                    </ul>
+                </div>
+            </div>
+            <input id="AnswerOptions_0__Id" name="AnswerOptions[0].Id" type="hidden" value="">                    <div class="row align-items-center mb-2 gx-0">
+                <textarea class="form-control text-box single-line answerinput" type="text" placeholder="Fill in answer option" name="AnswerOptions[0].Text" rows="1" id="AnswerOptions_0__Text"></textarea>
+            </div>
+            <div id="otheroptions">
+            </div>
+            <div class="mt-2">
+                <button id="addoption" type="button" class="btn form-btn btn-secondary hover-boxshadow me-1"><i class="fa-solid fa-plus"></i> Add Answer Option</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question">Back To List</a>
+                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question/edit"><i class="fa-solid fa-plus"></i> Add Another Question</a>
+                <button type="submit" class="btn form-btn btn-primary hover-boxshadow">Save</button>
+            </div>
+        </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DBoTOVt5wFIv_PxWO0fj535_PfH4E0iF9ajwKEU3tApb329n9e58PWCWhDI5R2-OfZYiKjmZv3vw9pX9zN3Njx2EzINkfjE8FFJJLP_fWcPZnEz4KqRnyVpC2jwvxiPTmDYS62H2ucGrxpxZS2may3wshlS5P7Xpg3q1cxnnT6TiGvCIXkPmUrhkZQOjfAVsw">
+    </form>
+</section> 
+
+<section class="section">
+    <form action="/answer/edit/e2dc9fec-53fa-40ad-9272-00464c2076eb" class="form-horizontal" enctype="multipart/form-data" method="post" role="form">
+        <input id="Id" name="Id" type="hidden" value="e2dc9fec-53fa-40ad-9272-00464c2076eb"><input id="QuestionId" name="QuestionId" type="hidden" value="e2dc9fec-53fa-40ad-9272-00464c2076eb"><input id="QuestionTypeCode" name="QuestionTypeCode" type="hidden" value="MCQ"><input id="QuestionTitle" name="QuestionTitle" type="hidden" value="asd"><input id="QuestionTypeName" name="QuestionTypeName" type="hidden" value="Multiple Choice Question">        <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
+            <h2 class="fs-20 fw600 mb-4">Question Information</h2>
+            <div class="row">
+                <div class="mb-3 text-break">
+                    <div class="form-group">
+                        <div><label class="form-label fw600" for="QuestionTitle">Question Title</label></div>
+                        <div>  asd</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mb-3 text-break">
+                    <div class="form-group">
+                        <div><label class="form-label fw600" for="QuestionTypeName">Question Type</label></div>
+                        <div>  Multiple Choice Question</div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h2 class="fs-20 fw600 pt-2 mb-4">Answer Information</h2>
+            <div class="row mb-2">
+                <div class="form-group">
+                    <div class="fw600">Note:</div>
+                    <ul class="text-info mb-0">
+                        <li>Empty answer option will be ignored.</li>
+                        <li>Check the radio button to set the correct answer for the question.</li>
+                        <li>If there are existing students who took the exam that contains this question and you change the answer text or change the correct answer now, their result will be recalculated. This is to solve the problem of the teacher's mistake of selecting the wrong answer.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-danger">
+                <div class="validation-summary-valid" data-valmsg-summary="true">
+                    <ul>
+                        <li style="display:none"></li>
+                    </ul>
+                </div>
+            </div>
+            <input id="AnswerOptions_0__Id" name="AnswerOptions[0].Id" type="hidden" value="">                    <div class="d-flex align-items-center mb-1">
+                <input class="form-check-input mt-0 me-2" type="radio" id="AnswerOptions[0].IsCorrect" name="CorrectAnswer" value="0" style="width:1.2em;height:1.2em;vertical-align:middle;">
+                <textarea class="form-control text-box single-line answerinput" type="text" placeholder="Fill in answer option" name="AnswerOptions[0].Text" rows="1" id="AnswerOptions_0__Text"></textarea>
+            </div>
+            <div id="otheroptions">
+                <div class="d-flex align-items-center mb-1"><input class="form-check-input mt-0 me-2" type="radio" name="CorrectAnswer" id="AnswerOptions[1].IsCorrect" value="1" style="width:1.2em;height:1.2em;vertical-align:middle"><textarea class="form-control text-box single-line answerinput" id="AnswerOptions_1__Text" name="AnswerOptions[1].Text" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea></div><div class="d-flex align-items-center mb-1"><input class="form-check-input mt-0 me-2" type="radio" name="CorrectAnswer" id="AnswerOptions[2].IsCorrect" value="2" style="width:1.2em;height:1.2em;vertical-align:middle"><textarea class="form-control text-box single-line answerinput" id="AnswerOptions_2__Text" name="AnswerOptions[2].Text" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea></div><div class="d-flex align-items-center mb-1"><input class="form-check-input mt-0 me-2" type="radio" name="CorrectAnswer" id="AnswerOptions[3].IsCorrect" value="3" style="width:1.2em;height:1.2em;vertical-align:middle"><textarea class="form-control text-box single-line answerinput" id="AnswerOptions_3__Text" name="AnswerOptions[3].Text" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea></div>
+            </div>
+            <div class="mt-2">
+                <button id="addoption" type="button" class="btn form-btn btn-secondary hover-boxshadow me-1"><i class="fa-solid fa-plus"></i> Add Answer Option</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question">Back To List</a>
+                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question/edit"><i class="fa-solid fa-plus"></i> Add Another Question</a>
+                <button type="submit" class="btn form-btn btn-primary hover-boxshadow">Save</button>
+            </div>
+        </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8DBoTOVt5wFIv_PxWO0fj52SxilYlIXaDfCg38ujXpWbfs6-Yc80RO6Frqb02fJhDmQ11s-_yRdEAt7MXT4gXsDs5xfslq-OL5_rAfAOgadI2-VzR_VhHxs9cMFk66UGyss40PPqYi4LigrWlmXeDh1dTKmxtKFgKYH09_5nRHtk_CmbmlbDIEJZnLLqonaYLQ">
+    </form>
+</section>
+
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}

@@ -17,5 +17,9 @@ namespace WebApp.Controllers
         {
             return View();
         }
+        public ActionResult AddEditAnswer()
+        {
+            return View();
+        }
     }
 }

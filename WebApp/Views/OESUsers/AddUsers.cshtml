@@ -69,53 +69,52 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3 text-break">
-                            <label class="form-label required fw600" for="UserStatusId">Status</label> <a class="color-secondarycolor fs-12 hover-color-primarycolor" href="/userstatus/edit" target="_blank">Create New</a>
-                            <div class="select-wrapper"><div class="select"><input class="custom-option" for="UserStatusId" hidden="hidden" id="UserStatusId" name="UserStatusId" value=""><div class="select__trigger"><span>Please Select...</span><div class="arrow"><i class="fa-solid fa-caret-down"></i></div></div><div class="custom-options"><span class="custom-option selected" data-text="all" data-value="" value="">Please Select...</span><span class="custom-option" data-text="Registered" data-value="43BC3528-1459-4F3E-B260-7FB87621678C" value="43BC3528-1459-4F3E-B260-7FB87621678C">Registered</span><span class="custom-option" data-text="Manoj" data-value="1995bbdb-cf3e-44e2-80bc-625c4b9761af" value="1995bbdb-cf3e-44e2-80bc-625c4b9761af">Manoj</span></div></div></div>
-                            <span class="invalid-message field-validation-valid" data-valmsg-for="UserStatusId" data-valmsg-replace="true"></span>
+                            <div class="btn-group">
+                                <label class="form-label required fw600" for="Name">Status</label>
+                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" onclick="updateStatusSelectedValue(this)">Active</a>
+                                    <a class="dropdown-item" href="#" onclick="updateStatusSelectedValue(this)">InActive</a>
+
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mb-3 text-break">
-                            <div class="form-group">
-                                <label class="form-label required fw600" for="UserRoleName">Role</label>
-                                <div class="select-wrapper"><div class="select"><input class="custom-option" for="UserRoleName" hidden="hidden" id="UserRoleName" name="UserRoleName" value=""><div class="select__trigger"><span>Please Select...</span><div class="arrow"><i class="fa-solid fa-caret-down"></i></div></div><div class="custom-options"><span class="custom-option selected" data-text="all" data-value="" onclick="showHideClass(this)" value="">Please Select...</span><span class="custom-option" data-text="Student" data-value="Student" onclick="showHideClass(this)" value="Student">Student</span><span class="custom-option" data-text="System Admin" data-value="System Admin" onclick="showHideClass(this)" value="System Admin">System Admin</span><span class="custom-option" data-text="Teacher" data-value="Teacher" onclick="showHideClass(this)" value="Teacher">Teacher</span></div></div></div>
-                                <span class="invalid-message field-validation-valid" data-valmsg-for="UserRoleName" data-valmsg-replace="true"></span>
+                            <div class="btn-group">
+                                <label class="form-label required fw600" for="Name">Role</label>
+                                <button type="button" class="btn btn-sm btn-secondary roleclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" onclick="updateRoleSelectedValue(this)">Student</a>
+                                    <a class="dropdown-item" href="#" onclick="updateRoleSelectedValue(this)">Teacher</a>
+                                    <a class="dropdown-item" href="#" onclick="updateRoleSelectedValue(this)">Admin</a>
+
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div id="class-wrapper" class="col-md-6" style="display: none;">
+                    <div id="class-wrapper" class="col-md-6" @*style="display: none;"*@>
                         <div class="mb-3 text-break">
-                            <label class="form-label required fw600" for="ClassIdList">Class</label> <a class="color-secondarycolor fs-12 hover-color-primarycolor" href="/classhub/edit" target="_blank">Create New</a>
-                            <div>
-                                <div class="choices" data-type="select-multiple" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false" dir="ltr">
-                                    <div class="choices__inner"><select class="multichoice choices__input is-hidden" for="ClassIdList" id="ClassIdList" multiple="multiple" name="ClassIdList" placeholder="Select multiple..." tabindex="-1" aria-hidden="true" data-choice="active"></select><div class="choices__list choices__list--multiple"></div><input type="text" class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="Select multiple..." style="width: 132px;"></div><div class="choices__list choices__list--dropdown" aria-expanded="false">
-                                        <div class="choices__list" dir="ltr" role="listbox" aria-multiselectable="true">
-                                            <div class="choices__item choices__item--choice choices__item--selectable is-highlighted" data-select-text="Press to select" data-choice="" data-id="1" data-value="252cc663-0dc6-49c4-ad4b-2fd873505e4e" data-choice-selectable="" id="choices--ClassIdList-item-choice-1" role="option" aria-selected="true">
-                                                c++
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="2" data-value="d72f69e1-0505-4e11-bb37-a8e53cfb3347" data-choice-selectable="" id="choices--ClassIdList-item-choice-2" role="option">
-                                                Cm1
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="3" data-value="9a5000f3-0deb-49d6-8154-9f36ccea0028" data-choice-selectable="" id="choices--ClassIdList-item-choice-3" role="option">
-                                                Devops
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="4" data-value="c0b42b60-cf5c-4b3f-bbd2-3cc7dc605ac4" data-choice-selectable="" id="choices--ClassIdList-item-choice-4" role="option">
-                                                F#
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="5" data-value="d7fdb7b4-91c0-4763-99a9-c07a9019c935" data-choice-selectable="" id="choices--ClassIdList-item-choice-5" role="option">
-                                                jain
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="6" data-value="ec705ea1-11e6-455b-b384-151ac23d0374" data-choice-selectable="" id="choices--ClassIdList-item-choice-6" role="option">
-                                                newa
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="7" data-value="47ea5e34-9ea5-4c11-a267-142e30247fbf" data-choice-selectable="" id="choices--ClassIdList-item-choice-7" role="option">
-                                                Project Management
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="8" data-value="e1aac0d1-4213-431b-9538-c808daf12ef6" data-choice-selectable="" id="choices--ClassIdList-item-choice-8" role="option">
-                                                SSC
-                                            </div><div class="choices__item choices__item--choice choices__item--selectable" data-select-text="Press to select" data-choice="" data-id="9" data-value="d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f" data-choice-selectable="" id="choices--ClassIdList-item-choice-9" role="option">
-                                                teerm101
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="btn-group">
+                                <label class="form-label required fw600" for="Name">Class</label>
+                                <button type="button" class="btn btn-sm btn-secondary Classclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-I</a>
+                                    <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-II</a>
+                                    <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-III</a>
+
+
                                 </div>
                             </div>
-                            <span class="invalid-message field-validation-valid" data-valmsg-for="ClassIdList" data-valmsg-replace="true"></span>
                         </div>
                     </div>
                 </div>
@@ -189,12 +188,17 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3 text-break">
-                            <div class="form-group">
-                                <label class="form-label fw600" for="GenderId">Gender</label>
-                                <div>
-                                    <div class="form-check form-check-inline"><input class="form-check-input" for="GenderId_Female" id="GenderId_Female" name="GenderId" type="radio" value="8F4B0A52-B4EC-4000-9AE0-F35DA162A280"><label class="form-check-label" for="GenderId_Female">Female</label></div><div class="form-check form-check-inline"><input class="form-check-input" for="GenderId_Male" id="GenderId_Male" name="GenderId" type="radio" value="74AE3799-7CD3-47D0-977E-29E30B604F90"><label class="form-check-label" for="GenderId_Male">Male</label></div><div class="form-check form-check-inline"><input class="form-check-input" for="GenderId_Other" id="GenderId_Other" name="GenderId" type="radio" value="2725387A-2357-409B-B57F-144E91A06CA3"><label class="form-check-label" for="GenderId_Other">Other</label></div>
+                            <div class="btn-group">
+                                <label class="form-label required fw600" for="Name">Gender</label>
+                                <button type="button" class="btn btn-sm btn-secondary Classclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" onclick="updateGenderSelectedValue(this)">Male</a>
+                                    <a class="dropdown-item" href="#" onclick="updateGenderSelectedValue(this)">Female</a>
+                                    <a class="dropdown-item" href="#" onclick="updateGenderSelectedValue(this)">Other</a>
+
+
                                 </div>
-                                <span class="invalid-message field-validation-valid" data-valmsg-for="GenderId" data-valmsg-replace="true"></span>
                             </div>
                         </div>
                     </div>
@@ -278,6 +282,31 @@
         <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Hq1Qe0U07NJhdiD1odCwItDtCz0KKmdG0kNpaw4PB5rjOBlCUrJkWkYsqk6nylWzelaUfMgaQSMroItFVteLm8E7zn2jOj4Mkdf-jA7K3TIWk0AT5MBBioLjdyiT1wnf7c5GoBMoxeyeBDjC3NBL0bjbRaylgsTakzcjZFbdEq0NgFLB-Vc37CuFJ_O__pyXw">
     </form>
 </div>
-    @section FooterSection{
-        @Html.Partial("_FooterView")
+
+<script>
+    var defaultValue = "Active";
+    $(".btn-secondary").text(defaultValue);
+
+    function updateStatusSelectedValue(element) {
+        var selectedValue = $(element).text();
+        $(".btn-secondary").text(selectedValue);
     }
+    function updateRoleSelectedValue(element) {
+        var selectedValue = $(element).text();
+        $(".roleclass").text(selectedValue);
+    }
+
+    function updateClassSelectedValue(element) {
+        var selectedValue = $(element).text();
+        $(".Classclass").text(selectedValue);
+    }
+    function updateGenderSelectedValue(element) {
+        var selectedValue = $(element).text();
+        $(".Classclass").text(selectedValue);
+    }
+    
+</script>
+
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}

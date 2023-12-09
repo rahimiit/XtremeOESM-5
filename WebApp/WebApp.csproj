@@ -4135,6 +4135,7 @@
     <Compile Include="Controllers\OESSubjectController.cs" />
     <Compile Include="Controllers\OESUsersController.cs" />
     <Compile Include="Controllers\SharedController.cs" />
+    <Compile Include="Controllers\StudentExamController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -5504,6 +5505,13 @@
     <Content Include="Views\OESExam\Index.cshtml" />
     <Content Include="Views\OESExam\AddExam.cshtml" />
     <Content Include="Views\OESSubject\AddSubjects.cshtml" />
+    <Content Include="Views\OESQuestionsBank\AddEditAnswer.cshtml" />
+    <Content Include="Views\Shared\_StudentLayout.cshtml" />
+    <Content Include="Views\Home\XtremeUserDashboard.cshtml" />
+    <Content Include="Views\Shared\_UserSideBar.cshtml" />
+    <Content Include="Views\StudentExam\passedExam.cshtml" />
+    <Content Include="Views\StudentExam\currentExam.cshtml" />
+    <Content Include="Views\StudentExam\upcomingexam.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

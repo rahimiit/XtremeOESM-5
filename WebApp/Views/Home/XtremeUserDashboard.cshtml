@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "XtremeUserDashboard";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+
+<style>
+    .card {
+        box-shadow: 3px 7px 4px 0 rgba(0,0,0,.14) !important;
+    }
+</style>
+
+
+@section UserSideBarSection{
+    @Html.Partial("_UserSideBar")
+}
+
+@section HeaderSection{
+    @Html.Partial("_HeaderView")
+}
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="pagetitle mb-sm-0 fw600">Dashboard</h4>
+        </div>
+    </div>
+</div>
+<section class="section dashboard mt-3">
+    <div class="row justify-content-start align-items-start">
+        <div class="col-md-6 col-lg-3">
+            <div class="card card-animate border-0 shadow">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-grow-1 overflow-hidden">
+                            <p class="text-capitalize fw-medium text-muted text-truncate mb-0 fs-14"
+                               style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">Exam In Progress</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div class="fs-14 mb-0 text-muted"><i class="fa-solid fa-circle-info align-middle" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="The total number of teachers in the system." aria-label="The total number of teachers in the system."></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between mt-4">
+                        <div>
+                            <h4 class="fs-27 fw-bold ff-secondary mb-4">31</h4>
+                            <a href="~/StudentExam/currentExam" class="text-decoration-underline fw-light text-muted fs-13 hover-color-secondarycolor" style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">View Exam</a>
+                        </div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="material-icons" style=" font-size: 49px !important;">
+                                manage_accounts
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card card-animate border-0 shadow">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-grow-1 overflow-hidden">
+                            <p class="text-capitalize fw-medium text-muted text-truncate mb-0 fs-14" style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">Exam Completed</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div class="fs-14 mb-0 text-muted"><i class="fa-solid fa-circle-info align-middle" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="The total student account in the system." aria-label="The total student account in the system."></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between mt-4">
+                        <div>
+                            <h4 class="fs-27 fw-bold ff-secondary mb-4">85</h4>
+                            <a href="~/StudentExam/passedExam" class="text-decoration-underline fw-light text-muted fs-13 hover-color-secondarycolor" style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">View Exam</a>
+                        </div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="material-icons" style="font-size: 49px !important;">
+                                school
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card card-animate border-0 shadow">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-grow-1 overflow-hidden">
+                            <p class="text-capitalize fw-medium text-muted text-truncate mb-0 fs-14" style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">Exam Passed</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div class="fs-14 mb-0 text-muted"><i class="fa-solid fa-circle-info align-middle" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="The total exam which are currently still available for the students to start the exam." aria-label="The total exam which are currently still available for the students to start the exam."></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between mt-4">
+                        <div>
+                            <h4 class="fs-27 fw-bold ff-secondary mb-4">3</h4>
+                            <a href="~/StudentExam/passedExam" class="text-decoration-underline fw-light text-muted fs-13 hover-color-secondarycolor" style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">View Exam</a>
+                        </div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="material-icons" style="font-size: 49px !important;">
+                                pending
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <div class="card card-animate border-0 shadow">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-grow-1 overflow-hidden">
+                            <p class="text-capitalize fw-medium text-muted text-truncate mb-0 fs-14" style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">Exam Failed</p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <div class="fs-14 mb-0 text-muted"><i class="fa-solid fa-circle-info align-middle" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="The total exams have already passed the end date." aria-label="The total exams have already passed the end date."></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-end justify-content-between mt-4">
+                        <div>
+                            <h4 class="fs-27 fw-bold ff-secondary mb-4">37</h4>
+                            <a href="~/StudentExam/passedExam" class="text-decoration-underline fw-light text-muted fs-13 hover-color-secondarycolor" style="font-weight: normal; font-weight: lighter; font-weight: bold; font-weight: 900; ">View Exam</a>
+                        </div>
+                        <div class="avatar-sm flex-shrink-0">
+                            <span class="material-icons" style="font-size: 49px !important;">
+                                check_circle_outline
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 mt-4">
+
+        </div>
+        <div class="col-lg-6 mt-4">
+
+        </div>
+        <div class="col-lg-6 mt-4">
+
+        </div>
+        <div class="col-lg-6 mt-4">
+
+        </div>
+        <div class="col-lg-6 mt-4">
+
+        </div>
+        <div class="col-lg-6 mt-4">
+
+        </div>
+    </div>
+</section>
+
+
+
+
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}
+

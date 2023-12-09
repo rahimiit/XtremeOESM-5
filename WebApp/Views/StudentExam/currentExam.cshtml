@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "currentExam";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+
+@section UserSideBarSection{
+    @Html.Partial("_UserSideBar")
+}
+
+@section HeaderSection{
+    @Html.Partial("_HeaderView")
+}
+
+
+<style>
+    .mat-table {
+        display: block;
+        font-family: Tahoma, Verdana;
+    }
+
+    .mat-row,
+    .mat-header-row {
+        display: flex;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 24px;
+    }
+
+    .mat-cell,
+    .mat-header-cell {
+        flex: 1;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+</style>
+<div class="col-12">
+    <div class="bg-white rounded p-3 shadow">
+        <div class="mat-table">
+            <div class="mat-header-row">
+                <div class="mat-header-cell">Exam Name</div>
+                <div class="mat-header-cell">Star Date & Time</div>
+                <div class="mat-header-cell">End Date & Time</div>
+                <div class="mat-header-cell">Duration (minute) </div>
+                <div class="mat-header-cell">Total Question</div>
+                <div class="mat-header-cell">Action</div>
+            </div>
+            <div class="mat-row">
+                <div class="mat-cell">Test Exam-1</div>
+                <div class="mat-cell">12/08/2023, 12:54 PM</div>
+                <div class="mat-cell">12/08/2023, 12:54 PM</div>
+                <div class="mat-cell">40</div>
+                <div class="mat-cell">25</div>
+                <div class="mat-cell">Active</div>
+                <div class="mat-cell">
+                    <div class="d-flex text-breakspaces">
+                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
+                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
+                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
+                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mat-row">
+                <div class="mat-cell">Test Exam-1</div>
+                <div class="mat-cell">12/08/2023, 12:54 PM</div>
+                <div class="mat-cell">12/08/2023, 12:54 PM</div>
+                <div class="mat-cell">40</div>
+                <div class="mat-cell">25</div>
+                <div class="mat-cell">Active</div>
+                <div class="mat-cell">
+                    <div class="d-flex text-breakspaces">
+                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
+                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
+                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
+                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mat-row">
+                <div class="mat-cell">Test Exam-1</div>
+                <div class="mat-cell">12/08/2023, 12:54 PM</div>
+                <div class="mat-cell">12/08/2023, 12:54 PM</div>
+                <div class="mat-cell">40</div>
+                <div class="mat-cell">25</div>
+                <div class="mat-cell">Active</div>
+                <div class="mat-cell">
+                    <div class="d-flex text-breakspaces">
+                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
+                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
+                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
+                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}
+
+

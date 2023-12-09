@@ -6,28 +6,25 @@ using System.Web.Mvc;
 
 namespace WebApp.Controllers
 {
-    public class HomeController : Controller
+    public class StudentExamController : Controller
     {
-        // GET: Home
+        // GET: StudentExam
         public ActionResult Index()
-        { 
-            @ViewBag.UserId = 12000255;
-            return View();
-        }
-        public ActionResult Login()
         {
-            @ViewBag.UserId = 12000255;
             return View();
         }
-        public ActionResult XtremeDashboard()
+        public ActionResult passedExam()
         {
-       
             return View();
         }
-        public ActionResult XtremeUserDashboard()
+        public ActionResult currentExam()
         {
-
             return View();
         }
+        public ActionResult upcomingexam()
+        {
+            return View();
+        }
+        
     }
 }
