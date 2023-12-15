@@ -108,6 +108,22 @@ namespace apps.Services
         }
     }
 
+    [Command(Name = APPS_COMMANDS.Get_USER_LOGIN)]
+    public class GetUserLoginCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { userEmail = string.Empty, password = string.Empty }, v);
+            IDictionary<string, object> values = new Dictionary<string, object>();
+            values.Add("@userEmail", model.userEmail);
+            values.Add("@password", model.password);
+            var repository = Ioc.Resolve<IRepository>();
+            return repository.GetMultiple<dynamic>(StoreProcedure.Employee.Employees_LoginVerification.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
+
+
+
 
 
 }

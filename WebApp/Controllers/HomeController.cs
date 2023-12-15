@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace WebApp.Controllers
 {
@@ -28,6 +29,16 @@ namespace WebApp.Controllers
         {
 
             return View();
+        }
+        public ActionResult Logout()
+        {
+            // Clear the session
+            Session.Clear();
+ 
+            FormsAuthentication.SignOut();
+
+
+            return RedirectToAction("Login");
         }
     }
 }

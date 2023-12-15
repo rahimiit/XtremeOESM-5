@@ -15,5 +15,6 @@ namespace apps.Services
         public const string GET_MENU_BY_PARENT = "getMenusbyParentId";
         public const string GET_CAMP_BY_IP = "getCampByIP";
         public const string LIST_GHQ_UNITS = "listGHQUnits";
+        public const string Get_USER_LOGIN = "GetUserLogin";
     }
 }

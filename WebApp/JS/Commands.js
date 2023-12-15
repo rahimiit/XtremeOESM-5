@@ -9,6 +9,7 @@
         LIST_MENUS_BY_ROLE_ID: "getMenusbyRoleId",
         LIST_MENUS_BY_PARENT_ID: "getMenusbyParentId",
         GET_USER_PROFILE_BY_ID: "getUserProfilebyId",
+        Get_USER_LOGIN: "GetUserLogin",
     }
 
     /* ************** Attachment Commands ****************** */

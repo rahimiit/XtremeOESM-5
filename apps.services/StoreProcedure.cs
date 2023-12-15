@@ -30,7 +30,10 @@ public class StoreProcedure
         [Description("[Employee].[ExternalEmployee_Save]")]
         ExternalEmployee_Save,
         [Description("[Employee].[ExternalEmployees_Select]")]
-        ExternalEmployees_Select
+        ExternalEmployees_Select,
+        [Description("[sp_VerifyUserAccountInformaion]")]
+        Employees_LoginVerification
+
     }
 
 

@@ -440,21 +440,21 @@ var getConstantUrlVars = function (url) {
     return vars;
 }
 
-function GetClientIPAddress() {
-    $.ajax({
-        type: 'GET',
-        url: '/services/PG/GetIPAddress',
-        contentType: "application/json; charset=utf-8",
-        xhrFields: { withCredentials: true },
-        statusCode: {
-            401: function () {
-            }
-        },
-        success: function (data) {
-            sessionStorage.setItem("IP", data);
-        },
-        error: function () {
-            alert('hello error');
-        }
-    });
-}
+//function GetClientIPAddress() {
+//    $.ajax({
+//        type: 'GET',
+//        url: '/services/PG/GetIPAddress',
+//        contentType: "application/json; charset=utf-8",
+//        xhrFields: { withCredentials: true },
+//        statusCode: {
+//            401: function () {
+//            }
+//        },
+//        success: function (data) {
+//            sessionStorage.setItem("IP", data);
+//        },
+//        error: function () {
+//            alert('hello error');
+//        }
+//    });
+//}
