@@ -3,17 +3,39 @@ $(document).ready(function () {
    
     $("#btnlogin").click(function () {
         ; debugger
- 
-     
+        var Isvalid = true;
+        if ($('#email').val() == '') {
+            $('#error_span_email').text("Enter Invoice No");
+            setTimeout(function () {
+                // Hide the element after 5 seconds
+                $('#error_span_email').text("");
+            }, 5000); 
+            Isvalid = false;
+        }
+        else {
+            $('#error_span_email').text("");
+        }
+        if ($('#password').val() == '') {
+            $('#error_span_password').text("Enter Invoice No");
+            setTimeout(function () {
+                // Hide the element after 5 seconds
+                $('#error_span_password').text("");
+            }, 5000); 
+            Isvalid = false;
+        }
+        else {
+            $('#error_span_password').text("");
+        }
+        if (Isvalid) { 
         var _param = {
             'userEmail': $('#email').val(),
             'password': $('#password').val()
         }
-        GlobalAjax({ commandName: APPS_COMMANDS.Get_USER_LOGIN, values: JSON.stringify(_param), CallBack: GetUserData });
-        alert(d.Value);
+            GlobalAjax({ commandName: APPS_COMMANDS.Get_USER_LOGIN, values: JSON.stringify(_param), CallBack: GetUserData });
+             
+        }
+      
     });   
-
-
 
 });
 
@@ -26,8 +48,11 @@ var GetUserData = function (d) {
       
         if (_data[0].userTypeId === 1) {  //Admin
             sessionStorage.setItem('userfirstName', JSON.stringify(_data[0].firstName));
+            sessionStorage.setItem('rolename', JSON.stringify(_data[0].roleName));
             window.location.href = '/Home/XtremeDashboard';
         } else if (_data[0].userTypeId === 2) {  //user
+            sessionStorage.setItem('userfirstName', JSON.stringify(_data[0].firstName));
+            sessionStorage.setItem('rolename', JSON.stringify(_data[0].roleName));
             $(".username span").text(_data[0].firstName);
             window.location.href = '/Home/XtremeUserDashboard';
         } else {

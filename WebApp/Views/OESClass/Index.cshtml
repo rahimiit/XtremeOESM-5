@@ -109,7 +109,9 @@
     </div>
     </div>
 
+<div id="tabcontentToAppendCompanys">
 
+</div>
 
 
     @section FooterSection{
@@ -117,4 +119,130 @@
     }
 
 
+<script>
+    ; debugger
+    var _data = [];
+    var GetUserProfile = function (d) {
+    
+        GlobalAjax({ commandName: APPS_COMMANDS.Get_USER_LOGIN, values: JSON.stringify(""), CallBack: GetMenuByRole });
+  
+    }
+    var GridExample1 = function () {
+        var initialize = function () {
 
+            var container = $('#tabcontentToAppendCompanys').html('<div></div>');
+            var grid = $('div', container);
+            var columnOptions;
+
+            columnOptions = [
+                //Company_Id, Company_Name, Company_Address, Company_Contact, Company_Email, Company_Status
+                {
+                    title: " Id", field: "Id", hidden: true, width: "180px",
+                },
+
+                { title: " Supplier_Name", field: "Supplier_Name", width: "70%" },
+
+                { title: "Country_Id ", field: "Country_Id", width: "70%" },
+                { title: "City_Id", field: "City_Id", width: "70%" },
+                { title: "Address", field: "Address", width: "70%" },
+                { title: "ContactPerson", field: "Contact_Person", width: "70%" },
+                { title: "Mobile1", field: "Mobile_No1", width: "70%" },
+                { title: "Mobile2", field: "Mobile_No2", width: "70%" },
+                { title: "Email", field: "Email", width: "70%" },
+                {
+                    field: "Id", title: "Action", width: "30%", template: '<img src="/images/Pencil-icon.png" title="Edit" alt="Edit" onclick=EditCompany(this) />'
+                    //           +
+                    //'<a style="color:darkblue;margin: 0px 10px;"" href="/Company/CompanyPayment?zindex=My love is #=Company_Id# Coding so treat me with love"> <i class="fa fa-sort-amount-asc" title="Company Add Payment Detail" style="font-size: 18px;"></i></a>',
+                },
+
+
+
+            ]
+
+
+
+
+            var gridOptions = {
+
+
+
+
+                dataSource: {
+                    transport: {
+                        read: {
+                            //url: gridCompanyReadURl,
+                            type: "GET",
+                            dataType: "json",
+                            data: _data,
+                            complete: function () {
+                            }
+                        }
+                    },
+                    schema: { data: "data", total: "total" },
+                    serverPaging: true,
+
+                    serverSorting: true,
+                    serverFiltering: true
+                },
+                columns: columnOptions,
+                //height: 385,
+                height: "",
+
+                action: ["maximize"],
+                resizable: true,
+                scrollable: true,
+                columnMenu: true,
+                sortable: true,
+                serverSorting: true,
+                navigatable: true,
+                selectable: "row",
+                mobile: true,
+
+                pageable: {
+                    pageSize: 25,
+                    pageSizes: [10, 25, 50, 100, 250],
+                    refresh: true,
+
+                    // messages: {
+                    //   refresh: "Refresh the grid"
+                    // }
+                }
+            };
+            grid.kendoGrid(gridOptions)
+
+                .delegate("tbody>tr", "dblclick", function (e) {
+
+                    //   var projectid = $(this).find('td').eq(0).html();
+                    //var issueid = $(this).find('td').eq(1).html();
+                    //  var Url = '/ServiceDesk/projectissuelist?projectid=' + projectid + ''
+                    // window.location.href = '/ServiceDesk/projectissuelist?projectid=' + projectid + ''
+                    // window.open(Url);
+                    //  window.open(Url, '_blank');
+
+                });
+            grid.kendoGrid(gridOptions)
+        };
+        var refresh = function () {
+            var grid = $('#tabcontentToAppendCompanys>div');
+            if (grid.length < 1) {
+                return;
+            }
+
+            grid.data("kendoGrid").dataSource.read();
+        };
+        return {
+            Initialize: initialize,
+            Refresh: refresh
+        };
+    }();
+
+    $(document).delegate('#tabcontentToAppendCompanys table tbody tr', 'mouseover', function () {
+        $(this).css("cursor", "pointer");
+    });
+
+
+    $(document).ready(function () {
+        // $(".nav-tabs li").trigger('click');
+        GridExample1.Initialize();
+    });
+</script>

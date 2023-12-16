@@ -5522,6 +5522,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="ExceptionLogs\" />
+    <Folder Include="Scripts\OESClass\" />
+    <Folder Include="Scripts\OESExam\" />
+    <Folder Include="Scripts\OESQuestionBank\" />
+    <Folder Include="Scripts\OESStudentExam\" />
+    <Folder Include="Scripts\OESSubject\" />
+    <Folder Include="Scripts\OESUser\" />
     <Folder Include="Token\" />
     <Folder Include="_logs\" />
   </ItemGroup>
