@@ -182,6 +182,7 @@
     <Content Include="JS\ConstantsLabels.min.js">
       <DependentUpon>ConstantsLabels.js</DependentUpon>
     </Content>
+    <Content Include="JS\KendojqueryController.js" />
     <Content Include="JS\popper.min.js">
       <DependentUpon>popper.js</DependentUpon>
     </Content>
@@ -3272,6 +3273,7 @@
     <Content Include="Scripts\Home\Index.min.js">
       <DependentUpon>Index.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\OESClass\OESClass.js" />
     <Content Include="theme\css\vertical-layout-light\style.css" />
     <Content Include="theme\gulpfile.js" />
     <Content Include="theme\images\auth\lockscreen-bg.jpg" />
@@ -5522,7 +5524,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="ExceptionLogs\" />
-    <Folder Include="Scripts\OESClass\" />
     <Folder Include="Scripts\OESExam\" />
     <Folder Include="Scripts\OESQuestionBank\" />
     <Folder Include="Scripts\OESStudentExam\" />

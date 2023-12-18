@@ -5,6 +5,7 @@ using CastleWindsorFactory.Repository;
 using System.Configuration;
 using System.Reflection;
 using apps.Services.Model;
+using System.Linq;
 namespace apps.Services
 {
     [Command(Name = APPS_COMMANDS.GET_USER_PROFILE_BY_ID)]
@@ -121,7 +122,36 @@ namespace apps.Services
             return repository.GetMultiple<dynamic>(StoreProcedure.Employee.Employees_LoginVerification.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
         }
     }
+ 
+    [Command(Name = "Employee_Select")]
+    public class Employee_SelectCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            object result = new { status = false, returnUrl = "#" };
+          
+            var model = base.MappedModel(new { Status = string.Empty }, v);
 
+            try
+            {
+              
+                var repository = Ioc.Resolve<IRepository>();
+                //IDictionary<string, object> values = new Dictionary<string, object>();
+            
+                ICommandParameters _params = new CommandParameters();
+                IDictionary<string, object> values = _params.Get(model);
+                values = _params.Get(model);
+                return repository.GetMultiple<dynamic>(StoreProcedure.Employee.sp_GetAllClasses.ToString(), values, connectionFactory._factory, connectionFactory._connection);
+
+            }
+            catch (Exception ex)
+            {
+                result = new { status = false, message = ex.Message };
+            }
+            return result;
+        }
+
+    }
 
 
 

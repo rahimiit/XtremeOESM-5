@@ -3,7 +3,8 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_XtremeLayout.cshtml";
 }
-
+ 
+ 
 @section SideBarSection{
     @Html.Partial("_SideBarView")
 }
@@ -12,26 +13,8 @@
     @Html.Partial("_HeaderView")
 }
 <style>
-    .mat-table {
-        display: block;
-        font-family: Tahoma, Verdana;
-    }
-
-    .mat-row,
-    .mat-header-row {
-        display: flex;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        align-items: center;
-        min-height: 48px;
-        padding: 0 24px;
-    }
-
-    .mat-cell,
-    .mat-header-cell {
-        flex: 1;
-        overflow: hidden;
-        word-wrap: break-word;
+    .k-grid-content k-auto-scrollable {
+        /*height:;*/
     }
 </style>
 
@@ -60,73 +43,37 @@
 </section>
 <div class="col-12">
     <div class="bg-white rounded p-3 shadow">
-        <div class="mat-table">
-            <div class="mat-header-row">
-                <div class="mat-header-cell">Name</div>
-                <div class="mat-header-cell">Status</div>
-                <div class="mat-header-cell">Action</div>
-            </div>
-            <div class="mat-row">
-                <div class="mat-cell">Class-1</div>
-                <div class="mat-cell">Active</div>
-                <div class="mat-cell">
-                    <div class="d-flex text-breakspaces">
-                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
-                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
-                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
-                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="mat-row">
-                <div class="mat-cell">Class-II</div>
-                <div class="mat-cell">Active</div>
-                <div class="mat-cell">
-                    <div class="d-flex text-breakspaces">
-                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
-                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
-                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
-                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="mat-row">
-                <div class="mat-cell">Class-III</div>
-                <div class="mat-cell">Active</div>
-                <div class="mat-cell">
-                    <div class="d-flex text-breakspaces">
-                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
-                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
-                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
-                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-<div id="tabcontentToAppendCompanys">
+        <div id="employee-grid">
 
 </div>
+    </div> 
+</div>
+<script src="~/Scripts/OESClass/OESClass.js"></script>
 
 
-    @section FooterSection{
-        @Html.Partial("_FooterView")
-    }
+
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}
 
 
-<script>
+@*<script>
     ; debugger
     var _data = [];
     var GetUserProfile = function (d) {
-    
+
         GlobalAjax({ commandName: APPS_COMMANDS.Get_USER_LOGIN, values: JSON.stringify(""), CallBack: GetMenuByRole });
-  
+
     }
+
+    var GetMenuByRole = function (d) {
+        ; debugger
+        var _data = JSON.parse(d.Value);
+        console.log(d.Value);
+
+    
+    }
+
     var GridExample1 = function () {
         var initialize = function () {
 
@@ -140,15 +87,10 @@
                     title: " Id", field: "Id", hidden: true, width: "180px",
                 },
 
-                { title: " Supplier_Name", field: "Supplier_Name", width: "70%" },
+                { title: " Class Name", field: "ClassName", width: "70%" },
 
-                { title: "Country_Id ", field: "Country_Id", width: "70%" },
-                { title: "City_Id", field: "City_Id", width: "70%" },
-                { title: "Address", field: "Address", width: "70%" },
-                { title: "ContactPerson", field: "Contact_Person", width: "70%" },
-                { title: "Mobile1", field: "Mobile_No1", width: "70%" },
-                { title: "Mobile2", field: "Mobile_No2", width: "70%" },
-                { title: "Email", field: "Email", width: "70%" },
+                { title: "Status ", field: "Status", width: "70%" },
+             
                 {
                     field: "Id", title: "Action", width: "30%", template: '<img src="/images/Pencil-icon.png" title="Edit" alt="Edit" onclick=EditCompany(this) />'
                     //           +
@@ -170,7 +112,7 @@
                 dataSource: {
                     transport: {
                         read: {
-                            //url: gridCompanyReadURl,
+                            url: GetUserProfile,
                             type: "GET",
                             dataType: "json",
                             data: _data,
@@ -245,4 +187,4 @@
         // $(".nav-tabs li").trigger('click');
         GridExample1.Initialize();
     });
-</script>
+</script>*@

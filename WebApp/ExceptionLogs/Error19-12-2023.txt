@@ -1,0 +1,7 @@
+01:21:53:Service Started
+*********************************************************************************
+01:21:53:{EmployeeID:'9',ReasonOfDeletion: 'zdfsdf'}
+*********************************************************************************
+01:21:53:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************

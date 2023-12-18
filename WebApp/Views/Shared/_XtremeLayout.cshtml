@@ -57,11 +57,26 @@ The above copyright notice and this permission notice shall be included in all c
     <link href="~/JS/themeJS/assets/css/material-dashboard.min6c54.css" rel="stylesheet" />
 
     <link href="~/JS/themeJS/assets/demo/demo.css" rel="stylesheet" />
- 
+
     <link href="@Url.Content("~/kendo/css/kendo.flat.min.css")" rel="stylesheet" />
     <link href="@Url.Content("~/kendo/css/kendo.common.min.css")" rel="stylesheet" />
+    <script src="~/JS/themeJS/assets/js/core/jquery.min.js"></script>
+    <script src="~/JS/KendojqueryController.js"></script>
+    <style>
+        .container-fluid {
+            width: 100%;
+             padding-right: 0px; 
+             padding-left: 0px; 
+             margin-right: auto; 
+             margin-left: auto; 
+        }
+        .main-panel > .content {
+            margin-top: 39px;
+            padding: 30px 15px;
+            min-height: calc(100vh - 123px);
+        }
 
-
+    </style>
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -189,12 +204,13 @@ The above copyright notice and this permission notice shall be included in all c
             </ul>
         </div>
     </div>
+ 
     <script src="~/JS/themeJS/assets/js/core/bootstrap-material-design.min.js"></script>
-    <script src="~/JS/themeJS/assets/js/core/jquery.min.js"></script>
+
     <script src="~/JS/themeJS/assets/js/core/popper.min.js"></script>
     <script src="~/JS/themeJS/assets/js/core/bootstrap-material-design.min.js"></script>
     <script src="~/JS/themeJS/assets/js/plugins/perfect-scrollbar.min.js"></script>
- 
+
     <script src="~/kendo/js/kendo.all.min.js"></script>
     <script src="~/JS/themeJS/assets/js/plugins/moment.min.js"></script>
 
