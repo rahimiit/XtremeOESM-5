@@ -42,3 +42,98 @@
 01:21:50.855 [17] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.Employee_DeleteByID 
  Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.Employee_DeleteByID' was not found in the container. Did you forget to register it?
 There are 13 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+18:54:37.583 [5] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+18:54:37.598 [5] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:54:37.619 [5] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:54:37.651 [5] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:54:37.709 [5] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:54:37.709 [5] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+18:54:37.725 [5] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+18:54:37.725 [5] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+18:54:37.725 [5] INFO  Default - register 'apps.Services.Employee_SelectCommand' by name 'Employee_Select
+18:54:37.725 [5] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+18:54:37.725 [5] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+18:54:37.725 [5] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+18:54:37.725 [5] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+18:54:37.725 [5] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+18:54:37.725 [5] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+18:54:37.730 [5] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+18:54:37.730 [5] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+18:54:37.730 [5] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+18:54:37.730 [5] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:54:37.731 [5] INFO  Default - Started:RepositoryInstaller Install
+18:54:37.735 [5] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+18:54:37.735 [5] INFO  Default - Ended: RepositoryInstaller Install
+18:54:37.735 [5] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+22:27:08.387 [22] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+22:27:08.426 [22] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+22:27:08.560 [22] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+22:27:11.230 [22] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+22:27:14.658 [22] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+22:27:14.674 [22] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+22:27:14.677 [22] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+22:27:14.677 [22] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+22:27:14.677 [22] INFO  Default - register 'apps.Services.Employee_SelectCommand' by name 'Employee_Select
+22:27:14.677 [22] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+22:27:14.677 [22] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+22:27:14.677 [22] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+22:27:14.677 [22] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+22:27:14.682 [22] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+22:27:14.682 [22] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+22:27:14.682 [22] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+22:27:14.682 [22] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+22:27:14.682 [22] INFO  Default - register 'apps.Services.ListClassDropDownCommand' by name 'listClassDDL
+22:27:14.682 [22] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+22:27:14.682 [22] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+22:27:14.682 [22] INFO  Default - Started:RepositoryInstaller Install
+22:27:14.689 [22] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+22:27:14.690 [22] INFO  Default - Ended: RepositoryInstaller Install
+22:27:14.690 [22] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+23:22:35.858 [6] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+23:22:35.910 [6] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+23:22:35.934 [6] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+23:22:35.974 [6] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+23:22:36.078 [6] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+23:22:36.108 [6] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+23:22:36.119 [6] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+23:22:36.119 [6] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+23:22:36.119 [6] INFO  Default - register 'apps.Services.Employee_SelectCommand' by name 'Employee_Select
+23:22:36.121 [6] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+23:22:36.121 [6] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+23:22:36.121 [6] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+23:22:36.121 [6] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+23:22:36.121 [6] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+23:22:36.121 [6] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+23:22:36.121 [6] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+23:22:36.121 [6] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+23:22:36.121 [6] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+23:22:36.121 [6] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+23:22:36.121 [6] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+23:22:36.121 [6] INFO  Default - Started:RepositoryInstaller Install
+23:22:36.129 [6] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+23:22:36.133 [6] INFO  Default - Ended: RepositoryInstaller Install
+23:22:36.133 [6] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+00:47:57.432 [14] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+00:47:57.489 [14] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+00:47:57.511 [14] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+00:47:57.560 [14] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+00:47:57.644 [14] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+00:47:57.672 [14] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+00:47:57.679 [14] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+00:47:57.679 [14] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+00:47:57.683 [14] INFO  Default - register 'apps.Services.Employee_SelectCommand' by name 'Employee_Select
+00:47:57.683 [14] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+00:47:57.683 [14] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+00:47:57.683 [14] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+00:47:57.683 [14] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+00:47:57.683 [14] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+00:47:57.683 [14] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+00:47:57.683 [14] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+00:47:57.687 [14] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+00:47:57.688 [14] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+00:47:57.689 [14] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+00:47:57.690 [14] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+00:47:57.691 [14] INFO  Default - Started:RepositoryInstaller Install
+00:47:57.698 [14] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+00:47:57.698 [14] INFO  Default - Ended: RepositoryInstaller Install
+00:47:57.698 [14] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin

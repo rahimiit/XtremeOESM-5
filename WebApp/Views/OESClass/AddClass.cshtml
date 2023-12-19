@@ -11,66 +11,65 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
- 
-    <div class="col-12">
-        <div style="--bs-breadcrumb-divider: '>';">
-            <ol class="breadcrumb m-0">
-                <li class="breadcrumb-item fw-normal"><a class="color-primarycolor opacity-50" href="~/OESClass/Index">Class Management</a></li>
-                <li class="breadcrumb-item fw-normal active">Add Class</li>
-            </ol>
+
+<div class="col-12">
+    <div style="--bs-breadcrumb-divider: '>';">
+        <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item fw-normal"><a class="color-primarycolor opacity-50" href="~/OESClass/Index">Class Management</a></li>
+            <li class="breadcrumb-item fw-normal active">Add Class</li>
+        </ol>
+    </div>
+
+</div>
+
+<div class="col-12">
+    <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateClass">
+        <input type="hidden" name="UserId" id="UserId" value="" />
+
+
+        <input type="hidden" name="type" id="type" value="OES_Add_Class" />
+        <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3 text-break">
+                        <div class="form-group">
+                            <label class="form-label required fw600" for="Name">Name</label>
+                            <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Name must be a string or array type with a maximum length of '256'." data-val-maxlength-max="256" data-val-required="Field is required." id="ClassName" maxlength="256" name="ClassName" type="text" >
+                            <span class="invalid-message field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3 text-break">
+                        <div class="form-group">
+                            <label class="form-label required fw600" for="Status">Status</label>
+                            <input id="Status" name="Status" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        
-    </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <button type="button" id="btnAddClass" class="btn form-btn btn-primary hover-boxshadow">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+
  
-    <div class="col-12">
-        <form action="/classhub/edit" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
-            <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3 text-break">
-                            <div class="form-group">
-                                <label class="form-label required fw600" for="Name">Name</label>
-                                <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Name must be a string or array type with a maximum length of '256'." data-val-maxlength-max="256" data-val-required="Field is required." id="Name" maxlength="256" name="Name" type="text" value="">
-                                <span class="invalid-message field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3 text-break">
-                            <div class="btn-group">
-                                <label class="form-label required fw600" for="Name">Status</label>
-                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">Active</a>
-                                    <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">InActive</a>
 
+<script>
+    var defaultValue = "Active";
+    $(".btn-secondary").text(defaultValue);
 
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-12">
-                    <button type="submit" class="btn form-btn btn-primary hover-boxshadow">Save</button>
-                </div>
-            </div>
-            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OJ0N0MQ0flFiaYaawsus7PLz24xiBgJkkrum87DJJwxOacdg892CR-57JyrElU7vbGdEHWeiH-55bZORS_rTMOHFopJ1nw6WdHLSE0B9Op8RwJGhPpKHIZJWNX8guP5ucEwiwStmqAt6BvX4883JzOHho0_9nN589logQNnNqUUJVmpplYlDK48UPdRDYoxOA">
-        </form>
-    </div>
-    <script>
-        var defaultValue = "Active";
-        $(".btn-secondary").text(defaultValue);
-
-        function updateSelectedValue(element) {
-            var selectedValue = $(element).text();
-            $(".btn-secondary").text(selectedValue);
-        }
-    </script>
-        @section FooterSection{
-            @Html.Partial("_FooterView")
-        }
-
+    function updateSelectedValue(element) {
+        var selectedValue = $(element).text();
+        $(".btn-secondary").text(selectedValue);
+    }
+</script>
+@section FooterSection{
+    @Html.Partial("_FooterView")
+}
+<script src="~/Scripts/OESClass/OESAddClass.js"></script>

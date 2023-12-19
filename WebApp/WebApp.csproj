@@ -3273,6 +3273,7 @@
     <Content Include="Scripts\Home\Index.min.js">
       <DependentUpon>Index.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\OESClass\OESAddClass.js" />
     <Content Include="Scripts\OESClass\OESClass.js" />
     <Content Include="theme\css\vertical-layout-light\style.css" />
     <Content Include="theme\gulpfile.js" />

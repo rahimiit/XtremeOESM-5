@@ -18,23 +18,23 @@ var importJS = function (_file) {
 }
 
 
-var importStyle = function (_file) {
-    $('head').append('<link type="text/css" rel="stylesheet" href="' + _file + '" />');
-}
+//var importStyle = function (_file) {
+//    $('head').append('<link type="text/css" rel="stylesheet" href="' + _file + '" />');
+//}
 
-var themes = function () {
-    //theme fonts
-    importStyle("../../fonts/simple-line-icons/simple-line-icons.min.css");
-    importStyle("../../fonts/font-awesome/css/font-awesome.min.css");
-    importStyle("../../fonts/material-design-icons/material-icon.css");
+//var themes = function () {
+//    //theme fonts
+//    importStyle("../../fonts/simple-line-icons/simple-line-icons.min.css");
+//    importStyle("../../fonts/font-awesome/css/font-awesome.min.css");
+//    importStyle("../../fonts/material-design-icons/material-icon.css");
     
-    importStyle("../../themes/plugins/material/material.min.css");
-    importStyle("../../themes/plugins/material/material.rtl.min.css");
-    importStyle("../../themes/css/material_style.css");
-    importStyle("../../themes/css/plugins.min.css");
-    importStyle("../../themes/css/responsive.css");
-    importJS("../../themes/plugins/material/material.min.js");
-}
+//    importStyle("../../themes/plugins/material/material.min.css");
+//    importStyle("../../themes/plugins/material/material.rtl.min.css");
+//    importStyle("../../themes/css/material_style.css");
+//    importStyle("../../themes/css/plugins.min.css");
+//    importStyle("../../themes/css/responsive.css");
+//    importJS("../../themes/plugins/material/material.min.js");
+//}
 var _SNO = 'ت';
 var LanguageTheme=function(lang)
 {
@@ -58,22 +58,22 @@ var LanguageTheme=function(lang)
 }
 
 
-var summernote = function () {
-   importStyle("../../themes/plugins/summernote/summernote.css");
-   importJS("../../themes/plugins/summernote/summernote.js");
-   importJS("../../themes/js/pages/summernote/summernote-data.js");
-}
+//var summernote = function () {
+//   importStyle("../../themes/plugins/summernote/summernote.css");
+//   importJS("../../themes/plugins/summernote/summernote.js");
+//   importJS("../../themes/js/pages/summernote/summernote-data.js");
+//}
 
                                 
 
-var BootstrapFiles = function () {
-    importStyle("../../themes/plugins/bootstrap/css/bootstrap.min.css");
+//var BootstrapFiles = function () {
+//    importStyle("../../themes/plugins/bootstrap/css/bootstrap.min.css");
   
-    importJS("../../themes/plugins/bootstrap/js/bootstrap.min.js");
-    importJS("../../themes/plugins/bootstrap-switch/js/bootstrap-switch.min.js");
-    importJS("../../themes/plugins/sparkline/jquery.sparkline.js");
-    importJS("../../themes/js/pages/sparkline/sparkline-data.js");
-}
+//    importJS("../../themes/plugins/bootstrap/js/bootstrap.min.js");
+//    importJS("../../themes/plugins/bootstrap-switch/js/bootstrap-switch.min.js");
+//    importJS("../../themes/plugins/sparkline/jquery.sparkline.js");
+//    importJS("../../themes/js/pages/sparkline/sparkline-data.js");
+//}
 
 var Charts = function () {
     importJS("../../themes/plugins/chart-js/Chart.bundle.js");
@@ -101,21 +101,21 @@ var FontAwesome5 = function () {
 
 }
 
-var jQueryConfirm = function () {
-    importStyle("../../Content/css/jquery-confirm.css");
-    importJS("../../Content/js/jquery-confirm.js");
-}
+//var jQueryConfirm = function () {
+//    importStyle("../../Content/css/jquery-confirm.css");
+//    importJS("../../Content/js/jquery-confirm.js");
+//}
 
-var jqGridGuriddo = function (lang) {
-   // importStyle("../../Content/free-jqgrid/css/ui.jqgrid-bootstrap4.css");
-  //  importStyle("../../Content/free-jqgrid/css/jqgrid.xtreme.css");
-  //  importJS("../../Content/free-jqgrid/js/jquery.jqgrid.min.js");
-    if (lang === 'ar-AE') {
-        importJS("../../Content/free-jqgrid/dist/i18n/min/grid.locale-ar.js");
-    } else {
-        importJS("../../Content/free-jqgrid/dist/i18n/min/grid.locale-en.js");
-    }
-}
+//var jqGridGuriddo = function (lang) {
+//   // importStyle("../../Content/free-jqgrid/css/ui.jqgrid-bootstrap4.css");
+//  //  importStyle("../../Content/free-jqgrid/css/jqgrid.xtreme.css");
+//  //  importJS("../../Content/free-jqgrid/js/jquery.jqgrid.min.js");
+//    if (lang === 'ar-AE') {
+//        importJS("../../Content/free-jqgrid/dist/i18n/min/grid.locale-ar.js");
+//    } else {
+//        importJS("../../Content/free-jqgrid/dist/i18n/min/grid.locale-en.js");
+//    }
+//}
 
 
 var AjaxifyForm = function () {
@@ -128,9 +128,9 @@ var Select2Dropdown = function () {
 }
 
 
-var ImportCommon = function () {
-    importJS("../../JS/Common.js");
-}
+//var ImportCommon = function () {
+//    importJS("../../JS/Common.js");
+//}
 var BindCombo = function (data, $combo) {
     //alert(JSON.stringify(data));
     var $list = "";

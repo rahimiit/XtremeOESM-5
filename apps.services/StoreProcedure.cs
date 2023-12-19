@@ -34,7 +34,9 @@ public class StoreProcedure
         [Description("[sp_VerifyUserAccountInformaion]")]
         Employees_LoginVerification,
         [Description("[sp_GetAllClasses]")]
-        sp_GetAllClasses
+        sp_GetAllClasses,
+        [Description("[sp_OES_Add_Class]")]
+        sp_OES_Add_Class
 
     }
 

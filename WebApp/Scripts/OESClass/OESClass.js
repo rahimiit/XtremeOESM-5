@@ -61,13 +61,13 @@ var KendoGrid = function (_data) {
 
         { title: "S/N", width: 40, template: "#= renderNumber() #" },
 
-        { field: "className", title: "Class Name", width: 110, filterable: true },
+        { field: "className", title: "Class Name", width: 110, filterable: true ,attributes: { class: "custom-grid-cell" } },
         { field: "isActive", title: "Status", width: 110, filterable: true, hidden: true },
         {
             field: "", width: 170,
             title: "Action",
 
- 
+            attributes: { class: "custom-grid-cell" },
             template: "<a style='cursor:pointer; font-size:20px;' onClick= whatsapp_btn(this) title='Share Employee' ><span class='icofont icofont-phone'></span></a> <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a> &nbsp;&nbsp;&nbsp;&nbsp; <button type='button' class='btn btn-danger btn-sm text-white'   onclick=deleteRecordByID('#=classID#')> Deactivate</button>"
 
         }];

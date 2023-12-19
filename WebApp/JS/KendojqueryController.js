@@ -119,7 +119,7 @@ var BindkendoGrid = function ($gridid, $pageSize, $colModel, $data) {
         },
         //toolbar: ["search"],
         // mobile: "phone",
-        height: 550,
+        height: 400,
         scrollable: true,
         sortable: true,
        // filterable: { mode: "row" },
@@ -394,7 +394,7 @@ var BindCombo = function (data, $combo) {
 var BindComboForDefault = function (data, $combo, defaultoption) {
     var $list = "";
     $combo.empty();
-    var defaultoption = '<option value="00000000-0000-0000-0000-000000000000" selected>' + defaultoption + '</option>'
+    var defaultoption = '<option value="0" selected>' + defaultoption + '</option>'
     $combo.append($(defaultoption));
     // $combo.append($('<option />'));
     $.map(data, function (item) {
@@ -494,31 +494,31 @@ function fnAvoidNegavtiveNumber(Inputvalue) { //Inputvalue is input field value 
 //----------------------------  AVOID NEGATVIE NUMBERS END --------------------------------
 
 // Add TinyMCE
-function addTinyMCE() {
-    // Initialize
-    tinymce.init({
-        selector: '.editor',
-        themes: 'advanced',
-        height: 300,
-        menubar: true, width: "100%",
-        plugins: [
-            'advlist autolink lists link image charmap print preview anchor',
-            'searchreplace visualblocks code fullscreen',
-            'insertdatetime media table paste code help wordcount'
-        ],
-        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
-    });
+//function addTinyMCE() {
+//    // Initialize
+//    tinymce.init({
+//        selector: '.editor',
+//        themes: 'advanced',
+//        height: 300,
+//        menubar: true, width: "100%",
+//        plugins: [
+//            'advlist autolink lists link image charmap print preview anchor',
+//            'searchreplace visualblocks code fullscreen',
+//            'insertdatetime media table paste code help wordcount'
+//        ],
+//        toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
+//    });
 
 
-}
+//}
 $(document).ready(function () {
-    setTimeout(function () {
-        addTinyMCE();
+    //setTimeout(function () {
+    //    addTinyMCE();
 
-    }, 500);
-    setTimeout(function () {
-        $('.tox-tinymce-aux').css('display', 'none');
-    }, 1000);
+    //}, 500);
+    //setTimeout(function () {
+    //    $('.tox-tinymce-aux').css('display', 'none');
+    //}, 1000);
 
 
 });

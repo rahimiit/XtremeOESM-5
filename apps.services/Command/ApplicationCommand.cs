@@ -153,7 +153,32 @@ namespace apps.Services
 
     }
 
+    [Command(Name = "OES_Add_Class")]
+    public class OESAddClassCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            object result = new { status = false, returnUrl = "#" };
 
+            var model = base.MappedModel(new { Status = 0, ClassName = string.Empty }, v);
+
+            try
+            {
+                var repository = Ioc.Resolve<IRepository>();
+                ICommandParameters _params = new CommandParameters();
+                IDictionary<string, object> values = _params.Get(model);
+                values = _params.Get(model);
+                return repository.GetSingle<dynamic>(StoreProcedure.Employee.sp_OES_Add_Class.ToString(), values, connectionFactory._factory, connectionFactory._connection);
+
+            }
+            catch (Exception ex)
+            {
+                result = new { status = false, message = ex.Message };
+            }
+            return result;
+        }
+
+    }
 
 
 }
