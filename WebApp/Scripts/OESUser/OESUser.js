@@ -5,7 +5,7 @@ var roleID = "";
 var Status = "";
 var SelectedEmployeeID = "";
 
-var $grid = "employee-grid";
+var $grid = "user-grid";
 
 var IsReadEmployeeDetail = localStorage.getItem('IsReadEmployeeDetail');
 var IsUpdateEmployeeDetail = localStorage.getItem('IsUpdateEmployeeDetail');
@@ -24,24 +24,20 @@ $(document).ready(function () {
     //---------------------------------  USER SESSION RECORD END ----------------------------------------------------------------------------   
     $("#UserID").val(userId);
 
-    LoadClassKendo();
+    LoadUserKendo();
 
 });
 
 
-$('#btn-send-email').click(function () {
 
-    window.localStorage.setItem("EmailIt", "1");
-    window.open('/Employee/Employee/EmployeePrint', '_blank')
-});
-function LoadClassKendo() {
+function LoadUserKendo() {
 
-    Status = 'Active'
-    KendoGlobalAjax({ commandName: 'Class_Select', values: { Status: Status }, CallBack: loadClass });
+    Status = '1'
+    KendoGlobalAjax({ commandName: OESUSER_COMMANDS.OES_GET_USERALL, values: { Status: Status }, CallBack: loadUser });
 }
 
 
-var loadClass = function (d) {
+var loadUser = function (d) {
     console.log(d.Value);
 
     KendoGrid(JSON.parse(d.Value));
@@ -49,7 +45,7 @@ var loadClass = function (d) {
 }
 
 var KendoGrid = function (_data) {
-
+    ; debugger
     var record = 0;
     var record = 0;
 
@@ -57,18 +53,25 @@ var KendoGrid = function (_data) {
 
 
         { title: "S/N", width: 40, template: "#= renderNumber() #" },
-        { field: "classID", title: "classID", hidden: true },
-        { field: "className", title: "Class Name", width: 110, filterable: true ,attributes: { class: "custom-grid-cell" } },
-        { field: "isActive", title: "Status", width: 110, filterable: true },
+        { field: "userID", title: "userID", hidden: true },
+        { field: "userName", title: "Name  ", width: 110, filterable: true, attributes: { class: "custom-grid-cell" } },
+        { field: "email", title: "Enmail  ", width: 180, filterable: true, attributes: { class: "custom-grid-cell" } },
+        { field: "fullName", title: "FullName  ", width: 110, filterable: true, attributes: { class: "custom-grid-cell" } },
+        { field: "phoneNumber", title: "PhoneNo  ", width: 110, filterable: true, attributes: { class: "custom-grid-cell" } },
+        { field: "fullAddress", title: "FullAddress  ", width: 110, filterable: true, attributes: { class: "custom-grid-cell" } },
+        { field: "dateOfBirth", title: "DOB  ", width: 110, filterable: true, attributes: { class: "custom-grid-cell" } },
+        { field: "roleName", title: "Role  ", width: 110, filterable: true, attributes: { class: "custom-grid-cell" } },
+        { field: "isActive", title: "isActive", width: 110, filterable: true },
         {
             field: "", width: 170,
             title: "Action",
 
             attributes: { class: "custom-grid-cell" },
-            template: "# if (isActive == true) { # <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a>  &nbsp;&nbsp<button type='button' class='btn btn-danger btn-sm text-white'   onclick=deleteRecordByID('#=classID#')> Deactivate</button>  # } else   {# <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a>  #}#",
-            //template: "<a style='cursor:pointer; font-size:20px;' onClick= whatsapp_btn(this) title='Share Employee' ><span class='icofont icofont-phone'></span></a> <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a> &nbsp;&nbsp;&nbsp;&nbsp; <button type='button' class='btn btn-danger btn-sm text-white'   onclick=deleteRecordByID('#=classID#')> Deactivate</button>"
+            template: "# if (isActive == true) { # <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a>  &nbsp;&nbsp<button type='button' class='btn btn-danger btn-sm text-white'   onclick=deleteRecordByID('#=userID#')> Deactivate</button>  # } else   {# <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a>  #}#",
+ 
 
-        }];
+        }
+    ];
 
     BindkendoGrid($grid, 15, colModel, _data);
 };
@@ -490,3 +493,8 @@ $('#btn-add-update-employee').click(function () {
 //var getLoadCountry = function (d) {
 //    _CountryList += BindComboForDefault(JSON.parse(d.Value), $("#CountryID"), "Select Country");
 //}
+//$('#btn-send-email').click(function () {
+
+//    window.localStorage.setItem("EmailIt", "1");
+//    window.open('/Employee/Employee/EmployeePrint', '_blank')
+//});

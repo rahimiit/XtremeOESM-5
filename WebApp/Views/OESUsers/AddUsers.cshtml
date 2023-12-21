@@ -21,7 +21,11 @@
 
 </div>
 <div class="col-12">
-    <form action="/user/edit" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
+    <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateUser">
+        @*<input type="hidden" name="UserId" id="UserId" value="" />*@
+        <input type="hidden" name="UserID" id="UserID" value="" />
+
+        <input type="hidden" name="type" id="type" value="OES_Add_USDER" />
         <input id="Id" name="Id" type="hidden" value=""><input id="AspNetUserId" name="AspNetUserId" type="hidden" value="">    <section class="section mt-3">
             <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow mb-4">
                 <h2 class="fs-20 fw600 mb-4">System Information</h2>
@@ -30,7 +34,7 @@
                         <div class="mb-3 text-break">
                             <div class="form-group">
                                 <label class="form-label required fw600" for="Username">Username</label>
-                                <input class="form-control text-box single-line" data-val="true" data-val-regex="Username is invalid. Username must have at least 4 characters, must start with a letter, and cannot have special symbols." data-val-regex-pattern="^[A-Za-z]\w{3,29}$" data-val-required="The Username field is required." id="Username" name="Username" type="text" value="">
+                                <input class="form-control text-box single-line" data-val="true" data-val-regex="Username is invalid. Username must have at least 4 characters, must start with a letter, and cannot have special symbols." data-val-regex-pattern="^[A-Za-z]\w{3,29}$" data-val-required="The Username field is required." id="Username" name="Username" type="text">
                                 <span class="invalid-message field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span>
                             </div>
                         </div>
@@ -67,57 +71,35 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="mb-3 text-break">
-                            <div class="btn-group">
-                                <label class="form-label required fw600" for="Name">Status</label>
-                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#" onclick="updateStatusSelectedValue(this)">Active</a>
-                                    <a class="dropdown-item" href="#" onclick="updateStatusSelectedValue(this)">InActive</a>
-
-
-                                </div>
+                            <div class="form-group">
+                                <label class="form-label required fw600" for="Status">Status</label>
+                                <input id="Status" name="Status" />
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="mb-3 text-break">
-                            <div class="btn-group">
-                                <label class="form-label required fw600" for="Name">Role</label>
-                                <button type="button" class="btn btn-sm btn-secondary roleclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#" onclick="updateRoleSelectedValue(this)">Student</a>
-                                    <a class="dropdown-item" href="#" onclick="updateRoleSelectedValue(this)">Teacher</a>
-                                    <a class="dropdown-item" href="#" onclick="updateRoleSelectedValue(this)">Admin</a>
-
-
-                                </div>
+                            <div class="form-group">
+                                <label class="form-label required fw600" for="Role">Role</label>
+                                <input id="Role" name="Role" />
                             </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3 text-break">
+                            <div class="form-group">
+                                <label class="form-label required fw600" for="Class">Class</label>
+                                <input id="Class" name="Class" />
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div id="class-wrapper" class="col-md-6" @*style="display: none;"*@>
-                        <div class="mb-3 text-break">
-                            <div class="btn-group">
-                                <label class="form-label required fw600" for="Name">Class</label>
-                                <button type="button" class="btn btn-sm btn-secondary Classclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-I</a>
-                                    <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-II</a>
-                                    <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-III</a>
 
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
 
@@ -188,17 +170,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3 text-break">
-                            <div class="btn-group">
-                                <label class="form-label required fw600" for="Name">Gender</label>
-                                <button type="button" class="btn btn-sm btn-secondary Classclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#" onclick="updateGenderSelectedValue(this)">Male</a>
-                                    <a class="dropdown-item" href="#" onclick="updateGenderSelectedValue(this)">Female</a>
-                                    <a class="dropdown-item" href="#" onclick="updateGenderSelectedValue(this)">Other</a>
-
-
-                                </div>
+                            <div class="form-group">
+                                <label class="form-label required fw600" for="Gender">Gender</label>
+                                <input id="Gender" name="Gender" />
                             </div>
                         </div>
                     </div>
@@ -218,7 +192,7 @@
             <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow mt-4">
                 <h2 class="fs-20 fw600 mb-4">Address Information</h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    @*<div class="col-md-6">
                         <div class="mb-3 text-break">
                             <div class="form-group">
                                 <label class="form-label required fw600" for="CountryName">Country</label>
@@ -226,7 +200,7 @@
                                 <span class="invalid-message field-validation-valid" data-valmsg-for="CountryName" data-valmsg-replace="true"></span>
                             </div>
                         </div>
-                    </div>
+                    </div>*@
                     <div class="col-md-6">
                         <div class="mb-3 text-break">
                             <div class="form-group">
@@ -274,38 +248,15 @@
             </div>
             <div class="row mt-4">
                 <div class="col-12">
-                    <a type="button" class="btn form-btn btn-secondary hover-boxshadow me-1" href="/user">Back To List</a>
-                    <button id="save-btn" type="submit" class="btn form-btn btn-primary hover-boxshadow">Save</button>
+                    <a type="button" class="btn form-btn btn-secondary hover-boxshadow me-1" href="~/OESUsers/Index">Back To List</a>
+                    <button id="btnAddUser"   class="btn form-btn btn-primary hover-boxshadow">Save</button>
                 </div>
             </div>
         </section>
-        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Hq1Qe0U07NJhdiD1odCwItDtCz0KKmdG0kNpaw4PB5rjOBlCUrJkWkYsqk6nylWzelaUfMgaQSMroItFVteLm8E7zn2jOj4Mkdf-jA7K3TIWk0AT5MBBioLjdyiT1wnf7c5GoBMoxeyeBDjC3NBL0bjbRaylgsTakzcjZFbdEq0NgFLB-Vc37CuFJ_O__pyXw">
-    </form>
+     </form>
 </div>
 
-<script>
-    var defaultValue = "Active";
-    $(".btn-secondary").text(defaultValue);
-
-    function updateStatusSelectedValue(element) {
-        var selectedValue = $(element).text();
-        $(".btn-secondary").text(selectedValue);
-    }
-    function updateRoleSelectedValue(element) {
-        var selectedValue = $(element).text();
-        $(".roleclass").text(selectedValue);
-    }
-
-    function updateClassSelectedValue(element) {
-        var selectedValue = $(element).text();
-        $(".Classclass").text(selectedValue);
-    }
-    function updateGenderSelectedValue(element) {
-        var selectedValue = $(element).text();
-        $(".Classclass").text(selectedValue);
-    }
-    
-</script>
+<script src="~/Scripts/OESUser/OESAddUser.js"></script>
 
 @section FooterSection{
     @Html.Partial("_FooterView")

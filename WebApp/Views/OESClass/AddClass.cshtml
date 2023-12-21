@@ -24,8 +24,8 @@
 
 <div class="col-12">
     <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateClass">
-        <input type="hidden" name="UserId" id="UserId" value="" />
-
+        @*<input type="hidden" name="UserId" id="UserId" value="" />*@
+        <input type="hidden" name="ClassID" id="ClassID" value="" />
 
         <input type="hidden" name="type" id="type" value="OES_Add_Class" />
         <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
@@ -34,8 +34,8 @@
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="Name">Name</label>
-                            <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Name must be a string or array type with a maximum length of '256'." data-val-maxlength-max="256" data-val-required="Field is required." id="ClassName" maxlength="256" name="ClassName" type="text" >
-                            <span class="invalid-message field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                            <input class="form-control text-box single-line"   id="ClassName" maxlength="256" name="ClassName" type="text">
+                            @*<span class="invalid-message field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>*@
                         </div>
                     </div>
                 </div>
@@ -52,6 +52,7 @@
         </div>
         <div class="row mt-4">
             <div class="col-12">
+                <a type="button" class="btn form-btn btn-secondary hover-boxshadow me-1" href="~/OESClass/Index">Back To List</a>
                 <button type="button" id="btnAddClass" class="btn form-btn btn-primary hover-boxshadow">Save</button>
             </div>
         </div>
@@ -60,15 +61,7 @@
 
  
 
-<script>
-    var defaultValue = "Active";
-    $(".btn-secondary").text(defaultValue);
-
-    function updateSelectedValue(element) {
-        var selectedValue = $(element).text();
-        $(".btn-secondary").text(selectedValue);
-    }
-</script>
+ 
 @section FooterSection{
     @Html.Partial("_FooterView")
 }

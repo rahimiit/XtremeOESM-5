@@ -2,7 +2,7 @@
 $(document).ready(function () {
    
     $("#btnlogin").click(function () {
-        ; debugger
+     
         var Isvalid = true;
         if ($('#email').val() == '') {
             $('#error_span_email').text("Enter Invoice No");

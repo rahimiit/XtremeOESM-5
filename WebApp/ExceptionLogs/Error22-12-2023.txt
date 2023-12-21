@@ -1,0 +1,128 @@
+01:31:31:Service Started
+*********************************************************************************
+01:31:31:{}
+*********************************************************************************
+01:31:31:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:32:08:
+*********************************************************************************
+01:32:08:{}
+*********************************************************************************
+01:32:08:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:36:21:OESGetUserRole
+*********************************************************************************
+01:36:21:{}
+*********************************************************************************
+01:36:21:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:37:55:OESGetUserAll
+*********************************************************************************
+01:37:55:{}
+*********************************************************************************
+01:37:55:System.NullReferenceException: Object reference not set to an instance of an object.
+   at CastleWindsorFactory.Core.CommandParameters.CastleWindsorFactory.Core.ICommandParameters.Get(Object model)
+   at apps.services.Command.OESGetUserAllCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 49
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:39:05:OESGetUserAll
+*********************************************************************************
+01:39:05:{}
+*********************************************************************************
+01:39:05:System.NullReferenceException: Object reference not set to an instance of an object.
+   at CastleWindsorFactory.Core.CommandParameters.CastleWindsorFactory.Core.ICommandParameters.Get(Object model)
+   at apps.services.Command.OESGetUserAllCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 49
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:39:50:OESGetUserRole
+*********************************************************************************
+01:39:50:{}
+*********************************************************************************
+01:39:50:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:43:08:OESGetUserRoleDropDown
+*********************************************************************************
+01:43:08:{
+  "ClassID": ""
+}
+*********************************************************************************
+01:43:08:System.NullReferenceException: Object reference not set to an instance of an object.
+   at CastleWindsorFactory.Core.CommandParameters.CastleWindsorFactory.Core.ICommandParameters.Get(Object model)
+   at apps.services.Command.OESGetUserRoleDropDownCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 63
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:45:19:OESGetUserRoleDropDown
+*********************************************************************************
+01:45:19:
+*********************************************************************************
+01:45:19:System.NullReferenceException: Object reference not set to an instance of an object.
+   at CastleWindsorFactory.Core.CommandParameters.CastleWindsorFactory.Core.ICommandParameters.Get(Object model)
+   at apps.services.Command.OESGetUserRoleDropDownCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 63
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+01:45:26:OESGetUserRoleDropDown
+*********************************************************************************
+01:45:26:{
+  "Status": "1"
+}
+*********************************************************************************
+01:45:26:System.Data.SqlClient.SqlException (0x80131904): Procedure sp_GetUserRole has no parameters and arguments were supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.<QueryImpl>d__140`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetMultiple[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESGetUserRoleDropDownCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 66
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+ClientConnectionId:791ff6ff-fd77-440f-bfb8-ae0e07fe2210
+Error Number:8146,State:2,Class:16
+*********************************************************************************
+01:46:49:OESGetUserRoleDropDown
+*********************************************************************************
+01:46:49:{
+  "Status": "1"
+}
+*********************************************************************************
+01:46:49:System.Data.SqlClient.SqlException (0x80131904): Procedure sp_GetUserRole has no parameters and arguments were supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.<QueryImpl>d__140`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetMultiple[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESGetUserRoleDropDownCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 66
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+ClientConnectionId:791ff6ff-fd77-440f-bfb8-ae0e07fe2210
+Error Number:8146,State:2,Class:16
+*********************************************************************************

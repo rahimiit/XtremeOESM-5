@@ -134,6 +134,8 @@
     <Compile Include="ApplicationEnums.cs" />
     <Compile Include="Command\ApplicationCommand.cs" />
     <Compile Include="Command\AttachmentCommand.cs" />
+    <Compile Include="Command\OESClassCommand.cs" />
+    <Compile Include="Command\OESUserCommand.cs" />
     <Compile Include="connectionFactory.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Installer\appsCommandInstaller.cs" />

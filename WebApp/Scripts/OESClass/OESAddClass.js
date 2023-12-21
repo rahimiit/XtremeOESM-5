@@ -1,23 +1,24 @@
-﻿ 
-
-
-// OESAddClass.js
- 
+﻿
 $(document).ready(function () {
+     
     userId = window.localStorage.getItem("userId");
     username = window.localStorage.getItem('userName');
     roleID = window.localStorage.getItem("RoleId");
-     
-    var full_url = document.URL;            
-    var url_array = full_url.split('=');   
-    var url_arrayForDetail = full_url.split('??');  
-    /*    id = url_array[1].split('??')[0];*/
-
+ 
+    var Id = getUrlVars();
+    $('#ClassID').val(Id.ClassID);
+    if ($('#ClassID').val() !== '') {
+        LoadClassDetails(Id.ClassID);
+    }
+    else {
+        $('#ClassID').val(0);
+    }
+    
 
     var dataSource = new kendo.data.DataSource({
         data: [
-            { StatusID: 1, StatusName: "Active" },
-            { StatusID: 0, StatusName: "Inactive" }
+            { StatusID: true, StatusName: "Active" },
+            { StatusID: false, StatusName: "Inactive" }
 
         ],
         sort: { field: "StatusName", dir: "asc" }
@@ -30,6 +31,7 @@ $(document).ready(function () {
         dataValueField: "StatusID",
         dataSource: dataSource
     });
+    
     function AjaxFormSubmit($form, options) {
         var url = "/services/Xtreme/multipart/";
 
@@ -50,10 +52,8 @@ $(document).ready(function () {
             }
         });
     }
-
-    // Click event handler for the button
     $('#btnAddClass').on('click', function (e) {
-        ; debugger
+        
         e.preventDefault();
 
         if (validateForm('frmAddUpdateClass')) {
@@ -89,3 +89,22 @@ $(document).ready(function () {
         }
     });
 });
+
+
+function LoadClassDetails(id) {
+
+    KendoGlobalAjax({ commandName: OESCLASS_COMMANDS.OES_GET_CLASSById, values: { ClassID: id }, CallBack: loadClassDetailByID });
+
+}
+
+var loadClassDetailByID = function (d) {
+    var jsonData = JSON.parse(d.Value);
+    $('#ClassID').text(jsonData.classID);
+    $('#ClassName').val(jsonData.className);
+    $('#Status').val(jsonData.isActive);
+    var statusDropdown = $("#Status").data("kendoDropDownList");
+    statusDropdown.value(jsonData.isActive);
+    $('#Status').val(jsonData.isActive);
+
+
+}

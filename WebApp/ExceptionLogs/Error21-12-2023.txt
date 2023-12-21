@@ -1,0 +1,533 @@
+21:50:02:Service Started
+*********************************************************************************
+21:50:02:{
+  "ClassID": [
+    "http://localhost:21471/OESClass/AddClass"
+  ]
+}
+*********************************************************************************
+21:50:02:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: [. Path 'ClassID', line 2, position 14.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESGetClassByIdCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESClassCommand.cs:line 31
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+21:50:18:OESGetClassById
+*********************************************************************************
+21:50:18:{
+  "ClassID": [
+    "ClassID"
+  ]
+}
+*********************************************************************************
+21:50:18:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: [. Path 'ClassID', line 2, position 14.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESGetClassByIdCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESClassCommand.cs:line 31
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+22:10:10:OES_Add_Class
+*********************************************************************************
+22:10:10:{"UserId":"","ClassID":"9","type":"OES_Add_Class","ClassName":"Class-I","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:10:10:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 82.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:10:13:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:10:27:OES_Add_Class
+*********************************************************************************
+22:10:27:{"UserId":"","ClassID":"9","type":"OES_Add_Class","ClassName":"Class-I","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:10:27:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 82.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:10:32:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:10:48:OES_Add_Class
+*********************************************************************************
+22:10:48:{"UserId":"","ClassID":"10","type":"OES_Add_Class","ClassName":"Class-II","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:10:48:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 84.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:10:50:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:11:27:OES_Add_Class
+*********************************************************************************
+22:11:27:{"UserId":"","ClassID":"10","type":"OES_Add_Class","ClassName":"Class-II","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:11:27:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 84.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:11:28:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:12:54:OES_Add_Class
+*********************************************************************************
+22:12:54:{"UserId":"","ClassID":"10","type":"OES_Add_Class","ClassName":"Class-II","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:12:54:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 84.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:12:56:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:16:18:OES_Add_Class
+*********************************************************************************
+22:16:18:{"UserId":"","ClassID":"9","type":"OES_Add_Class","ClassName":"Class-I","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:16:18:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'UserId', line 1, position 12. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:16:19:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:16:40:OES_Add_Class
+*********************************************************************************
+22:16:40:{"UserId":"","ClassID":"9","type":"OES_Add_Class","ClassName":"Class-I","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:16:40:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'UserId', line 1, position 12. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:16:41:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:19:28:OES_Add_Class
+*********************************************************************************
+22:19:28:{"ClassID":"9","type":"OES_Add_Class","ClassName":"Class-I","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:19:28:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 70.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:19:29:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:20:16:OES_Add_Class
+*********************************************************************************
+22:20:16:{"ClassID":"9","type":"OES_Add_Class","ClassName":"Class-I","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:20:16:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 70.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:20:18:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:20:31:OES_Add_Class
+*********************************************************************************
+22:20:31:{"ClassID":"11","type":"OES_Add_Class","ClassName":"Class-III","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:20:31:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 73.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:20:33:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:20:59:OES_Add_Class
+*********************************************************************************
+22:20:59:{"ClassID":"","type":"OES_Add_Class","ClassName":"dsfssd","Status":"1","UploadedFiles":[]}
+*********************************************************************************
+22:20:59:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'ClassID', line 1, position 13. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:21:00:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:24:08:OES_Add_Class
+*********************************************************************************
+22:24:08:{"ClassID":"","type":"OES_Add_Class","ClassName":"sfdsf","Status":"0","UploadedFiles":[]}
+*********************************************************************************
+22:24:08:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'ClassID', line 1, position 13. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:24:09:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:34:32:OES_Add_Class
+*********************************************************************************
+22:34:32:{"ClassID":"","type":"OES_Add_Class","ClassName":"gfdgf","Status":"1","UploadedFiles":[]}
+*********************************************************************************
+22:34:32:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'ClassID', line 1, position 13. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:34:34:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:35:21:OES_Add_Class
+*********************************************************************************
+22:35:21:{"ClassID":"9","type":"OES_Add_Class","ClassName":"Class-I","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:35:21:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 70.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:35:22:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:36:11:OES_Add_Class
+*********************************************************************************
+22:36:11:{"ClassID":"10","type":"OES_Add_Class","ClassName":"Class-II","Status":false,"UploadedFiles":[]}
+*********************************************************************************
+22:36:11:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 72.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:36:12:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:39:14:OES_Add_Class
+*********************************************************************************
+22:39:14:{"ClassID":"0","type":"OES_Add_Class","ClassName":"asdsad","Status":"0","UploadedFiles":[]}
+*********************************************************************************
+22:39:14:Newtonsoft.Json.JsonReaderException: Could not convert string to boolean: 0. Path 'Status', line 1, position 71.
+   at Newtonsoft.Json.JsonReader.ReadBooleanString(String s)
+   at Newtonsoft.Json.JsonTextReader.ReadAsBoolean()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.Services.OESAddClassCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+22:39:15:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************

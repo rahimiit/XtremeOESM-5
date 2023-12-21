@@ -3275,6 +3275,8 @@
     </Content>
     <Content Include="Scripts\OESClass\OESAddClass.js" />
     <Content Include="Scripts\OESClass\OESClass.js" />
+    <Content Include="Scripts\OESUser\OESAddUser.js" />
+    <Content Include="Scripts\OESUser\OESUser.js" />
     <Content Include="theme\css\vertical-layout-light\style.css" />
     <Content Include="theme\gulpfile.js" />
     <Content Include="theme\images\auth\lockscreen-bg.jpg" />
@@ -5529,7 +5531,6 @@
     <Folder Include="Scripts\OESQuestionBank\" />
     <Folder Include="Scripts\OESStudentExam\" />
     <Folder Include="Scripts\OESSubject\" />
-    <Folder Include="Scripts\OESUser\" />
     <Folder Include="Token\" />
     <Folder Include="_logs\" />
   </ItemGroup>

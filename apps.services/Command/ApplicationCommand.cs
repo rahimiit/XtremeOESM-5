@@ -123,8 +123,8 @@ namespace apps.Services
         }
     }
  
-    [Command(Name = "Employee_Select")]
-    public class Employee_SelectCommand : CamelCommandBase
+    [Command(Name = "Class_Select")]
+    public class GetClassSelectCommand : CamelCommandBase
     {
         protected override object DoAction(object v)
         {
@@ -141,7 +141,7 @@ namespace apps.Services
                 ICommandParameters _params = new CommandParameters();
                 IDictionary<string, object> values = _params.Get(model);
                 values = _params.Get(model);
-                return repository.GetMultiple<dynamic>(StoreProcedure.Employee.sp_GetAllClasses.ToString(), values, connectionFactory._factory, connectionFactory._connection);
+                return repository.GetMultiple<dynamic>(StoreProcedure.OESClassEnum.sp_GetAllClasses.ToString(), values, connectionFactory._factory, connectionFactory._connection);
 
             }
             catch (Exception ex)
@@ -160,7 +160,7 @@ namespace apps.Services
         {
             object result = new { status = false, returnUrl = "#" };
 
-            var model = base.MappedModel(new { Status = 0, ClassName = string.Empty }, v);
+            var model = base.MappedModel(new { ClassID = 0, Status = false, ClassName = string.Empty}, v);
 
             try
             {
@@ -168,7 +168,7 @@ namespace apps.Services
                 ICommandParameters _params = new CommandParameters();
                 IDictionary<string, object> values = _params.Get(model);
                 values = _params.Get(model);
-                return repository.GetSingle<dynamic>(StoreProcedure.Employee.sp_OES_Add_Class.ToString(), values, connectionFactory._factory, connectionFactory._connection);
+                return repository.GetSingle<dynamic>(StoreProcedure.OESClassEnum.sp_OES_Add_Class.ToString(), values, connectionFactory._factory, connectionFactory._connection);
 
             }
             catch (Exception ex)

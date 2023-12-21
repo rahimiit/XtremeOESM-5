@@ -33,15 +33,39 @@ public class StoreProcedure
         ExternalEmployees_Select,
         [Description("[sp_VerifyUserAccountInformaion]")]
         Employees_LoginVerification,
-        [Description("[sp_GetAllClasses]")]
-        sp_GetAllClasses,
-        [Description("[sp_OES_Add_Class]")]
-        sp_OES_Add_Class
+       
+      
 
     }
 
-
-
+    public enum OESClassEnum
+    {
+        [Description("[sp_OES_Delete_Class]")]
+        sp_OES_Delete_Class,
+        [Description("[sp_OES_Add_Class]")]
+        sp_OES_Add_Class,
+        [Description("[sp_GetAllClasses]")]
+        sp_GetAllClasses,
+        [Description("[sp_GetClassesById]")]
+        sp_GetClassesById
+    }
+    public enum OESUserEnum
+    {
+        [Description("[sp_OES_Delete_User]")]
+        sp_OES_Delete_User,
+        [Description("[sp_OES_Add_User]")]
+        sp_OES_Add_User,
+        [Description("[sp_GetAllUser]")]
+        sp_GetAllUser,
+        [Description("[sp_GetUserById]")]
+        sp_GetUserById,
+            [Description("[sp_GetUserAll]")]
+        sp_GetUserAll,
+        [Description("[sp_GetUserRole]")]
+        sp_GetUserRole,
+        [Description("[sp_GetUserClass]")]
+        sp_GetUserClass
+    }
 
     public enum Requests
     {

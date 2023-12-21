@@ -1,0 +1,83 @@
+﻿using System;
+using CastleWindsorFactory.Core;
+using System.Collections.Generic;
+using CastleWindsorFactory.Repository;
+using System.Configuration;
+using System.Reflection;
+using apps.Services.Model;
+using System.Linq;
+using apps.Services;
+
+namespace apps.services.Command
+{
+    [Command(Name = OESUSER_COMMANDS.OES_DELETE_USER)]
+    public class OESDeleteUserCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { ClassID = 0, ReasonOfDeletion = string.Empty }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetSingle<dynamic>(StoreProcedure.OESUserEnum.sp_OES_Delete_User.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
+    [Command(Name = OESUSER_COMMANDS.OES_GET_USERBYID)]
+    public class OESGetUserByIdCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { ClassID = 0 }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetSingle<dynamic>(StoreProcedure.OESUserEnum.sp_GetUserById.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
+    [Command(Name = OESUSER_COMMANDS.OES_GET_USERALL)]
+    public class OESGetUserAllCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { Status = string.Empty }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetMultiple<dynamic>(StoreProcedure.OESUserEnum.sp_GetAllUser.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
+    [Command(Name = OESUSER_COMMANDS.OES_GET_USEROLE_DROP_DOWN)]
+    public class OESGetUserRoleDropDownCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { Status = string.Empty }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetMultiple<dynamic>(StoreProcedure.OESUserEnum.sp_GetUserRole.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
+    [Command(Name = OESUSER_COMMANDS.OES_GET_USEClass_DROP_DOWN)]
+    public class OESGetUserClassDropDownCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { Status = string.Empty }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetMultiple<dynamic>(StoreProcedure.OESUserEnum.sp_GetUserClass.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
+}
