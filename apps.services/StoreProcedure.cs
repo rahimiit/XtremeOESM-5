@@ -64,7 +64,9 @@ public class StoreProcedure
         [Description("[sp_GetUserRole]")]
         sp_GetUserRole,
         [Description("[sp_GetUserClass]")]
-        sp_GetUserClass
+        sp_GetUserClass,
+         [Description("[sp_OES_AddUpdate_User]")]
+        sp_OES_AddUpdate_User,
     }
 
     public enum Requests

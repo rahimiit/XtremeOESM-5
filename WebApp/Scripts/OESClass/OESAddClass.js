@@ -4,7 +4,7 @@ $(document).ready(function () {
     userId = window.localStorage.getItem("userId");
     username = window.localStorage.getItem('userName');
     roleID = window.localStorage.getItem("RoleId");
- 
+    UserStatusDropdown();
     var Id = getUrlVars();
     $('#ClassID').val(Id.ClassID);
     if ($('#ClassID').val() !== '') {
@@ -15,52 +15,27 @@ $(document).ready(function () {
     }
     
 
-    var dataSource = new kendo.data.DataSource({
-        data: [
-            { StatusID: true, StatusName: "Active" },
-            { StatusID: false, StatusName: "Inactive" }
-
-        ],
-        sort: { field: "StatusName", dir: "asc" }
-    });
-
-    $("#Status").kendoDropDownList({
-        filter: "contains",
-        optionLabel: 'Please select Status...',
-        dataTextField: "StatusName",
-        dataValueField: "StatusID",
-        dataSource: dataSource
-    });
-    
-    function AjaxFormSubmit($form, options) {
-        var url = "/services/Xtreme/multipart/";
-
-        // Create a FormData object
-        var formData = new FormData($form[0]);
-
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,  // Set contentType to false when using FormData
-            success: function (response, statusText, jqXHR) {
-                options.success(response, statusText, jqXHR);
-            },
-            error: function (xhr, status, error) {
-                options.error(xhr, status, error);
-            }
-        });
-    }
+ 
+   
     $('#btnAddClass').on('click', function (e) {
         
         e.preventDefault();
 
         if (validateForm('frmAddUpdateClass')) {
+            ; debugger
             var btn = document.getElementById("btnAddClass");
             btn.disabled = true;
             btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Please wait...';
+            // Get the selected value from the Kendo dropdown
+            var selectedStatus = $("#Status").data("kendoDropDownList").value();
 
+            // Get the value from the input field
+            var className = $("#ClassName").val();
+
+            // Add the values to the form data
+            var formData = new FormData($("#frmAddUpdateClass")[0]);
+            formData.append("status", selectedStatus);
+            formData.append("className", className);
             var options = {
                 success: function (response, statusText, jqXHR) {
                     Swal.fire({
@@ -87,7 +62,27 @@ $(document).ready(function () {
             btn.innerHTML = '<i class="fa fa-save"></i> Save...';
             return false;
         }
-    });
+    });  
+
+    function AjaxFormSubmit($form, options) {
+        var url = "/services/Xtreme/multipart/";
+
+        var formData = new FormData($form[0]);
+
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (response, statusText, jqXHR) {
+                options.success(response, statusText, jqXHR);
+            },
+            error: function (xhr, status, error) {
+                options.error(xhr, status, error);
+            }
+        });
+    }
 });
 
 
@@ -107,4 +102,24 @@ var loadClassDetailByID = function (d) {
     $('#Status').val(jsonData.isActive);
 
 
-}
+}  
+function UserStatusDropdown() {
+ 
+    var dataSource = new kendo.data.DataSource({
+        data: [
+            { StatusID: 1, StatusName: "Active" },
+            { StatusID: 0, StatusName: "Inactive" }
+
+        ],
+        sort: { field: "StatusName", dir: "asc" }
+    });
+
+    $("#Status").kendoDropDownList({
+        filter: "contains",
+        optionLabel: 'Please select Status...',
+        dataTextField: "StatusName",
+        dataValueField: "StatusID",
+        dataSource: dataSource
+    });
+}  
+ 

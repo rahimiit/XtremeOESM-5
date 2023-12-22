@@ -34,8 +34,8 @@
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="Name">Name</label>
-                            <input class="form-control text-box single-line"   id="ClassName" maxlength="256" name="ClassName" type="text">
-                            @*<span class="invalid-message field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>*@
+                            <input class="form-control text-box single-line" required  id="ClassName" maxlength="256" name="ClassName" type="text">
+                            <span class="invalid-message field-validation-ivalid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,8 @@
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="Status">Status</label>
-                            <input id="Status" name="Status" />
+                            @*<input id="Status" name="Status" />*@
+                            <select id="Status" name="Status"></select>
                         </div>
 
                     </div>

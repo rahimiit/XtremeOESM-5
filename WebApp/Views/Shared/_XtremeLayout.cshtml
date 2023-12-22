@@ -63,7 +63,7 @@ The above copyright notice and this permission notice shall be included in all c
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="~/JS/KendojqueryController.js"></script>
     <script src="~/JS/Commands.js"></script>
-
+    
     <style>
         .container-fluid {
             width: 100%;
@@ -79,23 +79,7 @@ The above copyright notice and this permission notice shall be included in all c
             min-height: calc(100vh - 123px);
         }
     </style>
-    <script>
-        //(function (w, d, s, l, i) {
-        //    w[l] = w[l] || [];
-        //    w[l].push({
-        //        'gtm.start': new Date().getTime(),
-        //        event: 'gtm.js'
-        //    });
-        //    var f = d.getElementsByTagName(s)[0],
-        //        j = d.createElement(s),
-        //        dl = l != 'dataLayer' ? '&l=' + l : '';
-        //    j.async = true;
-        //    j.src =
-        //        '../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
-        //    f.parentNode.insertBefore(j, f);
-        //})(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
-
-    </script>
+ 
 
 </head>
 <body>
@@ -234,10 +218,7 @@ The above copyright notice and this permission notice shall be included in all c
     <script src="~/JS/themeJS/assets/js/plugins/jasny-bootstrap.min.js"></script>
 
     <script src="~/JS/themeJS/assets/js/plugins/fullcalendar.min.js"></script>
-
-    @*<script src="~/JS/themeJS/assets/js/plugins/jquery-jvectormap.js"></script>*@
-
-    @*<script src="~/JS/themeJS/assets/js/plugins/nouislider.min.js"></script>*@
+ 
     <script src="~/JS/themeJS/assets/js/core/core.js"></script>
 
 
@@ -256,7 +237,18 @@ The above copyright notice and this permission notice shall be included in all c
 
     <script>
         $(document).ready(function () {
+
             $().ready(function () {
+                var userFirstName = JSON.parse(sessionStorage.getItem('userfirstName'));
+
+                // Find the element by class name
+                var usernameElement = document.querySelector('.username span');
+
+                // Update the text content of the element
+                if (userFirstName) {
+                    usernameElement.textContent = userFirstName;
+                }
+
                 $sidebar = $('.sidebar');
 
                 $sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -452,10 +444,9 @@ The above copyright notice and this permission notice shall be included in all c
             });
         });</script>
 
-    @*<script src="../../assets/demo/jquery.sharrre.js"></script>*@
+ 
 
 
 </body>
 
-<!-- Mirrored from demos.creative-tim.com/material-dashboard-pro-bs4/examples/forms/regular.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2023 21:00:12 GMT -->
-</html>
+ </html>

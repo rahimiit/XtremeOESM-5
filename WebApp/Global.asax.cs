@@ -21,7 +21,8 @@ namespace WebApp
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            // BundleConfig.RegisterBundles(BundleTable.Bundles);
+        
+            //BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             Aspose.Pdf.License l = new Aspose.Pdf.License();
             l.SetLicense(License.LStream);

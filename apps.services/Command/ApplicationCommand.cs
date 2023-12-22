@@ -160,7 +160,7 @@ namespace apps.Services
         {
             object result = new { status = false, returnUrl = "#" };
 
-            var model = base.MappedModel(new { ClassID = 0, Status = false, ClassName = string.Empty}, v);
+            var model = base.MappedModel(new { ClassID = 0, Status = 0, ClassName = string.Empty}, v);
 
             try
             {

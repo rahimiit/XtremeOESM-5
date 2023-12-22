@@ -9,12 +9,12 @@ $(document).ready(function () {
     LoadRole();
     UserGenderDropdown();
     var Id = getUrlVars();
-    $('#ClassID').val(Id.UserID);
-    if ($('#ClassID').val() !== '') {
+    $('#UserID').val(Id.UserID);
+    if ($('#UserID').val() !== '') {
        // LoadClassDetails(Id.ClassID);
     }
     else {
-        $('#ClassID').val(0);
+        $('#UserID').val(0);
     }
     
     function AjaxFormSubmit($form, options) {
@@ -98,8 +98,8 @@ function UserStatusDropdown() {
     ; debugger
     var dataSource = new kendo.data.DataSource({
         data: [
-            { StatusID: true, StatusName: "Active" },
-            { StatusID: false, StatusName: "Inactive" }
+            { StatusID: 1, StatusName: "Active" },
+            { StatusID: 0, StatusName: "Inactive" }
 
         ],
         sort: { field: "StatusName", dir: "asc" }
@@ -117,9 +117,9 @@ function UserGenderDropdown() {
     ; debugger
     var dataSource = new kendo.data.DataSource({
         data: [
-            { Gender: 1, StatusName: "Male" },
-            { Gender: 2, StatusName: "Female" },
-            { Gender: 3, StatusName: "Other" }
+            { Gender: 1, GenderName: "Male" },
+            { Gender: 2, GenderName: "Female" },
+            { Gender: 3, GenderName: "Other" }
 
         ],
         sort: { field: "GenderName", dir: "asc" }

@@ -7,7 +7,7 @@ $(document).ready(function () {
         if ($('#email').val() == '') {
             $('#error_span_email').text("Enter Invoice No");
             setTimeout(function () {
-                // Hide the element after 5 seconds
+         
                 $('#error_span_email').text("");
             }, 5000); 
             Isvalid = false;
@@ -18,7 +18,7 @@ $(document).ready(function () {
         if ($('#password').val() == '') {
             $('#error_span_password').text("Enter Invoice No");
             setTimeout(function () {
-                // Hide the element after 5 seconds
+          
                 $('#error_span_password').text("");
             }, 5000); 
             Isvalid = false;
@@ -47,6 +47,7 @@ var GetUserData = function (d) {
     if (_data && _data.length > 0) {
       
         if (_data[0].userTypeId === 1) {  //Admin
+            ; debugger
             sessionStorage.setItem('userfirstName', JSON.stringify(_data[0].firstName));
             sessionStorage.setItem('rolename', JSON.stringify(_data[0].roleName));
             window.location.href = '/Home/XtremeDashboard';

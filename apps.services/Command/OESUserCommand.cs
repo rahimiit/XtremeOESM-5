@@ -80,4 +80,36 @@ namespace apps.services.Command
             return repository.GetMultiple<dynamic>(StoreProcedure.OESUserEnum.sp_GetUserClass.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
         }
     }
+    [Command(Name = "OES_ADD_USER")]
+    //[Command(Name = OESUSER_COMMANDS.OES_ADD_USER)]
+    public class OESAddUserCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { UserID = 0, Username = string.Empty,
+                EmailAddress = string.Empty,
+                Password = string.Empty ,
+                Status = 0,
+                Class = string.Empty,
+                Role = string.Empty,
+                DateOfBirth = string.Empty,
+                FullName = string.Empty,
+                FirstName = string.Empty,
+                LastName = string.Empty,
+                PhoneNumber = string.Empty,
+                IDCardNumber = string.Empty,
+                PostalCode = string.Empty,
+                Address = string.Empty,
+                IntakeYear = string.Empty,
+                Code = string.Empty
+          
+            }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetSingle<dynamic>(StoreProcedure.OESUserEnum.sp_OES_AddUpdate_User.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
 }
