@@ -24,12 +24,12 @@ namespace apps.services.Command
             return repository.GetSingle<dynamic>(StoreProcedure.OESUserEnum.sp_OES_Delete_User.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
         }
     }
-    [Command(Name = OESUSER_COMMANDS.OES_GET_USERBYID)]
+    [Command(Name = OESUSER_COMMANDS.OES_GET_USERById)]
     public class OESGetUserByIdCommand : CamelCommandBase
     {
         protected override object DoAction(object v)
         {
-            var model = base.MappedModel(new { ClassID = 0 }, v);
+            var model = base.MappedModel(new { UserID = 0 }, v);
             var repository = Ioc.Resolve<IRepository>();
             ICommandParameters _params = new CommandParameters();
             IDictionary<string, object> values = _params.Get(model);

@@ -11,7 +11,7 @@ $(document).ready(function () {
     var Id = getUrlVars();
     $('#UserID').val(Id.UserID);
     if ($('#UserID').val() !== '') {
-       // LoadClassDetails(Id.ClassID);
+        LoadUserDetails(Id.UserID);
     }
     else {
         $('#UserID').val(0);
@@ -76,20 +76,47 @@ $(document).ready(function () {
 });
 
 
-function LoadClassDetails(id) {
+function LoadUserDetails(id) {
 
-    KendoGlobalAjax({ commandName: OESCLASS_COMMANDS.OES_GET_CLASSById, values: { ClassID: id }, CallBack: loadClassDetailByID });
+    KendoGlobalAjax({ commandName: OESUSER_COMMANDS.OES_GET_USERById, values: { UserID: id }, CallBack: loadUserDetailByID });
 
 }
 
-var loadClassDetailByID = function (d) {
+var loadUserDetailByID = function (d) {
+    ; debugger
     var jsonData = JSON.parse(d.Value);
+    console.log(jsonData);
     $('#ClassID').text(jsonData.classID);
-    $('#ClassName').val(jsonData.className);
+    $('#Username').val(jsonData.userName);
+    $('#EmailAddress').val(jsonData.email);
+    $('#Password').val(jsonData.password);
+    $('#ConfirmPassword').val(jsonData.password);
+ 
+    $('#Role').val(jsonData.roleID);
+    var roleDropdown = $("#Role").data("kendoDropDownList");
+    roleDropdown.value(jsonData.roleID);
+    $('#Role').val(jsonData.roleID);
+
+    $('#Class').val(jsonData.classID);
+    var classDropdown = $("#Class").data("kendoDropDownList");
+    classDropdown.value(jsonData.classID);
+    $('#Class').val(jsonData.classID);
+
     $('#Status').val(jsonData.isActive);
     var statusDropdown = $("#Status").data("kendoDropDownList");
     statusDropdown.value(jsonData.isActive);
     $('#Status').val(jsonData.isActive);
+    $('#FullName').val(jsonData.fullName);
+    $('#DateOfBirth').val(jsonData.dateOfBirth);
+    $('#FirstName').val(jsonData.firstName);
+    $('#LastName').val(jsonData.lastName);
+    $('#PhoneNumber').val(jsonData.phoneNumber);
+    $('#IDCardNumber').val(jsonData.iDCardNumber);
+    $('#LastName').val(jsonData.lastName);
+    $('#Gender').val(jsonData.gender);
+    var genderropdown = $("#Gender").data("kendoDropDownList");
+    genderropdown.value(jsonData.gender);
+    $('#Gender').val(jsonData.gender);
 
 
 }

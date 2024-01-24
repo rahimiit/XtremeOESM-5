@@ -48,7 +48,7 @@ namespace apps.Services
     {
         public const string OES_ADD_USER = "OESAddUser";
         public const string OES_DELETE_USER = "OESDeleteUser";
-        public const string OES_GET_USERBYID = "OESGetUserById";
+        public const string OES_GET_USERById = "OESGetUserById";
         public const string OES_GET_USERALL = "OESGetUserAll";
         public const string OES_GET_USEROLE_DROP_DOWN = "OESGetUserRoleDropDown";
         public const string OES_GET_USEClass_DROP_DOWN = "OESGetUserClassDropDown";

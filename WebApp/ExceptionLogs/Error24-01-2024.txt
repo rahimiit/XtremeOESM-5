@@ -43,3 +43,113 @@
 21:50:25:System.NullReferenceException: Object reference not set to an instance of an object.
    at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
 *********************************************************************************
+22:07:28:OESGetClassById
+*********************************************************************************
+22:07:28:{
+  "ClassID": "null"
+}
+*********************************************************************************
+22:07:28:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: null. Path 'ClassID', line 2, position 19.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESGetClassByIdCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESClassCommand.cs:line 31
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+22:33:59:
+*********************************************************************************
+22:33:59:{
+  "UserID": "1"
+}
+*********************************************************************************
+22:33:59:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+22:34:21:
+*********************************************************************************
+22:34:21:{
+  "UserID": "1"
+}
+*********************************************************************************
+22:34:21:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+23:45:42:OESGetUserById
+*********************************************************************************
+23:45:42:{
+  "UserID": "student2"
+}
+*********************************************************************************
+23:45:42:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: student2. Path 'UserID', line 2, position 22.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESGetUserByIdCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 32
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+23:45:52:OESGetUserById
+*********************************************************************************
+23:45:52:{
+  "UserID": "hamadiit44"
+}
+*********************************************************************************
+23:45:52:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: hamadiit44. Path 'UserID', line 2, position 24.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESGetUserByIdCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 32
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+23:46:44:OESGetUserById
+*********************************************************************************
+23:46:44:{
+  "UserID": "hamadiit44"
+}
+*********************************************************************************
+23:46:44:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: hamadiit44. Path 'UserID', line 2, position 24.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESGetUserByIdCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 32
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************

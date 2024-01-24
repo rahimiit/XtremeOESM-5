@@ -355,14 +355,22 @@ function LoadRecordByID(e) {
 }
 
 
+//function EditDetail(e) {
+     
+//    var row = $(e).closest("tr");
+//    var grid = $("#" + $grid).data("kendoGrid");
+//    var dataItem = grid.dataItem(row);
+    
+//    window.location.href = '/OESUsers/AddUsers?UserID=' + dataItem.userID + '';
+//}
+
 function EditDetail(e) {
 
     var row = $(e).closest("tr");
     var grid = $("#" + $grid).data("kendoGrid");
     var dataItem = grid.dataItem(row);
-    window.location.href = '/OESClass/AddClass?ClassID=' + dataItem.classID + '';
+    window.location.href = '/OESUsers/AddUsers?UserID=' + dataItem.userID + '';
 }
-
 
 function EmployeePrint(e) {
 
