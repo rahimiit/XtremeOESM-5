@@ -24,6 +24,26 @@ namespace apps.Services
         public const string OES_GET_CLASSBYID = "OESGetClassById";
 
     }
+    public class OESSUBJECT_COMMANDS
+    {
+        public const string OES_ADD_SUBJECT = "OESAddSubject";
+        public const string OES_DELETE_SUBJECT = "OESDeleteSubject";
+        public const string OES_GET_SUBJECTBYID = "OESGetSubjectById";
+        public const string OES_GET_SUBJECT_SELECT = "OESSubjectSelect";
+        
+
+    }
+    public class OESQUESTION_COMMANDS
+    {
+        public const string OES_ADD_QUESTION = "OESAddQuestion";
+        public const string OES_DELETE_QUESTION = "OESDeleteQuestion";
+        public const string OES_GET_QUESTIONBYID = "OESGetQuestionById";
+        public const string OES_GET_QUESTIONS_SELECT = "OESQuestionSelect";
+        public const string OES_GET_SUBJECT_DROP_DOWN = "OESGetSubjectDropDown";
+        public const string OES_GET_QUESTIONTYPE_DROP_DOWN = "OESGetQuestionTypeDropDown";
+
+
+    }
     public class OESUSER_COMMANDS
     {
         public const string OES_ADD_USER = "OESAddUser";

@@ -3275,6 +3275,10 @@
     </Content>
     <Content Include="Scripts\OESClass\OESAddClass.js" />
     <Content Include="Scripts\OESClass\OESClass.js" />
+    <Content Include="Scripts\OESQuestionBank\OESAddQuestion.js" />
+    <Content Include="Scripts\OESQuestionBank\OESQuestions.js" />
+    <Content Include="Scripts\OESSubject\OESAddSubject.js" />
+    <Content Include="Scripts\OESSubject\OESSubject.js" />
     <Content Include="Scripts\OESUser\OESAddUser.js" />
     <Content Include="Scripts\OESUser\OESUser.js" />
     <Content Include="theme\css\vertical-layout-light\style.css" />
@@ -5528,9 +5532,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="ExceptionLogs\" />
     <Folder Include="Scripts\OESExam\" />
-    <Folder Include="Scripts\OESQuestionBank\" />
     <Folder Include="Scripts\OESStudentExam\" />
-    <Folder Include="Scripts\OESSubject\" />
     <Folder Include="Token\" />
     <Folder Include="_logs\" />
   </ItemGroup>

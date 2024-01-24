@@ -9,6 +9,24 @@
         OES_GET_CLASSById: 'OESGetClassById',
         
     }
+    /* ************************ Common OES Subject *********************** */
+    window.OESSUBJECT_COMMANDS = {
+        OES_GET_SUBJECT_SELECT: 'OESSubjectSelect',
+        OES_ADD_SUBJECT: 'OESAddSubject',
+        OES_DELETE_SUBJECT: 'OESDeleteSubject',
+        OES_GET_SUBJECTById: 'OESGetSubjectById',
+
+    }
+    /* ************************ Common OES Questions Bank *********************** */
+    window.OESQUESTION_COMMANDS = {
+        OES_GET_QUESTIONS_SELECT: 'OESQuestionSelect',
+        OES_ADD_QUESTION: 'OESAddQuestion',
+        OES_DELETE_QUESTION: 'OESDeleteQuestion',
+        OES_GET_QUESTIONById: 'OESGetQuestionById',
+        OES_GET_SUBJECT_DROP_DOWN: 'OESGetSubjectDropDown',
+        OES_GET_QUESTIONTYPE_DROP_DOWN: 'OESGetQuestionTypeDropDown',
+
+    }
     /* ************************ Common OES User *********************** */
     window.OESUSER_COMMANDS = {
         OES_ADD_USER: 'OESAddUser',

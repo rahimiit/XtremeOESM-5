@@ -11,7 +11,8 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
-    <div class="col-12">
+<div class="col-12">
+   
         <div style="--bs-breadcrumb-divider: '>';">
             <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item fw-normal"><a class="color-primarycolor opacity-50" href="~/OESSubject/index">Subject Management</a></li>
@@ -19,34 +20,39 @@
             </ol>
         </div>
 
-    </div>
+</div>
 
     <div class="col-12">
-        <form action="/classhub/edit" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
+   
+        <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateSubject">
+            @*<input type="hidden" name="UserId" id="UserId" value="" />*@
+            <input type="hidden" name="SubjectID" id="SubjectID" value="" />
+            <input type="hidden" name="type" id="type" value="OES_Add_Subject" />
             <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mb-3 text-break">
                             <div class="form-group">
+
                                 <label class="form-label required fw600" for="Name">Name</label>
-                                <input class="form-control text-box single-line" data-val="true" data-val-maxlength="The field Name must be a string or array type with a maximum length of '256'." data-val-maxlength-max="256" data-val-required="Field is required." id="Name" maxlength="256" name="Name" type="text" value="">
+                                <input class="form-control text-box single-line" required id="SubjectName" maxlength="256" name="SubjectName" type="text">
+
                                 <span class="invalid-message field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
                             </div>
                         </div>
                     </div>
-                 
+
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-12">
-                    <a type="button" class="btn form-btn btn-secondary hover-boxshadow me-1" href="/classhub">Back To List</a>
-                    <button type="submit" class="btn form-btn btn-primary hover-boxshadow">Save</button>
+                    <a type="button" class="btn form-btn btn-secondary hover-boxshadow me-1" href="~/OESSubject/Index">Back To List</a>
+                    <button type="button" id="btnAddSubject" class="btn form-btn btn-primary hover-boxshadow">Save</button>
                 </div>
             </div>
-            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OJ0N0MQ0flFiaYaawsus7PLz24xiBgJkkrum87DJJwxOacdg892CR-57JyrElU7vbGdEHWeiH-55bZORS_rTMOHFopJ1nw6WdHLSE0B9Op8RwJGhPpKHIZJWNX8guP5ucEwiwStmqAt6BvX4883JzOHho0_9nN589logQNnNqUUJVmpplYlDK48UPdRDYoxOA">
         </form>
-    </div>
-
+</div>
+    <script src="~/Scripts/OESSubject/OESAddSubject.js"></script>
     @section FooterSection{
         @Html.Partial("_FooterView")
     }

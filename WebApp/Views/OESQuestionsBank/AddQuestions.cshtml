@@ -12,17 +12,7 @@
     @Html.Partial("_HeaderView")
 }
 
-<style>
-    .nav-tabs .nav-item .nav-link.active {
-        background-color: hsl(0deg 0% 0% / 20%);
-        transition: background-color .3s .2s;
-    }
-    .nav-tabs .nav-item .nav-link, .nav-tabs .nav-item .nav-link:focus, .nav-tabs .nav-item .nav-link:hover {
-        border: 0 !important;
-        color: #df4040 !important;
-        font-weight: 500;
-    }
-</style>
+ 
 <div class="col-12">
     <div style="--bs-breadcrumb-divider: '>';">
         <ol class="breadcrumb m-0">
@@ -38,100 +28,77 @@
     </li>
 </ul>
 <div class="col-12">
-    <form action="/question/edit" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
+    <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateQuestion">
+        @*<input type="hidden" name="UserId" id="UserId" value="" />*@
+        <input type="hidden" name="QuestionID" id="QuestionID" value="" />
+
+        <input type="hidden" name="type" id="type" value="OES_Add_Question" />
         <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
             <div class="row">
                 <div class="col-md-12">
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="QuestionTitle">Question Title</label>
-                            <textarea class="form-control" data-val="true" data-val-required="Field is required." id="QuestionTitle" name="QuestionTitle" rows="3"></textarea>
+                            <textarea class="form-control" id="QuestionTitle" name="QuestionTitle" rows="3"></textarea>
                             <span class="invalid-message field-validation-valid" data-valmsg-for="QuestionTitle" data-valmsg-replace="true"></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3 text-break">
-                        <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm" type="button">
-                                Subject
-                            </button>
-                            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">English</a>
-                                <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">Maths</a>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="mb-3 text-break">
-                        <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm" type="button">
-                                Question Type
-                            </button>
-                            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">Multiple choice question</a>
-                                <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">Short Answer</a>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mb-3 text-break">
-                        <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm" type="button">
-                                Status
-                            </button>
-                            <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">Active</a>
-                                <a class="dropdown-item" href="#" onclick="updateSelectedValue(this)">InActive</a>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="mb-3 text-break">
                         <div class="form-group">
-                            <label class="form-label fw600" for="ImageFile">Question Image</label>
-                            <input accept="image/*" class="form-control" id="ImageFile" name="ImageFile" type="file">
-                            <span class="invalid-message field-validation-valid" data-valmsg-for="ImageFile" data-valmsg-replace="true"></span>
+                            <label class="form-label required fw600" for="Role">Subject</label>
+                            <input id="Subject" name="Subject" />
                         </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 text-break">
+                        <div class="form-group">
+                            <label class="form-label required fw600" for="Role">Question Type</label>
+                            <input id="QuestionType" name="QuestionType" />
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 text-break">
+                        <div class="form-group">
+                            <label class="form-label required fw600" for="Status">Status</label>
+                            @*<input id="Status" name="Status" />*@
+                            <select id="Status" name="Status"></select>
+                        </div>
+
                     </div>
                 </div>
             </div>
+        
+            @*<div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3 text-break">
+                            <div class="form-group">
+                                <label class="form-label fw600" for="ImageFile">Question Image</label>
+                                <input accept="image/*" class="form-control" id="ImageFile" name="ImageFile" type="file">
+                                <span class="invalid-message field-validation-valid" data-valmsg-for="ImageFile" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
         </div>
         <div class="row mt-4">
             <div class="col-12">
                 <a type="button" class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question">Back To List</a>
-                <button type="submit" class="btn form-btn btn-primary hover-boxshadow">
+                <button type="button" id="btnAddQuestion" class="btn form-btn btn-primary hover-boxshadow">
                     <span>Save &amp; Next</span>
                 </button>
             </div>
         </div>
-        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OJ0N0MQ0flFiaYaawsus7PW6UOoYLLYGf2Nso-K1nDB4n4VclZT14LI3iQYGh6nMRNC0bdpURm3749GVpjNeTkZk2rETR6B4J5gqKHsko1OsjPyR1ebcv_ICMLnMoM4u8RwLO2KMZQC_mVhQuMaitZj7SpYBE6cpYGPK5Ff01bKwUFH7N3xMESGuxBJvZYgSQ">
     </form>
 </div>
+<script src="~/Scripts/OESQuestionBank/OESAddQuestion.js"></script>
     @section FooterSection{
         @Html.Partial("_FooterView")
     }

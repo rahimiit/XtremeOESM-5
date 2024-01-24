@@ -11,38 +11,15 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
-<style>
-    .mat-table {
-        display: block;
-        font-family: Tahoma, Verdana;
-    }
-
-    .mat-row,
-    .mat-header-row {
-        display: flex;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        align-items: center;
-        min-height: 48px;
-        padding: 0 24px;
-    }
-
-    .mat-cell,
-    .mat-header-cell {
-        flex: 1;
-        overflow: hidden;
-        word-wrap: break-word;
-    }
-</style>
 <div class="col-12">
     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-        <h4 class="pagetitle mb-sm-0 fw600">Subject Management</h4>
+        <h4 class="pagetitle mb-sm-0 fw600">Suject Management</h4>
     </div>
 </div>
 <section class="section dashboard mt-3">
     <div class="bg-white rounded p-3 shadow">
         <div class="pb-2">
-            <a class="btn form-btn btn-primary hover-boxshadow hover-moveup hover-bg-primarycolor" href="~/OESSubject/AddSubjects">  Add New Record</a>
+            <a class="btn form-btn btn-primary hover-boxshadow hover-moveup hover-bg-primarycolor" href="~/OESClass/AddClass">  Add New Record</a>
 
 
             <span onclick="exportToPdf('user', 'Please wait. Table is still loading. Click this after table is loaded.')" data-bs-toggle="tooltip" data-bs-placement="right" title="" class="btn form-btn btn-secondary hover-boxshadow cursor-pointer hover-moveup" data-bs-original-title="You can control what you want to export to PDF before clicking this. For example, if you wish to export all the records, click &quot;Show All&quot; at the drop-down button below before clicking &quot;Export to PDF.&quot;"><i class="fa-solid fa-file-pdf pe-1"></i> Export to Pdf</span>
@@ -53,63 +30,18 @@
                 <div class="table-responsive overflow-auto">
                     <div id="renderImage"></div>
                 </div>
-
             </div>
-
-
         </div>
     </div>
 </section>
 <div class="col-12">
     <div class="bg-white rounded p-3 shadow">
-        <div class="mat-table">
-            <div class="mat-header-row">
-                <div class="mat-header-cell">Name</div>
-                <div class="mat-header-cell">Status</div>
-                <div class="mat-header-cell">Action</div>
-            </div>
-            <div class="mat-row">
-                <div class="mat-cell">Physics</div>
-                <div class="mat-cell">Active</div>
-                <div class="mat-cell">
-                    <div class="d-flex text-breakspaces">
-                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
-                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
-                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
-                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="mat-row">
-                <div class="mat-cell">Maths</div>
-                <div class="mat-cell">Active</div>
-                <div class="mat-cell">
-                    <div class="d-flex text-breakspaces">
-                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
-                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
-                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
-                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="mat-row">
-                <div class="mat-cell">Computer Science</div>
-                <div class="mat-cell">Active</div>
-                <div class="mat-cell">
-                    <div class="d-flex text-breakspaces">
-                        <span class="fs-20 canedit"><a href="/classhub/edit/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f"><i class="fa-solid fa-edit text-edit hover-color-secondarycolor" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Edit" aria-label="Edit"></i></a> &nbsp;</span>
-                        <span class="fs-20 candelete" onclick="triggerDeleteConfirmationModal('/classhub/delete/d6f1e0de-d2ed-4aa2-b250-2bd6bbd2248f')">
-                            <i class="fa-solid fa-trash-can text-delete hover-color-secondarycolor cursor-pointer"
-                               data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Delete" aria-label="Delete"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
+        <div id="subject-grid">
+
         </div>
     </div>
 </div>
+<script src="~/Scripts/OESSubject/OESSubject.js"></script>
 @section FooterSection{
     @Html.Partial("_FooterView")
 }

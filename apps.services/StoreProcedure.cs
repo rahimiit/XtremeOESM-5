@@ -49,6 +49,33 @@ public class StoreProcedure
         [Description("[sp_GetClassesById]")]
         sp_GetClassesById
     }
+
+    public enum OESSubjectEnum
+    {
+        [Description("[sp_OES_Delete_Subject]")]
+        sp_OES_Delete_Subject,
+        [Description("[sp_OES_Add_Subject]")]
+        sp_OES_Add_Subject,
+        [Description("[sp_GetAllSubjects]")]
+        sp_GetAllSubjects,
+        [Description("[sp_GetSubjectById]")]
+        sp_GetSubjectById
+    }
+    public enum OESQuestionBankEnum
+    {
+        [Description("[sp_OES_Delete_Question]")]
+        sp_OES_Delete_Question,
+        [Description("[sp_OES_Add_Question")]
+        sp_OES_Add_Question,
+        [Description("[sp_GetAllQuestions]")]
+        sp_GetAllQuestions,
+        [Description("[sp_GetQuestionById]")]
+        sp_GetQuestionById,
+        [Description("[sp_GetQuestionType]")]
+        sp_GetQuestionType,
+        [Description("[sp_GetSubject]")]
+        sp_GetSubject
+    }
     public enum OESUserEnum
     {
         [Description("[sp_OES_Delete_User]")]

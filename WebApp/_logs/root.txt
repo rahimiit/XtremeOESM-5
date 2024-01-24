@@ -525,3 +525,464 @@ There are 22 other components supporting requested service 'CastleWindsorFactory
 01:18:32.205 [10] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
 01:18:32.211 [10] INFO  Default - Ended: RepositoryInstaller Install
 01:18:32.211 [10] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:31:26.654 [9] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+18:31:26.670 [9] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:31:26.685 [9] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:31:26.701 [9] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:31:26.717 [9] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+18:31:26.732 [9] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+18:31:26.732 [9] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+18:31:26.732 [9] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+18:31:26.732 [9] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+18:31:26.732 [9] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+18:31:26.732 [9] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+18:31:26.732 [9] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+18:31:26.732 [9] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+18:31:26.732 [9] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+18:31:26.732 [9] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+18:31:26.732 [9] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+18:31:26.732 [9] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+18:31:26.732 [9] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+18:31:26.732 [9] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+18:31:26.732 [9] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+18:31:26.732 [9] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:31:26.732 [9] INFO  Default - Started:RepositoryInstaller Install
+18:31:26.732 [9] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+18:31:26.732 [9] INFO  Default - Ended: RepositoryInstaller Install
+18:31:26.732 [9] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:34:44.450 [6] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+18:34:44.481 [6] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:34:44.497 [6] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:34:45.528 [6] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:34:46.682 [6] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:34:46.698 [6] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+18:34:46.714 [6] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+18:34:46.714 [6] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+18:34:46.714 [6] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+18:34:46.714 [6] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+18:34:46.714 [6] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+18:34:46.714 [6] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+18:34:46.714 [6] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+18:34:46.714 [6] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+18:34:46.714 [6] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+18:34:46.714 [6] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+18:34:46.714 [6] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+18:34:46.714 [6] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+18:34:46.714 [6] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+18:34:46.714 [6] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+18:34:46.714 [6] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+18:34:46.714 [6] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+18:34:46.714 [6] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+18:34:46.714 [6] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+18:34:46.714 [6] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+18:34:46.714 [6] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+18:34:46.714 [6] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+18:34:46.714 [6] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:34:46.714 [6] INFO  Default - Started:RepositoryInstaller Install
+18:34:46.729 [6] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+18:34:46.730 [6] INFO  Default - Ended: RepositoryInstaller Install
+18:34:46.730 [6] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:47:59.739 [6] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+18:47:59.770 [6] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:47:59.785 [6] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:48:00.963 [6] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:48:02.985 [6] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+18:48:03.001 [6] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+18:48:03.001 [6] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+18:48:03.001 [6] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+18:48:03.001 [6] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+18:48:03.001 [6] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+18:48:03.001 [6] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+18:48:03.001 [6] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+18:48:03.001 [6] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+18:48:03.001 [6] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+18:48:03.001 [6] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+18:48:03.001 [6] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+18:48:03.001 [6] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+18:48:03.001 [6] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+18:48:03.001 [6] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+18:48:03.001 [6] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+18:48:03.001 [6] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:48:03.001 [6] INFO  Default - Started:RepositoryInstaller Install
+18:48:03.017 [6] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+18:48:03.017 [6] INFO  Default - Ended: RepositoryInstaller Install
+18:48:03.017 [6] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+19:13:48.204 [5] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+19:13:48.223 [5] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+19:13:48.232 [5] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+19:13:48.250 [5] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+19:13:48.269 [5] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+19:13:48.282 [5] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+19:13:48.285 [5] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+19:13:48.285 [5] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+19:13:48.286 [5] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+19:13:48.286 [5] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+19:13:48.286 [5] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+19:13:48.286 [5] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+19:13:48.286 [5] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+19:13:48.286 [5] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+19:13:48.286 [5] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+19:13:48.286 [5] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+19:13:48.286 [5] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+19:13:48.287 [5] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+19:13:48.287 [5] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+19:13:48.287 [5] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+19:13:48.287 [5] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+19:13:48.287 [5] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+19:13:48.287 [5] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+19:13:48.287 [5] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+19:13:48.287 [5] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+19:13:48.287 [5] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+19:13:48.288 [5] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+19:13:48.288 [5] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+19:13:48.289 [5] INFO  Default - Started:RepositoryInstaller Install
+19:13:48.292 [5] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+19:13:48.292 [5] INFO  Default - Ended: RepositoryInstaller Install
+19:13:48.292 [5] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:44:49.682 [9] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+18:44:49.719 [9] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+18:44:49.731 [9] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:44:49.755 [9] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+18:44:49.829 [9] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:44:49.869 [9] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+18:44:49.878 [9] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OESAddSubject
+18:44:49.879 [9] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+18:44:49.879 [9] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+18:44:49.880 [9] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+18:44:49.882 [9] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+18:44:49.882 [9] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+18:44:49.882 [9] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+18:44:49.882 [9] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+18:44:49.882 [9] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+18:44:49.882 [9] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+18:44:49.882 [9] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+18:44:49.882 [9] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+18:44:49.882 [9] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+18:44:49.882 [9] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+18:44:49.882 [9] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+18:44:49.882 [9] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+18:44:49.882 [9] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+18:44:49.886 [9] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+18:44:49.886 [9] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+18:44:49.886 [9] INFO  Default - Started:RepositoryInstaller Install
+18:44:49.894 [9] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+18:44:49.894 [9] INFO  Default - Ended: RepositoryInstaller Install
+18:44:49.894 [9] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+19:22:44.730 [32] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OES_ADD_SUBJECT 
+ Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OES_ADD_SUBJECT' was not found in the container. Did you forget to register it?
+There are 26 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+19:27:52.774 [7] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+19:27:52.818 [7] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+19:27:52.840 [7] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+19:27:52.885 [7] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+19:27:52.981 [7] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+19:27:53.014 [7] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+19:27:53.020 [7] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OESAddSubject
+19:27:53.020 [7] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+19:27:53.020 [7] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+19:27:53.020 [7] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+19:27:53.020 [7] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+19:27:53.020 [7] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+19:27:53.022 [7] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+19:27:53.022 [7] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+19:27:53.022 [7] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+19:27:53.022 [7] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+19:27:53.022 [7] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+19:27:53.022 [7] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+19:27:53.022 [7] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+19:27:53.022 [7] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+19:27:53.022 [7] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+19:27:53.022 [7] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+19:27:53.022 [7] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+19:27:53.022 [7] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+19:27:53.022 [7] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+19:27:53.022 [7] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+19:27:53.022 [7] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+19:27:53.022 [7] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+19:27:53.022 [7] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+19:27:53.022 [7] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+19:27:53.022 [7] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+19:27:53.022 [7] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+19:27:53.022 [7] INFO  Default - Started:RepositoryInstaller Install
+19:27:53.032 [7] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+19:27:53.034 [7] INFO  Default - Ended: RepositoryInstaller Install
+19:27:53.034 [7] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+19:30:22.260 [8] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESSUBJECT_COMMANDS.OES_ADD_SUBJECT 
+ Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESSUBJECT_COMMANDS.OES_ADD_SUBJECT' was not found in the container. Did you forget to register it?
+There are 26 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+19:33:54.493 [5] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+19:33:54.537 [5] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+19:33:54.558 [5] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+19:33:54.603 [5] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+19:33:54.702 [5] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+19:33:54.739 [5] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OES_Add_Subject
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+19:33:54.743 [5] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+19:33:54.748 [5] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+19:33:54.748 [5] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+19:33:54.749 [5] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+19:33:54.749 [5] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+19:33:54.749 [5] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+19:33:54.749 [5] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+19:33:54.749 [5] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+19:33:54.749 [5] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+19:33:54.749 [5] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+19:33:54.749 [5] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+19:33:54.749 [5] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+19:33:54.749 [5] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+19:33:54.749 [5] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+19:33:54.749 [5] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+19:33:54.749 [5] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+19:33:54.749 [5] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+19:33:54.749 [5] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+19:33:54.752 [5] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+19:33:54.752 [5] INFO  Default - Started:RepositoryInstaller Install
+19:33:54.758 [5] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+19:33:54.762 [5] INFO  Default - Ended: RepositoryInstaller Install
+19:33:54.763 [5] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+20:27:53.947 [8] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+20:27:53.968 [8] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+20:27:53.980 [8] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+20:27:54.003 [8] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+20:27:54.024 [8] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+20:27:54.041 [8] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+20:27:54.046 [8] INFO  Default - register 'apps.services.Command.GetQuestionSelectCommand' by name 'OESQuestionSelect
+20:27:54.047 [8] INFO  Default - register 'apps.services.Command.OESAddQuestionCommand' by name 'OES_Add_Question
+20:27:54.047 [8] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OES_Add_Subject
+20:27:54.047 [8] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+20:27:54.047 [8] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+20:27:54.047 [8] INFO  Default - register 'apps.services.Command.OESDeleteQuestionCommand' by name 'OESDeleteQuestion
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESGetQuestionByIdCommand' by name 'OESGetQuestionById
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+20:27:54.048 [8] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+20:27:54.049 [8] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+20:27:54.050 [8] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+20:27:54.050 [8] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+20:27:54.050 [8] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+20:27:54.050 [8] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+20:27:54.050 [8] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+20:27:54.050 [8] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+20:27:54.050 [8] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+20:27:54.051 [8] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+20:27:54.051 [8] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+20:27:54.051 [8] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+20:27:54.051 [8] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+20:27:54.051 [8] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+20:27:54.051 [8] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+20:27:54.051 [8] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+20:27:54.052 [8] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+20:27:54.053 [8] INFO  Default - Started:RepositoryInstaller Install
+20:27:54.056 [8] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+20:27:54.056 [8] INFO  Default - Ended: RepositoryInstaller Install
+20:27:54.056 [8] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+20:47:59.692 [6] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+20:47:59.719 [6] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+20:47:59.729 [6] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+20:47:59.752 [6] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+20:47:59.801 [6] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+20:47:59.815 [6] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+20:47:59.818 [6] INFO  Default - register 'apps.services.Command.GetQuestionSelectCommand' by name 'OESQuestionSelect
+20:47:59.818 [6] INFO  Default - register 'apps.services.Command.OESAddQuestionCommand' by name 'OES_Add_Question
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OES_Add_Subject
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESDeleteQuestionCommand' by name 'OESDeleteQuestion
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESGetQuestionByIdCommand' by name 'OESGetQuestionById
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+20:47:59.819 [6] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+20:47:59.821 [6] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+20:47:59.821 [6] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+20:47:59.821 [6] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+20:47:59.821 [6] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+20:47:59.821 [6] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+20:47:59.821 [6] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+20:47:59.821 [6] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+20:47:59.821 [6] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+20:47:59.822 [6] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+20:47:59.822 [6] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+20:47:59.822 [6] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+20:47:59.822 [6] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+20:47:59.822 [6] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+20:47:59.822 [6] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+20:47:59.822 [6] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+20:47:59.822 [6] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+20:47:59.823 [6] INFO  Default - Started:RepositoryInstaller Install
+20:47:59.827 [6] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+20:47:59.828 [6] INFO  Default - Ended: RepositoryInstaller Install
+20:47:59.828 [6] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+20:48:10.308 [12] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESQuestionsSelect 
+ Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESQuestionsSelect' was not found in the container. Did you forget to register it?
+There are 30 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+20:50:57.845 [13] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESQuestionsSelect 
+ Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESQuestionsSelect' was not found in the container. Did you forget to register it?
+There are 30 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+20:57:39.785 [6] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+20:57:39.803 [6] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+20:57:39.814 [6] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+20:57:39.835 [6] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+20:57:39.884 [6] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+20:57:39.897 [6] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+20:57:39.901 [6] INFO  Default - register 'apps.services.Command.GetQuestionSelectCommand' by name 'OESQuestionSelect
+20:57:39.901 [6] INFO  Default - register 'apps.services.Command.OESAddQuestionCommand' by name 'OES_Add_Question
+20:57:39.902 [6] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OES_Add_Subject
+20:57:39.902 [6] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+20:57:39.902 [6] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+20:57:39.902 [6] INFO  Default - register 'apps.services.Command.OESDeleteQuestionCommand' by name 'OESDeleteQuestion
+20:57:39.903 [6] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+20:57:39.903 [6] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+20:57:39.904 [6] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+20:57:39.904 [6] INFO  Default - register 'apps.services.Command.OESGetQuestionByIdCommand' by name 'OESGetQuestionById
+20:57:39.904 [6] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+20:57:39.904 [6] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+20:57:39.904 [6] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+20:57:39.905 [6] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+20:57:39.905 [6] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+20:57:39.905 [6] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+20:57:39.905 [6] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+20:57:39.906 [6] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+20:57:39.906 [6] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+20:57:39.906 [6] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+20:57:39.907 [6] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+20:57:39.907 [6] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+20:57:39.907 [6] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+20:57:39.907 [6] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+20:57:39.908 [6] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+20:57:39.908 [6] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+20:57:39.909 [6] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+20:57:39.909 [6] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+20:57:39.909 [6] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+20:57:39.910 [6] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+20:57:39.911 [6] INFO  Default - Started:RepositoryInstaller Install
+20:57:39.914 [6] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+20:57:39.915 [6] INFO  Default - Ended: RepositoryInstaller Install
+20:57:39.915 [6] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+20:57:51.172 [7] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESQuestionsSelect 
+ Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESQuestionsSelect' was not found in the container. Did you forget to register it?
+There are 30 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+21:44:46.713 [5] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+21:44:46.753 [5] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+21:44:46.770 [5] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+21:44:46.809 [5] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+21:44:46.880 [5] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+21:44:46.910 [5] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+21:44:46.917 [5] INFO  Default - register 'apps.services.Command.GetQuestionSelectCommand' by name 'OESQuestionSelect
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESAddQuestionCommand' by name 'OES_Add_Question
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OES_Add_Subject
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESDeleteQuestionCommand' by name 'OESDeleteQuestion
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESGetQuestionByIdCommand' by name 'OESGetQuestionById
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESGetQuestionTypeDropDownCommand' by name 'OESGetQuestionTypeDropDown
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESGetSubjectDropDownCommand' by name 'OESGetSubjectDropDown
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+21:44:46.920 [5] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+21:44:46.927 [5] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+21:44:46.927 [5] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+21:44:46.927 [5] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+21:44:46.927 [5] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+21:44:46.927 [5] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+21:44:46.927 [5] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+21:44:46.929 [5] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+21:44:46.929 [5] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+21:44:46.929 [5] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+21:44:46.929 [5] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+21:44:46.929 [5] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+21:44:46.929 [5] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+21:44:46.929 [5] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+21:44:47.017 [5] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+21:44:47.017 [5] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+21:44:47.017 [5] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+21:44:47.022 [5] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+21:44:47.025 [5] INFO  Default - Started:RepositoryInstaller Install
+21:44:47.030 [5] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+21:44:47.033 [5] INFO  Default - Ended: RepositoryInstaller Install
+21:44:47.033 [5] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+21:46:50.543 [6] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESGetQuestionDropDown 
+ Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESGetQuestionDropDown' was not found in the container. Did you forget to register it?
+There are 32 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+21:50:16.926 [15] WARN  Default - Not found : CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESGetQuestionDropDown 
+ Exception:Requested component named 'CastleWindsorFactory.Core::CastleWindsorFactory.Core.ICommand.OESGetQuestionDropDown' was not found in the container. Did you forget to register it?
+There are 32 other components supporting requested service 'CastleWindsorFactory.Core.ICommand'. Were you looking for any of them?
+21:53:13.758 [5] INFO  Default - Windsor Container Initialized successfully, with log4net facility
+21:53:13.810 [5] INFO  Default - Started: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin
+21:53:13.827 [5] INFO  Default - loaded assembly for ioc installation : apps.services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+21:53:13.860 [5] INFO  Default - loaded assembly for ioc installation : CastleWindsorFactory.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+21:53:13.942 [5] INFO  Default - Started: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+21:53:13.983 [5] INFO  Default - register 'apps.services.Command.GetClassSelectCommand' by name 'OESSubjectSelect
+21:53:13.996 [5] INFO  Default - register 'apps.services.Command.GetQuestionSelectCommand' by name 'OESQuestionSelect
+21:53:13.996 [5] INFO  Default - register 'apps.services.Command.OESAddQuestionCommand' by name 'OES_Add_Question
+21:53:13.996 [5] INFO  Default - register 'apps.services.Command.OESAddSubjectCommand' by name 'OES_Add_Subject
+21:53:13.996 [5] INFO  Default - register 'apps.services.Command.OESAddUserCommand' by name 'OES_ADD_USER
+21:53:13.996 [5] INFO  Default - register 'apps.services.Command.OESDeleteClassCommand' by name 'OESDeleteClass
+21:53:13.996 [5] INFO  Default - register 'apps.services.Command.OESDeleteQuestionCommand' by name 'OESDeleteQuestion
+21:53:13.996 [5] INFO  Default - register 'apps.services.Command.OESDeleteSubjectCommand' by name 'OESDeleteSubject
+21:53:14.000 [5] INFO  Default - register 'apps.services.Command.OESDeleteUserCommand' by name 'OESDeleteUser
+21:53:14.000 [5] INFO  Default - register 'apps.services.Command.OESGetClassByIdCommand' by name 'OESGetClassById
+21:53:14.000 [5] INFO  Default - register 'apps.services.Command.OESGetQuestionByIdCommand' by name 'OESGetQuestionById
+21:53:14.001 [5] INFO  Default - register 'apps.services.Command.OESGetQuestionTypeDropDownCommand' by name 'OESGetQuestionTypeDropDown
+21:53:14.002 [5] INFO  Default - register 'apps.services.Command.OESGetSubjectByIdCommand' by name 'OESGetSubjectById
+21:53:14.002 [5] INFO  Default - register 'apps.services.Command.OESGetSubjectDropDownCommand' by name 'OESGetSubjectDropDown
+21:53:14.002 [5] INFO  Default - register 'apps.services.Command.OESGetUserAllCommand' by name 'OESGetUserAll
+21:53:14.002 [5] INFO  Default - register 'apps.services.Command.OESGetUserByIdCommand' by name 'OESGetUserById
+21:53:14.002 [5] INFO  Default - register 'apps.services.Command.OESGetUserClassDropDownCommand' by name 'OESGetUserClassDropDown
+21:53:14.002 [5] INFO  Default - register 'apps.services.Command.OESGetUserRoleDropDownCommand' by name 'OESGetUserRoleDropDown
+21:53:14.005 [5] INFO  Default - register 'apps.Services.DeleteAttachmentByIdCommand' by name 'deleteAttachmentbyid
+21:53:14.005 [5] INFO  Default - register 'apps.Services.DownloadFileGetCommand' by name 'DownloadFileGet
+21:53:14.005 [5] INFO  Default - register 'apps.Services.DownloadMultipleFileZipCommand' by name 'DownloadMultipleFileZip
+21:53:14.006 [5] INFO  Default - register 'apps.Services.getCampByIPCommand' by name 'getCampByIP
+21:53:14.006 [5] INFO  Default - register 'apps.Services.GetClassSelectCommand' by name 'Class_Select
+21:53:14.006 [5] INFO  Default - register 'apps.Services.GetMenusbyParentIdCommand' by name 'getMenusbyParentId
+21:53:14.006 [5] INFO  Default - register 'apps.Services.GetMenusbyRoleIdCommand' by name 'getMenusbyRoleId
+21:53:14.008 [5] INFO  Default - register 'apps.Services.GetUserLoginCommand' by name 'GetUserLogin
+21:53:14.008 [5] INFO  Default - register 'apps.Services.GetUserProfilebyIdCommand' by name 'getUserProfilebyId
+21:53:14.008 [5] INFO  Default - register 'apps.Services.GetUserRoleByIdCommand' by name 'getuserrolebyid
+21:53:14.009 [5] INFO  Default - register 'apps.Services.GetUserRolesCommand' by name 'getUserRoles
+21:53:14.009 [5] INFO  Default - register 'apps.Services.ListAttachmentbyEntityCommand' by name 'listAttachmentbyEntity
+21:53:14.010 [5] INFO  Default - register 'apps.Services.ListGHQUnitsCommand' by name 'listGHQUnits
+21:53:14.011 [5] INFO  Default - register 'apps.Services.OESAddClassCommand' by name 'OES_Add_Class
+21:53:14.011 [5] INFO  Default - Ended: apps.CommandServices::apps.CommandServices.Installer.apps.CommandServices Install
+21:53:14.011 [5] INFO  Default - Started:RepositoryInstaller Install
+21:53:14.016 [5] INFO  Default - register 'CastleWindsorFactory.Repository.ConnectionFactory' by name 'CastleWindsor
+21:53:14.025 [5] INFO  Default - Ended: RepositoryInstaller Install
+21:53:14.025 [5] INFO  Default - Ended: Install Directory C:\Users\Hp\Source\Repos\NewRepo\WebApp\bin

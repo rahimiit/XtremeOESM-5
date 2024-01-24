@@ -333,7 +333,7 @@ function treePattern(arr, parent) {
 }
 
 var validateForm = function ($form) {
-
+    ; debugger
     var valid = true;
     $('#' + $form + " input[required],#" + $form + " textarea[required],#" + $form + " select[required]").each(function () {
         if ($(this).hasClass('select2')) {
