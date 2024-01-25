@@ -90,6 +90,8 @@ public class StoreProcedure
         sp_GetUserAll,
         [Description("[sp_GetUserRole]")]
         sp_GetUserRole,
+        [Description("[sp_GetUserStatus]")]
+        sp_GetUserStatus,
         [Description("[sp_GetUserClass]")]
         sp_GetUserClass,
          [Description("[sp_OES_AddUpdate_User]")]

@@ -17,26 +17,26 @@ $(document).ready(function () {
         $('#UserID').val(0);
     }
     
-    function AjaxFormSubmit($form, options) {
-        var url = "/services/Xtreme/multipart/";
+    //function AjaxFormSubmit($form, options) {
+    //    var url = "/services/Xtreme/multipart/";
 
-        // Create a FormData object
-        var formData = new FormData($form[0]);
+    //    // Create a FormData object
+    //    var formData = new FormData($form[0]);
 
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,  // Set contentType to false when using FormData
-            success: function (response, statusText, jqXHR) {
-                options.success(response, statusText, jqXHR);
-            },
-            error: function (xhr, status, error) {
-                options.error(xhr, status, error);
-            }
-        });
-    }
+    //    $.ajax({
+    //        url: url,
+    //        type: 'POST',
+    //        data: formData,
+    //        processData: false,
+    //        contentType: false,  // Set contentType to false when using FormData
+    //        success: function (response, statusText, jqXHR) {
+    //            options.success(response, statusText, jqXHR);
+    //        },
+    //        error: function (xhr, status, error) {
+    //            options.error(xhr, status, error);
+    //        }
+    //    });
+    //}
     $('#btnAddUser').on('click', function (e) {
         
         e.preventDefault();
@@ -55,7 +55,7 @@ $(document).ready(function () {
                         timer: 2000
                     });
                     setTimeout(function () {
-                        window.location.href = '/OESClass/Index';
+                        window.location.href = '/OESUsers/Index';
                     }, 2000);
 
                 
@@ -92,10 +92,10 @@ var loadUserDetailByID = function (d) {
     $('#Password').val(jsonData.password);
     $('#ConfirmPassword').val(jsonData.password);
  
-    $('#Role').val(jsonData.roleID);
+    $('#Role').val(jsonData.userTypeId);
     var roleDropdown = $("#Role").data("kendoDropDownList");
-    roleDropdown.value(jsonData.roleID);
-    $('#Role').val(jsonData.roleID);
+    roleDropdown.value(jsonData.userTypeId);
+    $('#Role').val(jsonData.userTypeId);
 
     $('#Class').val(jsonData.classID);
     var classDropdown = $("#Class").data("kendoDropDownList");
@@ -111,7 +111,11 @@ var loadUserDetailByID = function (d) {
     $('#FirstName').val(jsonData.firstName);
     $('#LastName').val(jsonData.lastName);
     $('#PhoneNumber').val(jsonData.phoneNumber);
-    $('#IDCardNumber').val(jsonData.iDCardNumber);
+    $('#IDCardNumber').val(jsonData.idCardNumber);
+    $('#PostalCode').val(jsonData.postalCode);
+    $('#Address').val(jsonData.fullAddress);
+    $('#Code').val(jsonData.code);
+    
     $('#LastName').val(jsonData.lastName);
     $('#Gender').val(jsonData.gender);
     var genderropdown = $("#Gender").data("kendoDropDownList");
@@ -120,26 +124,24 @@ var loadUserDetailByID = function (d) {
 
 
 }
-
 function UserStatusDropdown() {
-    ; debugger
-    var dataSource = new kendo.data.DataSource({
-        data: [
-            { StatusID: 1, StatusName: "Active" },
-            { StatusID: 0, StatusName: "Inactive" }
-
-        ],
-        sort: { field: "StatusName", dir: "asc" }
+    Status = '1'
+    KendoGlobalAjax({ commandName: OESUSER_COMMANDS.OES_GET_USERSTATUS_DROP_DOWN, values: { Status: Status }, CallBack: getLoadStatus });
+}
+var getLoadStatus = function (d) {
+    var dataSource1 = new kendo.data.DataSource({
+        data: JSON.parse(d.Value),
+        sort: { field: "statusName", dir: "asc" }
     });
-
     $("#Status").kendoDropDownList({
         filter: "contains",
         optionLabel: 'Please select Status...',
-        dataTextField: "StatusName",
-        dataValueField: "StatusID",
-        dataSource: dataSource
+        dataTextField: "statusName",
+        dataValueField: "statusID",
+        dataSource: dataSource1
     });
 }
+ 
 function UserGenderDropdown() {
     ; debugger
     var dataSource = new kendo.data.DataSource({

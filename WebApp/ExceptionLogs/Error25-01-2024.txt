@@ -1,0 +1,594 @@
+20:59:07:Service Started
+*********************************************************************************
+20:59:07:{"UserID":"10005","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"salman22","EmailAddress":"salman@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"2","Class":"11","FullName":"Salman Khan","DateOfBirth":"","FirstName":"Salman","LastName":"Khan","PhoneNumber":"213213","IDCardNumber":"100023","Gender":"","PostalCode":"pakistan","Address":"pakistan","IntakeYear":"2022","Code":"10002323","UploadedFiles":[]}
+*********************************************************************************
+20:59:07:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 173.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 89
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+20:59:07:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:03:09:OES_ADD_USER
+*********************************************************************************
+21:03:09:{"UserID":"6","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"hamadiit44","EmailAddress":"hamad@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"1","Class":"12","FullName":"hamad khan","DateOfBirth":"","FirstName":"hamad","LastName":"khan","PhoneNumber":"213213","IDCardNumber":"123123","Gender":"","PostalCode":"123213","Address":"UAE","IntakeYear":"0","Code":"12321123","UploadedFiles":[]}
+*********************************************************************************
+21:03:09:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 170.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 89
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+21:03:10:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:19:50:OES_ADD_USER
+*********************************************************************************
+21:19:50:{"UserID":"10005","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"salman22","EmailAddress":"salman@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"2","Class":"9","FullName":"Salman Khan","DateOfBirth":"","FirstName":"Salman","LastName":"Khan","PhoneNumber":"213213","IDCardNumber":"100023","Gender":"","PostalCode":"pakistan","Address":"pakistan","IntakeYear":"0","Code":"10002323","UploadedFiles":[]}
+*********************************************************************************
+21:19:50:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 114
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+ClientConnectionId:3495e7c5-3957-427d-8ba6-304a9a66cba6
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+21:19:56:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:24:57:OES_ADD_USER
+*********************************************************************************
+21:24:57:{"UserID":"10005","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"salman22","EmailAddress":"salman@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"2","Class":"9","FullName":"Salman Khan","DateOfBirth":"","FirstName":"Salman","LastName":"Khan","PhoneNumber":"213213","IDCardNumber":"100023","Gender":"1","PostalCode":"pakistan","Address":"pakistan","IntakeYear":"0","Code":"10002323","UploadedFiles":[]}
+*********************************************************************************
+21:24:57:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 114
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+ClientConnectionId:60f22665-b606-4dcc-8454-26d5dba670f6
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+21:25:00:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:28:17:OES_ADD_USER
+*********************************************************************************
+21:28:17:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+21:28:17:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 166.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+21:28:18:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:29:34:OES_ADD_USER
+*********************************************************************************
+21:29:34:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":"0","Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"55","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+21:29:34:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+ClientConnectionId:a9273dde-ec1d-4c02-b7f7-0b4f074686f8
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+21:29:39:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:32:52:OES_ADD_USER
+*********************************************************************************
+21:32:52:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"3","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+21:32:52:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 166.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+21:32:53:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:33:36:OES_ADD_USER
+*********************************************************************************
+21:33:36:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"1","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+21:33:36:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 166.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+21:33:37:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:37:36:OES_ADD_USER
+*********************************************************************************
+21:37:36:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+21:37:36:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 166.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+*********************************************************************************
+21:37:37:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:51:29:OES_ADD_USER
+*********************************************************************************
+21:51:29:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":"0","Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+21:51:29:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 127
+ClientConnectionId:8e9dfd95-1869-47fe-b564-f3091232dc9d
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+21:51:32:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__0(Task`1 o) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 134
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+21:54:55:OES_ADD_USER
+*********************************************************************************
+21:54:55:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+21:54:55:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 166.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+21:54:56:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:05:26:OES_ADD_USER
+*********************************************************************************
+22:05:26:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"1","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+22:05:26:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 166.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+22:05:28:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:06:03:OES_ADD_USER
+*********************************************************************************
+22:06:03:{"UserID":"10007","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"wwww","EmailAddress":"www@gmail.com","Password":"123","ConfirmPassword":"123","Status":false,"Role":"2","Class":"24","FullName":"www","DateOfBirth":"","FirstName":"wwwee","LastName":"eee","PhoneNumber":"213123123","IDCardNumber":"123213213","Gender":"","PostalCode":"123123","Address":"1dweewrew","IntakeYear":"0","Code":"3333324","UploadedFiles":[]}
+*********************************************************************************
+22:06:03:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: f. Path 'Status', line 1, position 166.
+   at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+22:06:04:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:24:27:
+*********************************************************************************
+22:24:27:{
+  "Status": "1"
+}
+*********************************************************************************
+22:24:27:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.Process(Request request) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 94
+*********************************************************************************
+22:35:14:OES_ADD_USER
+*********************************************************************************
+22:35:14:{"UserID":"6","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"hamadiit44","EmailAddress":"hamad@gmail.com","Password":"123","ConfirmPassword":"123","Status":"4","Role":"1","Class":"11","FullName":"hamad khan","DateOfBirth":"","FirstName":"hamad","LastName":"khan","PhoneNumber":"213213","IDCardNumber":"123123","Gender":"","PostalCode":"123213","Address":"UAE","IntakeYear":"0","Code":"12321123","UploadedFiles":[]}
+*********************************************************************************
+22:35:14:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESUserCommand.cs:line 126
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:172ee5c6-2102-494a-97f4-549b975f9745
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+22:35:45:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:39:19:OES_ADD_USER
+*********************************************************************************
+22:39:19:{"UserID":"10005","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"salman226666","EmailAddress":"salman@gmail.com","Password":"123","ConfirmPassword":"123","Status":"4","Role":"2","Class":"9","FullName":"Salman Khan","DateOfBirth":"","FirstName":"Salman","LastName":"Khan","PhoneNumber":"213213","IDCardNumber":"100023","Gender":"","PostalCode":"pakistan","Address":"pakistan","IntakeYear":"0","Code":"10002323","UploadedFiles":[]}
+*********************************************************************************
+22:39:19:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:20a8aa72-e1b4-4888-9044-77769734f56d
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+22:39:21:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:41:46:OES_ADD_USER
+*********************************************************************************
+22:41:46:{"UserID":"10005","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"salman2266","EmailAddress":"salman@gmail.com","Password":"123","ConfirmPassword":"123","Status":"4","Role":"2","Class":"11","FullName":"Salman Khan","DateOfBirth":"","FirstName":"Salman","LastName":"Khan","PhoneNumber":"213213","IDCardNumber":"100023","Gender":"3","PostalCode":"pakistan","Address":"pakistan","IntakeYear":"0","Code":"10002323","UploadedFiles":[]}
+*********************************************************************************
+22:41:46:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:2be4ae36-c33b-4e9e-8910-2988dcf9a495
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+22:41:49:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:49:27:OES_ADD_USER
+*********************************************************************************
+22:49:27:{"UserID":"10005","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"salman2266","EmailAddress":"salman@gmail.com","Password":"123","ConfirmPassword":"123","Status":"4","Role":"2","Class":"9","FullName":"Salman Khan","DateOfBirth":"","FirstName":"Salman","LastName":"Khan","PhoneNumber":"213213","IDCardNumber":"100023","Gender":"2","PostalCode":"pakistan","Address":"pakistan","IntakeYear":"0","Code":"10002323","UploadedFiles":[]}
+*********************************************************************************
+22:49:27:System.Data.SqlClient.SqlException (0x80131904): Error converting data type nvarchar to date.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:172ee5c6-2102-494a-97f4-549b975f9745
+Error Number:8114,State:5,Class:16
+*********************************************************************************
+22:49:28:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+22:52:13:OES_ADD_USER
+*********************************************************************************
+22:52:13:{"UserID":"10004","type":"OES_ADD_USER","Id":"","AspNetUserId":"","Username":"salman22","EmailAddress":"salman@gmail.com","Password":"123","ConfirmPassword":"123","Status":"4","Role":"2","Class":"21","FullName":"Salman Khan","DateOfBirth":"","FirstName":"Salman","LastName":"Khan","PhoneNumber":"033222233","IDCardNumber":"1122","Gender":"","PostalCode":"223","Address":"Pkistan","IntakeYear":"0","Code":"10001","UploadedFiles":[]}
+*********************************************************************************
+22:52:13:System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryRowImpl[T](IDbConnection cnn, Row row, CommandDefinition& command, Type effectiveType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1177
+   at Dapper.SqlMapper.QueryFirstOrDefault[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 761
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetSingle[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddUserCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:07f5bb0a-3588-4308-affc-0e15770a524b
+Error Number:241,State:1,Class:16
+*********************************************************************************
+22:52:16:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************

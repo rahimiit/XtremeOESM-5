@@ -66,6 +66,20 @@ namespace apps.services.Command
             return repository.GetMultiple<dynamic>(StoreProcedure.OESUserEnum.sp_GetUserRole.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
         }
     }
+    [Command(Name = OESUSER_COMMANDS.OES_GET_USERSTATUS_DROP_DOWN)]
+    public class OESGetUserStatusDropDownCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { Status = string.Empty }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetMultiple<dynamic>(StoreProcedure.OESUserEnum.sp_GetUserStatus.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
     [Command(Name = OESUSER_COMMANDS.OES_GET_USEClass_DROP_DOWN)]
     public class OESGetUserClassDropDownCommand : CamelCommandBase
     {
@@ -89,7 +103,7 @@ namespace apps.services.Command
             var model = base.MappedModel(new { UserID = 0, Username = string.Empty,
                 EmailAddress = string.Empty,
                 Password = string.Empty ,
-                Status = 0,
+                Status = string.Empty,
                 Class = string.Empty,
                 Role = string.Empty,
                 DateOfBirth = string.Empty,

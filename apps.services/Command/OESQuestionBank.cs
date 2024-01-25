@@ -75,7 +75,7 @@ namespace apps.services.Command
         {
             object result = new { status = false, returnUrl = "#" };
 
-            var model = base.MappedModel(new { QuestionID = 0, Status = 0, SubjectName = string.Empty }, v);
+            var model = base.MappedModel(new { UserID = 1, QuestionID = 0,  QuestionTitle = string.Empty, Marks=0, Subject=0, QuestionType=0, Status = 0}, v);
 
             try
             {

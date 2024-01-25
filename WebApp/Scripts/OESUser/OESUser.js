@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 function LoadUserKendo() {
 
-    Status = '1'
+    Status = '4'
     KendoGlobalAjax({ commandName: OESUSER_COMMANDS.OES_GET_USERALL, values: { Status: Status }, CallBack: loadUser });
 }
 

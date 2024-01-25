@@ -29,13 +29,13 @@
 </ul>
 <div class="col-12">
     <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateQuestion">
-        @*<input type="hidden" name="UserId" id="UserId" value="" />*@
+        <input type="hidden" name="UserID" id="UserID" value="1" />
         <input type="hidden" name="QuestionID" id="QuestionID" value="" />
 
         <input type="hidden" name="type" id="type" value="OES_Add_Question" />
         <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-8">
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="QuestionTitle">Question Title</label>
@@ -43,8 +43,16 @@
                             <span class="invalid-message field-validation-valid" data-valmsg-for="QuestionTitle" data-valmsg-replace="true"></span>
                         </div>
                     </div>
-                </div>
-            </div>
+                    </div>
+                    <div class="col-md-4">
+ 
+                            <div class="form-group">
+                                <label class="form-label required fw600" for="QuestionTitle">Marks</label>
+                                <input class="form-control text-box single-line" required id="Marks" maxlength="256" name="Marks" type="number">
+                            </div>
+                         
+                    </div>
+             </div>
             <div class="row">
                 <div class="col-md-4">
                     <div class="mb-3 text-break">

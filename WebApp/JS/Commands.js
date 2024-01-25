@@ -34,6 +34,7 @@
         OES_GET_USERById: 'OESGetUserById',
         OES_GET_USERALL: 'OESGetUserAll',
         OES_GET_USEROLE_DROP_DOWN: 'OESGetUserRoleDropDown',
+        OES_GET_USERSTATUS_DROP_DOWN: 'OESGetUserStatusDropDown',
         OES_GET_USEClass_DROP_DOWN: 'OESGetUserClassDropDown',
         
 

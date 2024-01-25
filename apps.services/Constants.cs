@@ -51,6 +51,7 @@ namespace apps.Services
         public const string OES_GET_USERById = "OESGetUserById";
         public const string OES_GET_USERALL = "OESGetUserAll";
         public const string OES_GET_USEROLE_DROP_DOWN = "OESGetUserRoleDropDown";
+        public const string OES_GET_USERSTATUS_DROP_DOWN = "OESGetUserStatusDropDown";
         public const string OES_GET_USEClass_DROP_DOWN = "OESGetUserClassDropDown";
         
 
