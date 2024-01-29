@@ -37,7 +37,7 @@ namespace apps.Services
     {
         public const string OES_ADD_QUESTION = "OESAddQuestion";
         public const string OES_DELETE_QUESTION = "OESDeleteQuestion";
-        public const string OES_GET_QUESTIONBYID = "OESGetQuestionById";
+        public const string OES_GET_QuestionBy_Id = "OESGetQuestionById";
         public const string OES_GET_QUESTIONS_SELECT = "OESQuestionSelect";
         public const string OES_GET_SUBJECT_DROP_DOWN = "OESGetSubjectDropDown";
         public const string OES_GET_QUESTIONTYPE_DROP_DOWN = "OESGetQuestionTypeDropDown";

@@ -65,7 +65,7 @@ var KendoGrid = function (_data) {
             title: "Action",
 
             attributes: { class: "custom-grid-cell" },
-            template: "# if (isActive == true) { # <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a>  &nbsp;&nbsp<button type='button' class='btn btn-danger btn-sm text-white'   onclick=deleteRecordByID('#=questionID#')> Deactivate</button>  # } else   {# <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a>  #}#",
+            template: "# if (isActive == true) { # <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a> &nbsp<button type='button' class='btn btn-success btn-sm text-white'   onclick=AddAnswerQuestionByID(this)> Add Answer</button>&nbsp<button type='button' class='btn btn-danger btn-sm text-white'   onclick=deleteRecordByID('#=questionID#')> Deactivate</button>  # } else   {# <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a>  #}#",
             //template: "<a style='cursor:pointer; font-size:20px;' onClick= whatsapp_btn(this) title='Share Employee' ><span class='icofont icofont-phone'></span></a> <a style='font-size:20px;cursor:pointer;' onClick= EditDetail(this) title='Edit Employee' ><span class='fa fa-edit'></span></a> &nbsp;&nbsp;&nbsp;&nbsp; <button type='button' class='btn btn-danger btn-sm text-white'   onclick=deleteRecordByID('#=classID#')> Deactivate</button>"
 
         }];
@@ -120,7 +120,15 @@ var deleteRecordByID = function (id) {
     });
 }
 
- 
+function AddAnswerQuestionByID(e) {
+
+    var row = $(e).closest("tr");
+    var grid = $("#" + $grid).data("kendoGrid");
+    var dataItem = grid.dataItem(row);
+    window.location.href = '/OESQuestionsBank/AddEditAnswer?QuestionID=' + dataItem.questionID + '';
+}
+
+
 function EditDetail(e) {
 
     var row = $(e).closest("tr");

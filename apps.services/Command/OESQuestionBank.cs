@@ -22,7 +22,7 @@ namespace apps.services.Command
             return repository.GetSingle<dynamic>(StoreProcedure.OESQuestionBankEnum.sp_OES_Delete_Question.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
         }
     }
-    [Command(Name = OESQUESTION_COMMANDS.OES_GET_QUESTIONBYID)]
+    [Command(Name = OESQUESTION_COMMANDS.OES_GET_QuestionBy_Id)]
     public class OESGetQuestionByIdCommand : CamelCommandBase
     {
         protected override object DoAction(object v)

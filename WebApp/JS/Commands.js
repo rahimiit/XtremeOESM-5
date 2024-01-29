@@ -22,7 +22,7 @@
         OES_GET_QUESTIONS_SELECT: 'OESQuestionSelect',
         OES_ADD_QUESTION: 'OESAddQuestion',
         OES_DELETE_QUESTION: 'OESDeleteQuestion',
-        OES_GET_QUESTIONById: 'OESGetQuestionById',
+        OES_GET_QuestionBy_Id: 'OESGetQuestionById',
         OES_GET_SUBJECT_DROP_DOWN: 'OESGetSubjectDropDown',
         OES_GET_QUESTIONTYPE_DROP_DOWN: 'OESGetQuestionTypeDropDown',
 
