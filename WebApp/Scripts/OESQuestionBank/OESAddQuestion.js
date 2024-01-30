@@ -31,6 +31,16 @@ $(document).ready(function () {
 
             var options = {
                 success: function (response, statusText, jqXHR) {
+            
+                    var responseObject = JSON.parse(response);
+                    var savedRecordId = responseObject.QuestionID;
+
+                    var ss = JSON.parse(responseObject);
+                    var questionID=(ss["questionID"]);
+
+;  
+                    console.log(questionID);
+               
                     Swal.fire({
                         icon: 'success',
                         title: 'Record saved successfully...',
@@ -38,7 +48,7 @@ $(document).ready(function () {
                         timer: 2000
                     });
                     setTimeout(function () {
-                        window.location.href = '/OESQuestionsBank/Index';
+                        window.location.href = '/OESQuestionsBank/AddEditAnswer?QuestionID=' + questionID;
                     }, 2000);
 
 

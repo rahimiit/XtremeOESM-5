@@ -5,6 +5,7 @@ $(document).ready(function () {
      
         var Isvalid = true;
         if ($('#email').val() == '') {
+   
             $('#error_span_email').text("Enter Invoice No");
             setTimeout(function () {
          
@@ -26,13 +27,16 @@ $(document).ready(function () {
         else {
             $('#error_span_password').text("");
         }
-        if (Isvalid) { 
-        var _param = {
-            'userEmail': $('#email').val(),
-            'password': $('#password').val()
-        }
+        if (Isvalid) {
+            var _param = {
+                'userEmail': $('#email').val(),
+                'password': $('#password').val()
+            }
             GlobalAjax({ commandName: APPS_COMMANDS.Get_USER_LOGIN, values: JSON.stringify(_param), CallBack: GetUserData });
-             
+
+        }
+        else {
+            $('#error_span_password').text("Enter Invoice No");
         }
       
     });   

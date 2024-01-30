@@ -75,7 +75,7 @@ namespace apps.services.Command
         {
             object result = new { status = false, returnUrl = "#" };
 
-            var model = base.MappedModel(new { UserID = 1, QuestionID = 0,  QuestionTitle = string.Empty, Marks=0, Subject=0, QuestionType=0, Status = 0}, v);
+            var model = base.MappedModel(new { UserID = 1, QuestionID = 0, QuestionTitle = string.Empty, Marks = 0, Subject = 0, QuestionType = 0, Status = 0 }, v);
 
             try
             {
@@ -83,9 +83,14 @@ namespace apps.services.Command
                 ICommandParameters _params = new CommandParameters();
                 IDictionary<string, object> values = _params.Get(model);
                 values = _params.Get(model);
-                return repository.GetSingle<dynamic>(StoreProcedure.OESQuestionBankEnum.sp_OES_Add_Question
+                dynamic questionData = repository.GetSingle<dynamic>(StoreProcedure.OESQuestionBankEnum.sp_OES_Add_Question
                     .ToString(), values, connectionFactory._factory, connectionFactory._connection);
 
+                // Assuming the QuestionID is returned as part of the questionData object
+                long questionID = questionData.QuestionID;
+
+                // Prepare the result object
+                result = new { QuestionID = questionID};
             }
             catch (Exception ex)
             {
