@@ -41,6 +41,9 @@ namespace apps.Services
         public const string OES_GET_QUESTIONS_SELECT = "OESQuestionSelect";
         public const string OES_GET_SUBJECT_DROP_DOWN = "OESGetSubjectDropDown";
         public const string OES_GET_QUESTIONTYPE_DROP_DOWN = "OESGetQuestionTypeDropDown";
+        public const string OES_GET_CHECKBOX_QUESTIONTANSWER = "OESAddCheckBoxQuestionAnswer";
+        public const string OES_GET_RADIOBOX_QUESTIONTANSWER = "OESAddRadioBoxQuestionAnswer";
+        public const string OES_GET_BOOL_QUESTIONTANSWER = "OESAddBoolQuestionAnswer";
 
 
     }

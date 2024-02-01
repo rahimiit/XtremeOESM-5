@@ -1,8 +1,10 @@
 ﻿
 $(document).ready(function () {
-   
+    $(".loader").bind("click", (function () {
+        $("#divLoading").show();
+    }));
     $("#btnlogin").click(function () {
-     
+        $("#divLoading").show();
         var Isvalid = true;
         if ($('#email').val() == '') {
    
@@ -11,6 +13,7 @@ $(document).ready(function () {
          
                 $('#error_span_email').text("");
             }, 5000); 
+            $("#divLoading").hide();
             Isvalid = false;
         }
         else {
@@ -22,6 +25,7 @@ $(document).ready(function () {
           
                 $('#error_span_password').text("");
             }, 5000); 
+            $("#divLoading").hide();
             Isvalid = false;
         }
         else {

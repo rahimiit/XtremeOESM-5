@@ -10,6 +10,8 @@ $(document).ready(function () {
   
     var Id = getUrlVars();
     $('#QuestionID').val(Id.QuestionID);
+
+
     if ($('#QuestionID').val() !== '') {
         LoadQuestionDetails(Id.QuestionID);
     }
@@ -32,14 +34,7 @@ $(document).ready(function () {
             var options = {
                 success: function (response, statusText, jqXHR) {
             
-                    var responseObject = JSON.parse(response);
-                    var savedRecordId = responseObject.QuestionID;
-
-                    var ss = JSON.parse(responseObject);
-                    var questionID=(ss["questionID"]);
-
-;  
-                    console.log(questionID);
+    
                
                     Swal.fire({
                         icon: 'success',
@@ -48,7 +43,7 @@ $(document).ready(function () {
                         timer: 2000
                     });
                     setTimeout(function () {
-                        window.location.href = '/OESQuestionsBank/AddEditAnswer?QuestionID=' + questionID;
+                       // window.location.href = '/OESQuestionsBank/AddEditAnswer?QuestionID=' + questionID;
                     }, 2000);
 
 

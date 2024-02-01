@@ -26,6 +26,11 @@
         OES_GET_SUBJECT_DROP_DOWN: 'OESGetSubjectDropDown',
         OES_GET_QUESTIONTYPE_DROP_DOWN: 'OESGetQuestionTypeDropDown',
 
+        OES_GET_CHECKBOX_QUESTIONTANSWER : 'OESAddCheckBoxQuestionAnswer',
+        OES_GET_RADIOBOX_QUESTIONTANSWER :'OESAddRadioBoxQuestionAnswer',
+         OES_GET_BOOL_QUESTIONTANSWER :'OESAddBoolQuestionAnswer',
+
+
     }
     /* ************************ Common OES User *********************** */
     window.OESUSER_COMMANDS = {

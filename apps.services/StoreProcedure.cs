@@ -74,7 +74,14 @@ public class StoreProcedure
         [Description("[sp_GetQuestionType]")]
         sp_GetQuestionType,
         [Description("[sp_GetSubject]")]
-        sp_GetSubject
+        sp_GetSubject,
+         [Description("[OES_ADD_Bool_QuestionAnswer]")]
+        OES_ADD_Bool_QuestionAnswer,
+        [Description("[OES_ADD_CheckBox_QuestionAnswer]")]
+        OES_ADD_CheckBox_QuestionAnswer,
+        [Description("[OES_ADD_RadioBox_QuestionAnswer]")]
+        OES_ADD_RadioBox_QuestionAnswer
+
     }
     public enum OESUserEnum
     {

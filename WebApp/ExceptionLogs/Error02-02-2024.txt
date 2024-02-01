@@ -1,0 +1,658 @@
+00:01:01:Service Started
+*********************************************************************************
+00:01:01:{"UserID2":"1","QuestionID2":"","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"1","txtOneChkAnswer":"dfgfdg","txttwoChkAnswer":"gggfd","IsOptionCorrecThree":"3","txtthreeChkAnswer":"sdsdsdd","txtChkAfournswer":"ghhhhh","UploadedFiles":[]}
+*********************************************************************************
+00:01:01:Newtonsoft.Json.JsonReaderException: Could not convert string to boolean: 1. Path 'IsOptionCorrectOne', line 1, position 98.
+   at Newtonsoft.Json.JsonReader.ReadBooleanString(String s)
+   at Newtonsoft.Json.JsonTextReader.ReadAsBoolean()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESQuestionBank.cs:line 138
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:01:02:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:09:14:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:09:14:{"UserID2":"1","QuestionID2":"","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","txtOneChkAnswer":"wwww","IsOptionCorrectTwo":"2","txttwoChkAnswer":"eeeee","IsOptionCorrecThree":"3","txtthreeChkAnswer":"qqqqq","txtChkAfournswer":"trttttt","UploadedFiles":[]}
+*********************************************************************************
+00:09:14:Newtonsoft.Json.JsonReaderException: Could not convert string to boolean: 2. Path 'IsOptionCorrectTwo', line 1, position 123.
+   at Newtonsoft.Json.JsonReader.ReadBooleanString(String s)
+   at Newtonsoft.Json.JsonTextReader.ReadAsBoolean()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESQuestionBank.cs:line 138
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:09:16:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:14:07:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:14:07:{"UserID2":"1","QuestionID2":"","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"asds","txttwoChkAnswer":"asdsad","IsOptionCorrecThree":"on","txtthreeChkAnswer":"asdsa","txtChkAfournswer":"asdasd","UploadedFiles":[]}
+*********************************************************************************
+00:14:07:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'QuestionID2', line 1, position 31. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:14:11:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:15:23:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:15:23:{"UserID2":"1","QuestionID2":"","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","txtOneChkAnswer":"asfdsad","txttwoChkAnswer":"asdsad","IsOptionCorrecThree":"on","txtthreeChkAnswer":"asdsad","IsOptionCorrectFour":"on","txtChkAfournswer":"asdasd","UploadedFiles":[]}
+*********************************************************************************
+00:15:23:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'QuestionID2', line 1, position 31. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:15:24:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:16:35:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:16:35:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"dfdgfdg","IsOptionCorrectTwo":"on","txttwoChkAnswer":"dfgfdg","txtthreeChkAnswer":"dfgfdg","txtChkAfournswer":"dfgfdgfd","UploadedFiles":[]}
+*********************************************************************************
+00:16:35:Newtonsoft.Json.JsonReaderException: Could not convert string to boolean: on. Path 'IsOptionCorrectOne', line 1, position 100.
+   at Newtonsoft.Json.JsonReader.ReadBooleanString(String s)
+   at Newtonsoft.Json.JsonTextReader.ReadAsBoolean()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:16:36:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:17:35:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:17:35:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"asdfasd","txttwoChkAnswer":"asdsad","IsOptionCorrecThree":"on","txtthreeChkAnswer":"asdsad","txtChkAfournswer":"asdsad","UploadedFiles":[]}
+*********************************************************************************
+00:17:35:System.NullReferenceException: Object reference not set to an instance of an object.
+   at CastleWindsorFactory.Core.CommandParameters.CastleWindsorFactory.Core.ICommandParameters.Get(Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:17:37:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:32:11:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:32:11:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"asadas","IsOptionCorrectTwo":"on","txttwoChkAnswer":"asdsad","txtthreeChkAnswer":"asdsad","txtChkAfournswer":"asdsad","UploadedFiles":[]}
+*********************************************************************************
+00:32:11:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: on. Path 'IsOptionCorrectOne', line 1, position 100.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESQuestionBank.cs:line 138
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:34:09:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:36:05:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:36:05:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"dsfdsf","IsOptionCorrectTwo":"on","txttwoChkAnswer":"dsfdsf","txtthreeChkAnswer":"sdfdsf","txtChkAfournswer":"sdfsdf","UploadedFiles":[]}
+*********************************************************************************
+00:36:05:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: on. Path 'IsOptionCorrectOne', line 1, position 100.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:36:06:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:37:54:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:37:54:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"sdfdsf","IsOptionCorrectTwo":"on","txttwoChkAnswer":"sdfdsf","txtthreeChkAnswer":"dsfdsf","txtChkAfournswer":"sdfsdf","UploadedFiles":[]}
+*********************************************************************************
+00:37:54:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: on. Path 'IsOptionCorrectOne', line 1, position 100.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:37:56:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:38:50:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:38:50:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"dgfd","IsOptionCorrectTwo":"on","txttwoChkAnswer":"gfgfdg","txtthreeChkAnswer":"dfgfd","txtChkAfournswer":"dfg","UploadedFiles":[]}
+*********************************************************************************
+00:38:50:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: on. Path 'IsOptionCorrectOne', line 1, position 100.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:38:51:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:44:47:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+00:44:47:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"sfsdfs","IsOptionCorrectTwo":"on","txttwoChkAnswer":"dsfdsf","txtthreeChkAnswer":"dsfdsf","txtChkAfournswer":"sdfdsf","UploadedFiles":[]}
+*********************************************************************************
+00:44:47:Newtonsoft.Json.JsonReaderException: Could not convert string to integer: on. Path 'IsOptionCorrectOne', line 1, position 100.
+   at Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   at Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+00:44:49:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:55:25:System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at WebApp.Controllers.XtremeController.CreateObject(NameValueCollection form, Collection`1 files, List`1 uploadedFiles) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 245
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 142
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:57:19:System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at WebApp.Controllers.XtremeController.CreateObject(NameValueCollection form, Collection`1 files, List`1 uploadedFiles) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 245
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 142
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+00:58:07:System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at WebApp.Controllers.XtremeController.CreateObject(NameValueCollection form, Collection`1 files, List`1 uploadedFiles) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 245
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 142
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:01:41:System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at WebApp.Controllers.XtremeController.CreateObject(NameValueCollection form, Collection`1 files, List`1 uploadedFiles) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 245
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 142
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:10:07:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+01:10:07:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"ddf","IsOptionCorrectTwo":"on","txttwoChkAnswer":"sdf","IsOptionCorrecThree":"off","txtthreeChkAnswer":"sfs","IsOptionCorrectFour":"off","txtChkAfournswer":"sdf","UploadedFiles":[]}
+*********************************************************************************
+01:10:07:System.NullReferenceException: Object reference not set to an instance of an object.
+   at CastleWindsorFactory.Core.CommandParameters.CastleWindsorFactory.Core.ICommandParameters.Get(Object model)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESQuestionBank.cs:line 162
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+01:10:08:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:14:28:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+01:14:28:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"sdfs","IsOptionCorrectTwo":"on","txttwoChkAnswer":"sdf","IsOptionCorrecThree":"off","txtthreeChkAnswer":"sdf","IsOptionCorrectFour":"off","txtChkAfournswer":"sdf","UploadedFiles":[]}
+*********************************************************************************
+01:14:28:System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'OES_ADD_CheckBox_QuestionAnswer' expects parameter '@QuestionID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.<QueryImpl>d__140`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetMultiple[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:0ebee123-4a62-4e4e-b754-e4340d091202
+Error Number:201,State:4,Class:16
+*********************************************************************************
+01:14:40:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:19:02:OES_GET_CHECKBOX_QUESTIONTANSWER
+*********************************************************************************
+01:19:02:{"UserID2":"1","QuestionID2":"1","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","IsOptionCorrectOne":"on","txtOneChkAnswer":"a","IsOptionCorrectTwo":"off","txttwoChkAnswer":"b","IsOptionCorrecThree":"off","txtthreeChkAnswer":"c","IsOptionCorrectFour":"on","txtChkAfournswer":"d","UploadedFiles":[]}
+*********************************************************************************
+01:19:02:System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'OES_ADD_CheckBox_QuestionAnswer' expects parameter '@QuestionID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.<QueryImpl>d__140`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetMultiple[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddCheckBoxQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:0448f2a9-a1c2-484d-8def-503fa9004f02
+Error Number:201,State:4,Class:16
+*********************************************************************************
+01:19:04:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:36:49:OES_GET_BOOL_QUESTIONTANSWER
+*********************************************************************************
+01:36:49:{"UserID3":"1","QuestionID3":"2","type":"OES_GET_BOOL_QUESTIONTANSWER","AnswerboolOne":"WW","boolrdotwo":"2","Answerbooltwo":"EE","UploadedFiles":[]}
+*********************************************************************************
+01:36:49:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+01:36:50:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:39:36:OES_GET_BOOL_QUESTIONTANSWER
+*********************************************************************************
+01:39:36:{"UserID3":"1","QuestionID3":"2","type":"OES_GET_BOOL_QUESTIONTANSWER","boolrdoOne":"1","AnswerboolOne":"WW","Answerbooltwo":"EE","UploadedFiles":[]}
+*********************************************************************************
+01:39:36:System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'OES_ADD_Bool_QuestionAnswer' expects parameter '@QuestionID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.<QueryImpl>d__140`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetMultiple[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddBoolQuestionAnswerCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESQuestionBank.cs:line 322
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:201b465e-ebb5-445a-b355-c5e2f41deec6
+Error Number:201,State:4,Class:16
+*********************************************************************************
+01:39:37:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:41:43:OES_GET_BOOL_QUESTIONTANSWER
+*********************************************************************************
+01:41:43:{"UserID3":"1","QuestionID3":"2","type":"OES_GET_BOOL_QUESTIONTANSWER","boolrdoOne":"1","AnswerboolOne":"WW","boolrdotwo":"off","Answerbooltwo":"EEE","UploadedFiles":[]}
+*********************************************************************************
+01:41:43:System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'OES_ADD_Bool_QuestionAnswer' expects parameter '@QuestionID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.<QueryImpl>d__140`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetMultiple[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddBoolQuestionAnswerCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:b4a79f8a-760c-4698-ada4-4bae998547e0
+Error Number:201,State:4,Class:16
+*********************************************************************************
+01:41:44:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:44:27:OES_GET_BOOL_QUESTIONTANSWER
+*********************************************************************************
+01:44:27:{"UserID3":"1","QuestionID3":"2","type":"OES_GET_BOOL_QUESTIONTANSWER","boolrdoOne":"off","AnswerboolOne":"eew","boolrdotwo":"2","Answerbooltwo":"eeww","UploadedFiles":[]}
+*********************************************************************************
+01:44:27:System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'OES_ADD_Bool_QuestionAnswer' expects parameter '@QuestionID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.<QueryImpl>d__140`1.MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at CastleWindsorFactory.Repository.Repository.CastleWindsorFactory.Core.IRepository.GetMultiple[T](String procedurename, IDictionary`2 values, String cnFactory, String con)
+   at apps.services.Command.OESAddBoolQuestionAnswerCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESQuestionBank.cs:line 322
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+ClientConnectionId:3dc5c6da-f96d-4f4e-baaa-400f84f89cdd
+Error Number:201,State:4,Class:16
+*********************************************************************************
+01:44:29:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:48:57:OES_Add_Question
+*********************************************************************************
+01:48:57:{"UserID":"1","QuestionID":"1","type":"OES_Add_Question","QuestionTitle":"What is the capital of France?444","Marks":"10","Subject":"9","QuestionType":"","Status":"4","UploadedFiles":[]}
+*********************************************************************************
+01:48:57:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'QuestionType', line 1, position 153. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddQuestionCommand.DoAction(Object v)
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+01:49:02:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************
+01:51:02:OES_Add_Question
+*********************************************************************************
+01:51:02:{"UserID":"1","QuestionID":"3","type":"OES_Add_Question","QuestionTitle":"Who wrote Romeo and Juliet?","Marks":"12","Subject":"","QuestionType":"","Status":"","UploadedFiles":[]}
+*********************************************************************************
+01:51:02:Newtonsoft.Json.JsonSerializationException: Error converting value {null} to type 'System.Int32'. Path 'Subject', line 1, position 128. ---> System.InvalidCastException: Null object cannot be converted to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ResolvePropertyAndCreatorValues(JsonObjectContract contract, JsonProperty containerProperty, JsonReader reader, Type objectType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObjectUsingCreatorWithParameters(JsonReader reader, JsonObjectContract contract, JsonProperty containerProperty, ObjectConstructor`1 creator, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at CastleWindsorFactory.Core.CamelCommandBase.MappedModel[T](T t, Object model)
+   at apps.services.Command.OESAddQuestionCommand.DoAction(Object v) in C:\Users\Hp\source\repos\NewRepo\apps.services\Command\OESQuestionBank.cs:line 78
+   at CastleWindsorFactory.Core.CamelCommandBase.Process(Request request)
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+01:51:03:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************

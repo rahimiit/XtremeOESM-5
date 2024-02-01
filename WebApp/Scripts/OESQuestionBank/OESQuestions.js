@@ -31,7 +31,7 @@ $(document).ready(function () {
 
   
 function LoadQuestionKendo() {
-
+   
     Status = 'Active'
     KendoGlobalAjax({ commandName: OESQUESTION_COMMANDS.OES_GET_QUESTIONS_SELECT, values: { Status: Status }, CallBack: loadQuestions });
 }

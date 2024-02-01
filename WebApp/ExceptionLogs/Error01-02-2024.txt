@@ -1,0 +1,17 @@
+23:54:21:Service Started
+*********************************************************************************
+23:54:21:{"UserID2":"1","QuestionID2":"","type":"OES_GET_CHECKBOX_QUESTIONTANSWER","txtOneChkAnswer":"1","IsOptionCorrectTwo":"2","txttwoChkAnswer":"2","txtthreeChkAnswer":"3","IsOptionCorrectFour":"3","txtChkAfournswer":"4","UploadedFiles":[]}
+*********************************************************************************
+23:54:21:System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 146
+*********************************************************************************
+23:54:23:System.Web.Http.HttpResponseException: Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+   at WebApp.Controllers.XtremeController.<>c__DisplayClass4_1.<Multipart>b__1(Task`1 formFields) in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 153
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WebApp.Controllers.XtremeController.<Multipart>d__4.MoveNext() in C:\Users\Hp\source\repos\NewRepo\WebApp\Controllers\api\XtremeController.cs:line 157
+*********************************************************************************

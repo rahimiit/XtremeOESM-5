@@ -10,85 +10,160 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
-
-
+ 
 
 <section class="section">
-    <form action="/services/Xtreme/multipart" method="post" id="frmAddEditAnswerQuestion">
-        <input type="hidden" name="UserID" id="UserID" value="1" />
-        <input type="hidden" name="QuestionID" id="QuestionID" value="" />
 
-        <input type="hidden" name="type" id="type" value="OES_AddEdit_QuestionAnswer" />
-        <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
-            <h2 class="fs-20 fw600 mb-4">Question Information</h2>
-            <div class="row">
-                <div class="mb-3 text-break">
-                    <div class="form-group">
-                        <div><label class="form-label fw600" for="QuestionTitle">Question Title</label></div>
-                        <div>
-                            <p id="questionTitle" name="questionTitle">  </p>
+    <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
+        <h2 class="fs-20 fw600 mb-4">Question Information</h2>
+        <div class="row">
+            <div class="mb-3 text-break">
+                <div class="form-group">
+                    <div><label class="form-label fw600" for="QuestionTitle">Question Title</label></div>
+                    <div>
+                        <p id="questionTitle" name="questionTitle">  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 text-break">
+                <div class="form-group">
+                    <div><label class="form-label fw600" for="QuestionTypeName">Question Type</label></div>
+                    <div>
+                        <p id="QuestionTypes" name="QuestionTypes">  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 class="fs-20 fw600 pt-2 mb-4">Answer Information</h2>
+        <div class="row mb-2">
+            <div class="form-group">
+                <div class="fw600">Note:</div>
+                <ul class="text-info mb-0">
+                    <li>Empty answer option will be ignored.</li>
+                    <li>Check the radio button to set the correct answer for the question.</li>
+                    <li>If there are existing students who took the exam that contains this question and you change the answer text or change the correct answer now, their result will be recalculated. This is to solve the problem of the teacher's mistake of selecting the wrong answer.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-danger">
+            <div class="validation-summary-valid" data-valmsg-summary="true">
+                <ul>
+                    <li style="display:none"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateradionview">
+                    <input type="hidden" name="UserID" id="UserID" value="1" />
+                    <input type="hidden" name="QuestionID" id="QuestionID" value="" />
+
+                    <input type="hidden" name="type" id="type" value="OES_GET_RADIOBOX_QUESTIONTANSWER" />
+                    <div id="radionview" style="display:none;">
+                        <div class="d-flex align-items-center mb-1">
+                            <input class="form-check-input mt-0 me-2" type="radio" id="rdioOptionOne" name="rdioOptionOne" style="width:1.2em;height:1.2em;vertical-align:middle;">
+                            <textarea class="form-control text-box single-line answerinput" type="text" placeholder="Fill in answer option" name="txtradioanswerOne" rows="1" id="txtradioanswerOne"></textarea>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-1">
+                            <input class="form-check-input mt-0 me-2" type="radio" name="rdioOptiontwo" id="rdioOptiontwo" style="width:1.2em;height:1.2em;vertical-align:middle">
+                            <textarea class="form-control text-box single-line answerinput" id="txtradioanswertwo" name="txtradioanswertwo" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea>
+                        </div>
+                        <div class="d-flex align-items-center mb-1">
+                            <input class="form-check-input mt-0 me-2" type="radio" name="rdioOptionthree" id="rdioOptionthree" style="width:1.2em;height:1.2em;vertical-align:middle">
+                            <textarea class="form-control text-box single-line answerinput" id="txtradioanswerthree" name="txtradioanswerthree" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea>
+                        </div>
+                        <div class="d-flex align-items-center mb-1">
+                            <input class="form-check-input mt-0 me-2" type="radio" name="rdioOptionfour" id="rdioOptionfour" value="3" style="width:1.2em;height:1.2em;vertical-align:middle">
+                            <textarea class="form-control text-box single-line answerinput" id="txtradioanswerfour" name="txtradioanswerfour" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question">Back To List</a>
+                                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/OESQuestionsBank/AddQuestions"><i class="fa-solid fa-plus"></i> Add Another Question</a>
+                                <button type="button" id="btnRdioAddAnswer" class="btn form-btn btn-primary hover-boxshadow">
+                                    <span>Save</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+                </form>
             </div>
-            <div class="row">
-                <div class="mb-3 text-break">
-                    <div class="form-group">
-                        <div><label class="form-label fw600" for="QuestionTypeName">Question Type</label></div>
-                        <div>
-                        <p id="QuestionTypes" name="QuestionTypes">  </p></div>
+        </div>
+        @*<div class="mt-2">
+            <button id="addoption" type="button" class="btn form-btn btn-secondary hover-boxshadow me-1"><i class="fa-solid fa-plus"></i> Add Answer Option</button>
+        </div>*@
+        <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdatechkboxview">
+            <input type="hidden" name="UserID2" id="UserID2" value="1" />
+            <input type="hidden" name="QuestionID2" id="QuestionID2" />
+
+            <input type="hidden" name="type" id="type" value="OES_GET_CHECKBOX_QUESTIONTANSWER" />
+            <div id="chkboxview" style="display:none;">
+                <div class="d-flex align-items-center mb-1">
+                    <input class="form-check-input mt-0 me-2" type="checkbox" name="IsOptionCorrectOne" id="IsOptionCorrectOne" style="width:1.2em;height:1.2em;vertical-align:middle">
+                    <textarea class="form-control text-box single-line answerinput" id="txtOneChkAnswer" name="txtOneChkAnswer" type="text" placeholder="Fill in answer option" rows="1"></textarea>
+                </div>
+                <div class="d-flex align-items-center mb-1">
+                    <input class="form-check-input mt-0 me-2" type="checkbox" name="IsOptionCorrectTwo" id="IsOptionCorrectTwo" style="width:1.2em;height:1.2em;vertical-align:middle">
+                    <textarea class="form-control text-box single-line answerinput" id="txttwoChkAnswer" name="txttwoChkAnswer" type="text" placeholder="Fill in answer option" rows="1"></textarea>
+                </div>
+                <div class="d-flex align-items-center mb-1">
+                    <input class="form-check-input mt-0 me-2" type="checkbox" name="IsOptionCorrecThree" id="IsOptionCorrecThree" style="width:1.2em;height:1.2em;vertical-align:middle">
+                    <textarea class="form-control text-box single-line answerinput" id="txtthreeChkAnswer" name="txtthreeChkAnswer" type="text" placeholder="Fill in answer option" rows="1"></textarea>
+                </div>
+                <div class="d-flex align-items-center mb-1">
+                    <input class="form-check-input mt-0 me-2" type="checkbox" name="IsOptionCorrectFour" id="IsOptionCorrectFour" style="width:1.2em;height:1.2em;vertical-align:middle">
+                    <textarea class="form-control text-box single-line answerinput" id="txtChkAfournswer" name="txtChkAfournswer" type="text" placeholder="Fill in answer option" rows="1"></textarea>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question">Back To List</a>
+                        <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/OESQuestionsBank/AddQuestions"><i class="fa-solid fa-plus"></i> Add Another Question</a>
+                        <button type="button" id="btnCheckBoxAddAnswer" class="btn form-btn btn-primary hover-boxshadow">
+                            <span>Save</span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <hr>
-            <h2 class="fs-20 fw600 pt-2 mb-4">Answer Information</h2>
-            <div class="row mb-2">
-                <div class="form-group">
-                    <div class="fw600">Note:</div>
-                    <ul class="text-info mb-0">
-                        <li>Empty answer option will be ignored.</li>
-                        <li>Check the radio button to set the correct answer for the question.</li>
-                        <li>If there are existing students who took the exam that contains this question and you change the answer text or change the correct answer now, their result will be recalculated. This is to solve the problem of the teacher's mistake of selecting the wrong answer.</li>
-                    </ul>
+        </form>
+
+        <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateboolview">
+            <input type="hidden" name="UserID3" id="UserID3" value="1" />
+            <input type="hidden" name="QuestionID3" id="QuestionID3" value="" />
+
+            <input type="hidden" name="type" id="type" value="OES_GET_BOOL_QUESTIONTANSWER" />
+            <div id="boolview" style=" display:none;">
+                <div class="d-flex align-items-center mb-1">
+                    <input class="form-check-input mt-0 me-2" type="radio" name="boolrdoOne" id="boolrdoOne" style="width:1.2em;height:1.2em;vertical-align:middle">
+                    <textarea class="form-control text-box single-line answerinput" id="AnswerboolOne" name="AnswerboolOne" type="text"   placeholder="Fill in answer option" rows="1"></textarea>
+                </div>
+                <div class="d-flex align-items-center mb-1">
+                    <input class="form-check-input mt-0 me-2" type="radio" name="boolrdotwo" id="boolrdotwo"  style="width:1.2em;height:1.2em;vertical-align:middle">
+                    <textarea class="form-control text-box single-line answerinput" id="Answerbooltwo" name="Answerbooltwo" type="text"   placeholder="Fill in answer option" rows="1"></textarea>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question">Back To List</a>
+                        <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/OESQuestionsBank/AddQuestions"><i class="fa-solid fa-plus"></i> Add Another Question</a>
+                        <button type="button" id="btnBooleanAddAnswer" class="btn form-btn btn-primary hover-boxshadow">
+                            <span>Save</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="row text-danger">
-                <div class="validation-summary-valid" data-valmsg-summary="true">
-                    <ul>
-                        <li style="display:none"></li>
-                    </ul>
-                </div>
-            </div>
-            <input id="AnswerOptions_0__Id" name="AnswerOptions[0].Id" type="hidden" value="">           
-            <div class="d-flex align-items-center mb-1">
-                <input class="form-check-input mt-0 me-2" type="radio" id="AnswerOptions[0].IsCorrect" name="CorrectAnswer" value="0" style="width:1.2em;height:1.2em;vertical-align:middle;">
-                <textarea class="form-control text-box single-line answerinput" type="text" placeholder="Fill in answer option" name="AnswerOptions[0].Text" rows="1" id="AnswerOptions_0__Text"></textarea>
-            </div>
-            <div id="otheroptions">
-                <div class="d-flex align-items-center mb-1">
-                <input class="form-check-input mt-0 me-2" type="radio" name="CorrectAnswer" id="AnswerOptions[1].IsCorrect" value="1" style="width:1.2em;height:1.2em;vertical-align:middle">
-                <textarea class="form-control text-box single-line answerinput" id="AnswerOptions_1__Text" name="AnswerOptions[1].Text" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea></div>
-                <div class="d-flex align-items-center mb-1">
-                <input class="form-check-input mt-0 me-2" type="radio" name="CorrectAnswer" id="AnswerOptions[2].IsCorrect" value="2" style="width:1.2em;height:1.2em;vertical-align:middle">
-                <textarea class="form-control text-box single-line answerinput" id="AnswerOptions_2__Text" name="AnswerOptions[2].Text" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea></div>
-                <div class="d-flex align-items-center mb-1">
-                <input class="form-check-input mt-0 me-2" type="radio" name="CorrectAnswer" id="AnswerOptions[3].IsCorrect" value="3" style="width:1.2em;height:1.2em;vertical-align:middle">
-                <textarea class="form-control text-box single-line answerinput" id="AnswerOptions_3__Text" name="AnswerOptions[3].Text" type="text" value="" placeholder="Fill in answer option" rows="1"></textarea></div>
-            </div>
-            @*<div class="mt-2">
-                <button id="addoption" type="button" class="btn form-btn btn-secondary hover-boxshadow me-1"><i class="fa-solid fa-plus"></i> Add Answer Option</button>
-            </div>*@
-        </div>
-        <div class="row mt-4">
-            <div class="col-12">
-                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/question">Back To List</a>
-                <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/OESQuestionsBank/AddQuestions"><i class="fa-solid fa-plus"></i> Add Another Question</a>
-                <button type="button" id="btnAddAnswer" class="btn form-btn btn-primary hover-boxshadow">
-                    <span>Save</span>
-                </button>
-            </div>
-        </div>
-    </form>
+
+        </form>
+        <!-- Add more options here -->
+
+
+    </div>
+     
+    
 </section>
 
 <script src="~/Scripts/OESQuestionBank/OESAddEditAnswer.js"></script>

@@ -10,6 +10,8 @@ $(document).ready(function () {
 
     var Id = getUrlVars();
     $('#QuestionID').val(Id.QuestionID);
+    $('#QuestionID2').val(Id.QuestionID);
+    $('#QuestionID3').val(Id.QuestionID);
     if ($('#QuestionID').val() !== '') {
         LoadQuestionDetails(Id.QuestionID);
     }
@@ -17,18 +19,19 @@ $(document).ready(function () {
         $('#QuestionID').val(0);
     }
 
-
-
-
-    $('#btnAddQuestion').on('click', function (e) {
-
+    $('#btnCheckBoxAddAnswer').on('click', function (e) {
         e.preventDefault();
 
-        if (validateForm('frmAddEditAnswerQuestion')) {
-            var btn = document.getElementById("btnAddQuestion");
+        // Set the value of unchecked checkboxes to "off"
+        $("input[type='checkbox']").not(":checked").each(function () {
+            $(this).prop('checked', false);
+            $(this).after("<input type='hidden' name='" + $(this).attr("name") + "' value='off' />");
+        });
+
+        if (validateForm('frmAddUpdatechkboxview')) {
+            var btn = document.getElementById("btnCheckBoxAddAnswer");
             btn.disabled = true;
             btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Please wait...';
-
             var options = {
                 success: function (response, statusText, jqXHR) {
                     Swal.fire({
@@ -40,16 +43,13 @@ $(document).ready(function () {
                     setTimeout(function () {
                         window.location.href = '/OESQuestionsBank/Index';
                     }, 2000);
-
-
                 },
                 error: function (xhr, status, error) {
                     var errmsg = xhr.status + ':' + xhr.responseText + ':' + error;
                     alert(errmsg);
                 }
             };
-
-            AjaxFormSubmit($("#frmAddEditAnswerQuestion"), options);
+            AjaxFormSubmit($("#frmAddUpdatechkboxview"), options);
         } else {
             btn.disabled = false;
             btn.innerHTML = '<i class="fa fa-save"></i> Save...';
@@ -57,7 +57,82 @@ $(document).ready(function () {
         }
     });
 
- 
+    $('#btnRdioAddAnswer').on('click', function (e) {
+        e.preventDefault();
+
+        // Set the value of unchecked checkboxes to "off"
+        $("input[type='checkbox']").not(":checked").each(function () {
+            $(this).prop('checked', false);
+            $(this).after("<input type='hidden' name='" + $(this).attr("name") + "' value='off' />");
+        });
+
+        if (validateForm('frmAddUpdateradionview')) {
+            var btn = document.getElementById("btnRdioAddAnswer");
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Please wait...';
+            var options = {
+                success: function (response, statusText, jqXHR) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Record saved successfully...',
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+                    setTimeout(function () {
+                        window.location.href = '/OESQuestionsBank/Index';
+                    }, 2000);
+                },
+                error: function (xhr, status, error) {
+                    var errmsg = xhr.status + ':' + xhr.responseText + ':' + error;
+                    alert(errmsg);
+                }
+            };
+            AjaxFormSubmit($("#frmAddUpdateradionview"), options);
+        } else {
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fa fa-save"></i> Save...';
+            return false;
+        }
+    });
+
+    $('#btnBooleanAddAnswer').on('click', function (e) {
+        e.preventDefault();
+
+        // Set the value of unchecked checkboxes to "off"
+        $("input[type='radio']").not(":checked").each(function () {
+            $(this).prop('checked', false);
+            $(this).after("<input type='hidden' name='" + $(this).attr("name") + "' value='off' />");
+        });
+
+        if (validateForm('frmAddUpdateboolview')) {
+            var btn = document.getElementById("btnBooleanAddAnswer");
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Please wait...';
+            var options = {
+                success: function (response, statusText, jqXHR) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Record saved successfully...',
+                        showConfirmButton: false,
+                        timer: 2000
+                    });
+                    setTimeout(function () {
+                        window.location.href = '/OESQuestionsBank/Index';
+                    }, 2000);
+                },
+                error: function (xhr, status, error) {
+                    var errmsg = xhr.status + ':' + xhr.responseText + ':' + error;
+                    alert(errmsg);
+                }
+            };
+            AjaxFormSubmit($("#frmAddUpdateboolview"), options);
+        } else {
+            btn.disabled = false;
+            btn.innerHTML = '<i class="fa fa-save"></i> Save...';
+            return false;
+        }
+    });
+    
 });
 
 
@@ -70,10 +145,26 @@ function LoadQuestionDetails(id) {
 var loadQuestionDetailByID = function (d) {
     var jsonData = JSON.parse(d.Value);
     console.log(jsonData);
+    var QestionType = (jsonData.questionTypeID);
     $('#QuestionID').val(jsonData.questionID);
     $('#questionTitle').append(jsonData.questionText);
- /*   $('#Marks').val(jsonData.marks);*/
+    /*   $('#Marks').val(jsonData.marks);*/
     $('#QuestionTypes').append(jsonData.questionTypeName);
+    if (QestionType == 1) {
+        $("#boolview").hide();
+        $("#chkboxview").hide();
+        $("#radionview").show();
+    }
+    else if (QestionType == 2) {
+        $("#boolview").show();
+        $("#chkboxview").hide();
+        $("#radionview").hide();
+    }
+    else {
+        $("#boolview").hide();
+        $("#chkboxview").show();
+        $("#radionview").hide();
+    }
 }
 
 function UserStatusDropdown() {
@@ -116,7 +207,7 @@ function LoadSubject() {
 }
 var getLoadSubject = function (d) {
     var dataSource1 = new kendo.data.DataSource({
-        data: JSON.parse(d.Value),
+        data: JSON.parse(d.Value), 
         sort: { field: "subjectName", dir: "asc" }
     });
     $("#Subject").kendoDropDownList({
