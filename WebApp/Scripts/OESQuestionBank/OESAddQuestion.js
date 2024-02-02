@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 
     $('#btnAddQuestion').on('click', function (e) {
-
+        ; debugger
         e.preventDefault();
 
         if (validateForm('frmAddUpdateQuestion')) {
@@ -33,8 +33,10 @@ $(document).ready(function () {
 
             var options = {
                 success: function (response, statusText, jqXHR) {
-            
-    
+                    var jsonString = response;
+                    var jsonObject = JSON.parse(jsonString);
+                    var questionID = jsonObject.questionID;
+                    
                
                     Swal.fire({
                         icon: 'success',
@@ -43,7 +45,7 @@ $(document).ready(function () {
                         timer: 2000
                     });
                     setTimeout(function () {
-                       // window.location.href = '/OESQuestionsBank/AddEditAnswer?QuestionID=' + questionID;
+                        window.location.href = '/OESQuestionsBank/AddEditAnswer?QuestionID=' + questionID;
                     }, 2000);
 
 
@@ -61,77 +63,7 @@ $(document).ready(function () {
             return false;
         }
     });
-
-   
-    //$('#btnAddQuestion').on('click', function (e) {
-        
-    //    e.preventDefault();
-
-    //    if (validateForm('frmAddUpdateQuestion')) {
-    //        ; debugger
-    //        var btn = document.getElementById("btnAddQuestion");
-    //        btn.disabled = true;
-    //        btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Please wait...';
-    //        // Get the selected value from the Kendo dropdown
-    //        var selectedStatus = $("#Status").data("kendoDropDownList").value();
-    //        var selectedSubject = $("#Subject").data("kendoDropDownList").value();
-    //        var selectedQuestionType = $("#QuestionType").data("kendoDropDownList").value();
-    //        // Get the value from the input field
-    //        var QuestionTitle = $("#QuestionTitle").val();
-
-    //        // Add the values to the form data
-    //        var formData = new FormData($("#frmAddUpdateQuestion")[0]);
-    //        formData.append("status", selectedStatus);
-    //        formData.append("Subject", selectedSubject);
-    //        formData.append("QuestionType", selectedQuestionType);
-    //        formData.append("QuestionTitle", QuestionTitle);
-    //        var options = {
-    //            success: function (response, statusText, jqXHR) {
-    //                Swal.fire({
-    //                    icon: 'success',
-    //                    title: 'Record saved successfully...',
-    //                    showConfirmButton: false,
-    //                    timer: 2000
-    //                });
-    //                setTimeout(function () {
-    //                    window.location.href = '/OESClass/Index';
-    //                }, 2000);
-
-                
-    //            },
-    //            error: function (xhr, status, error) {
-    //                var errmsg = xhr.status + ':' + xhr.responseText + ':' + error;
-    //                alert(errmsg);
-    //            }
-    //        };
-
-    //        AjaxFormSubmit($("#frmAddUpdateQuestion"), options);
-    //    } else {
-    //        btn.disabled = false;
-    //        btn.innerHTML = '<i class="fa fa-save"></i> Save...';
-    //        return false;
-    //    }
-    //});  
-
-    //function AjaxFormSubmit($form, options) {
-    //    var url = "/services/Xtreme/multipart/";
-
-    //    var formData = new FormData($form[0]);
-
-    //    $.ajax({
-    //        url: url,
-    //        type: 'POST',
-    //        data: formData,
-    //        processData: false,
-    //        contentType: false,
-    //        success: function (response, statusText, jqXHR) {
-    //            options.success(response, statusText, jqXHR);
-    //        },
-    //        error: function (xhr, status, error) {
-    //            options.error(xhr, status, error);
-    //        }
-    //    });
-    //}
+ 
 });
 
 

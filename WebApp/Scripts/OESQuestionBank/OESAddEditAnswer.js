@@ -14,6 +14,7 @@ $(document).ready(function () {
     $('#QuestionID3').val(Id.QuestionID);
     if ($('#QuestionID').val() !== '') {
         LoadQuestionDetails(Id.QuestionID);
+        LoadQuestionAnswerDetails(Id.QuestionID);
     }
     else {
         $('#QuestionID').val(0);
@@ -166,6 +167,127 @@ var loadQuestionDetailByID = function (d) {
         $("#radionview").hide();
     }
 }
+
+
+
+function LoadQuestionAnswerDetails(id) {
+    ; debugger
+    KendoGlobalAjax({ commandName: OESQUESTION_COMMANDS.OES_GET_QuestionAnswerBy_Id, values: { QuestionID: id }, CallBack: loadQuestionAnswerDetailByID });
+
+}
+
+var loadQuestionAnswerDetailByID = function (d) {
+    ; debugger
+    var jsonData = JSON.parse(d.Value);
+    console.log(jsonData);
+  
+    $('#boolview').empty();
+    $('#radionview').empty();
+    $('#chkboxview').empty();
+  
+    jsonData.forEach(function (option) {
+
+        if (option.questionTypeID == 2) {
+ 
+            var radioButton = $('<input>').attr({
+                type: 'radio',
+                name: 'boolradio',
+                value: option.optionID,
+                id: 'boolradio' + option.optionID,
+                class: 'form-check-input mt-0 me-2',
+                style: 'width:1.2em;height:1.2em;vertical-align:middle'
+            });
+
+            var textarea = $('<textarea>').attr({
+                class: 'form-control text-box single-line answerinput',
+                id: 'Answerbool' + option.optionID,
+                name: 'Answerbool' + option.optionID,
+                type: 'text',
+                placeholder: 'Fill in answer option',
+                rows: '1'
+            });
+
+ 
+            var div = $('<div>').addClass('d-flex align-items-center mb-1');
+            div.append(radioButton);
+            div.append(textarea);
+            $('#boolview').append(div);
+
+ 
+            $(textarea).val(option.optionText);
+ 
+            if (option.isCorrect === true) {
+                $(radioButton).prop('checked', true);
+            }
+
+        }
+        else if (option.questionTypeID == 1) {
+            var radioButton = $('<input>').attr({
+                type: 'radio',
+                name: 'rdioOptionOne',
+                value: option.optionID,
+                id: 'rdioOptionOne' + option.optionID,
+                class: 'form-check-input mt-0 me-2',
+                style: 'width:1.2em;height:1.2em;vertical-align:middle'
+            });
+
+            var textarea = $('<textarea>').attr({
+                class: 'form-control text-box single-line answerinput',
+                id: 'txtradioanswerOne' + option.optionID,
+                name: 'txtradioanswerOne' + option.optionID,
+                type: 'text',
+                placeholder: 'Fill in answer option',
+                rows: '1'
+            });
+ 
+            var div = $('<div>').addClass('d-flex align-items-center mb-1');
+            div.append(radioButton);
+            div.append(textarea);
+            $('#radionview').append(div);
+ 
+            $(textarea).val(option.optionText);
+ 
+            if (option.isCorrect === true) {
+                $(radioButton).prop('checked', true);
+            }
+        }
+        else {
+            var radioButton = $('<input>').attr({
+                type: 'checkbox',
+                name: 'IsOptionCorrectOne',
+                value: option.optionID,
+                id: 'IsOptionCorrectOne' + option.optionID,
+                class: 'form-check-input mt-0 me-2',
+                style: 'width:1.2em;height:1.2em;vertical-align:middle'
+            });
+
+            var textarea = $('<textarea>').attr({
+                class: 'form-control text-box single-line answerinput',
+                id: 'txtOneChkAnswer' + option.optionID,
+                name: 'txtOneChkAnswer' + option.optionID,
+                type: 'text',
+                placeholder: 'Fill in answer option',
+                rows: '1'
+            });
+
+ 
+            var div = $('<div>').addClass('d-flex align-items-center mb-1');
+            div.append(radioButton);
+            div.append(textarea);
+            $('#chkboxview').append(div);
+ 
+            $(textarea).val(option.optionText);
+ 
+            if (option.isCorrect === true) {
+                $(radioButton).prop('checked', true);
+            }
+        }
+
+
+    });
+}
+
+
 
 function UserStatusDropdown() {
     Status = '1'

@@ -11,6 +11,30 @@
 @section HeaderSection{
     @Html.Partial("_HeaderView")
 }
+<style>
+    .mat-table {
+        display: block;
+        font-family: Tahoma, Verdana;
+    }
+
+    .mat-row,
+    .mat-header-row {
+        display: flex;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 24px;
+    }
+
+    .mat-cell,
+    .mat-header-cell {
+        flex: 1;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+</style>
+
 <div class="col-12">
     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
         <h4 class="pagetitle mb-sm-0 fw600">Exam Management</h4>
@@ -37,9 +61,16 @@
         </div>
     </div>
 </section>
+<div class="col-12">
+    <div class="bg-white rounded p-3 shadow">
+        <div id="user-grid">
+
+        </div>
+    </div>
+</div>
+ 
+<script src="~/Scripts/OESExam/OESExam.js"></script>
 
 @section FooterSection{
     @Html.Partial("_FooterView")
 }
-
-

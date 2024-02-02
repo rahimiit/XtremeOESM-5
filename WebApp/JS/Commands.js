@@ -23,6 +23,7 @@
         OES_ADD_QUESTION: 'OESAddQuestion',
         OES_DELETE_QUESTION: 'OESDeleteQuestion',
         OES_GET_QuestionBy_Id: 'OESGetQuestionById',
+        OES_GET_QuestionAnswerBy_Id: 'OESGetQuestionAnswerById',
         OES_GET_SUBJECT_DROP_DOWN: 'OESGetSubjectDropDown',
         OES_GET_QUESTIONTYPE_DROP_DOWN: 'OESGetQuestionTypeDropDown',
 
@@ -42,6 +43,17 @@
         OES_GET_USERSTATUS_DROP_DOWN: 'OESGetUserStatusDropDown',
         OES_GET_USEClass_DROP_DOWN: 'OESGetUserClassDropDown',
         
+
+    }
+    window.OESEXAM_COMMANDS = {
+        OES_ADD_EXAM: 'OESAddExam',
+        OES_DELETE_EXAM: 'OESDeleteExam',
+        OES_GET_EXAMById: 'OESGetExamById',
+        OES_GET_EXAMALL: 'OESGetExamAll',
+ 
+        OES_GET_EXAMSUBJECT_DROP_DOWN: 'OESGetExamSubjectDropDown',
+        OES_GET_EXAMClass_DROP_DOWN: 'OESGetExamClassDropDown',
+
 
     }
     /* ************** Attachment Commands ****************** */

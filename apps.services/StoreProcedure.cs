@@ -71,6 +71,8 @@ public class StoreProcedure
         sp_GetAllQuestions,
         [Description("[sp_GetQuestionById]")]
         sp_GetQuestionById,
+        [Description("[sp_GetQuestionAnswerById]")]
+        sp_GetQuestionAnswerById,
         [Description("[sp_GetQuestionType]")]
         sp_GetQuestionType,
         [Description("[sp_GetSubject]")]
@@ -104,7 +106,23 @@ public class StoreProcedure
          [Description("[sp_OES_AddUpdate_User]")]
         sp_OES_AddUpdate_User,
     }
-
+    public enum OESExamEnum
+    {
+        [Description("[sp_OES_Delete_Exam]")]
+        sp_OES_Delete_Exam,
+        [Description("[sp_OES_Add_Exam]")]
+        sp_OES_Add_Exam,
+        [Description("[sp_GetAllExam]")]
+        sp_GetAllExam,
+        [Description("[sp_GetExamById]")]
+        sp_GetExamById,
+   
+   
+        [Description("[sp_GetUserClass]")]
+        sp_GetUserClass,
+        [Description("[sp_OES_AddUpdate_Exam]")]
+        sp_OES_AddUpdate_Exam,
+    }
     public enum Requests
     {
 

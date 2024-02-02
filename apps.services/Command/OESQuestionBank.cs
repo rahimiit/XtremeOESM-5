@@ -36,6 +36,20 @@ namespace apps.services.Command
             return repository.GetSingle<dynamic>(StoreProcedure.OESQuestionBankEnum.sp_GetQuestionById.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
         }
     }
+    [Command(Name = OESQUESTION_COMMANDS.OES_GET_QuestionAnswerBy_Id)]
+    public class OESGetQuestionAnswerByIdCommand : CamelCommandBase
+    {
+        protected override object DoAction(object v)
+        {
+            var model = base.MappedModel(new { QuestionID = 0 }, v);
+            var repository = Ioc.Resolve<IRepository>();
+            ICommandParameters _params = new CommandParameters();
+            IDictionary<string, object> values = _params.Get(model);
+            values = _params.Get(model);
+
+            return repository.GetMultiple<dynamic>(StoreProcedure.OESQuestionBankEnum.sp_GetQuestionAnswerById.GetDescription().ToString(), values, connectionFactory._factory, connectionFactory._connection);
+        }
+    }
     [Command(Name = OESQUESTION_COMMANDS.OES_GET_QUESTIONS_SELECT)]
 
     public class GetQuestionSelectCommand : CamelCommandBase

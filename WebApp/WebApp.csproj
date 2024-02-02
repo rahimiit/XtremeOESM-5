@@ -3275,6 +3275,8 @@
     </Content>
     <Content Include="Scripts\OESClass\OESAddClass.js" />
     <Content Include="Scripts\OESClass\OESClass.js" />
+    <Content Include="Scripts\OESExam\OESAddExam.js" />
+    <Content Include="Scripts\OESExam\OESExam.js" />
     <Content Include="Scripts\OESQuestionBank\OESAddEditAnswer.js" />
     <Content Include="Scripts\OESQuestionBank\OESAddQuestion.js" />
     <Content Include="Scripts\OESQuestionBank\OESQuestions.js" />
@@ -5532,7 +5534,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="ExceptionLogs\" />
-    <Folder Include="Scripts\OESExam\" />
     <Folder Include="Scripts\OESStudentExam\" />
     <Folder Include="Token\" />
     <Folder Include="_logs\" />

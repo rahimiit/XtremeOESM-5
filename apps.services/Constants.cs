@@ -38,6 +38,7 @@ namespace apps.Services
         public const string OES_ADD_QUESTION = "OESAddQuestion";
         public const string OES_DELETE_QUESTION = "OESDeleteQuestion";
         public const string OES_GET_QuestionBy_Id = "OESGetQuestionById";
+        public const string OES_GET_QuestionAnswerBy_Id = "OESGetQuestionAnswerById";
         public const string OES_GET_QUESTIONS_SELECT = "OESQuestionSelect";
         public const string OES_GET_SUBJECT_DROP_DOWN = "OESGetSubjectDropDown";
         public const string OES_GET_QUESTIONTYPE_DROP_DOWN = "OESGetQuestionTypeDropDown";
@@ -56,7 +57,17 @@ namespace apps.Services
         public const string OES_GET_USEROLE_DROP_DOWN = "OESGetUserRoleDropDown";
         public const string OES_GET_USERSTATUS_DROP_DOWN = "OESGetUserStatusDropDown";
         public const string OES_GET_USEClass_DROP_DOWN = "OESGetUserClassDropDown";
-        
+    }
+    public class OESEXAM_COMMANDS
+    {
+        public const string OES_ADD_EXAM = "OESAddExam";
+        public const string OES_DELETE_EXAM = "OESDeleteExam";
+        public const string OES_GET_EXAMById = "OESGetExamById";
+        public const string OES_GET_EXAMALL = "OESGetExamAll";
+        public const string OES_GET_EXAMSUBJECT_DROP_DOWN = "OESGetExamSubjectDropDown";
+    
+        public const string OES_GET_EXAMClass_DROP_DOWN = "OESGetExamClassDropDown";
+
 
 
     }

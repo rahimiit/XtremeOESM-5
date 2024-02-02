@@ -46,8 +46,12 @@
     </li>
 </ul>
 <div class="col-12">
-    <form action="/exam/edit" class="form-horizontal" enctype="multipart/form-data" method="post" role="form" novalidate="novalidate">
-        <input id="Id" name="Id" type="hidden" value="">        <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
+    <form action="/services/Xtreme/multipart" method="post" id="frmAddUpdateExam">
+        @*<input type="hidden" name="UserId" id="UserId" value="" />*@
+        <input type="hidden" name="ExamID" id="ExamID" value="" />
+
+        <input type="hidden" name="type" id="type" value="OESAddExam" />
+        <div class="bg-white rounded p-3 p-lg-4 p-xl-5 shadow">
             <h2 class="fs-20 fw600">Exam Information</h2>
             <div class="mb-4">Kind Reminder: Please double-check all exam details prior to the exam's start date and time to avoid errors while the student is taking the exam.</div>
             <div class="row">
@@ -55,7 +59,7 @@
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="Name">Name</label>
-                            <input class="form-control text-box single-line" data-val="true" data-val-required="Field is required." id="Name" name="Name" type="text" value="">
+                            <input class="form-control text-box single-line" data-val="true" data-val-required="Field is required." id="examName" name="examName" type="text" value="">
                             <span class="invalid-message field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
                         </div>
                     </div>
@@ -64,7 +68,7 @@
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="Description">Description</label>
-                            <textarea class="form-control" data-val="true" data-val-required="Field is required." id="Description" name="Description" rows="3"></textarea>
+                            <textarea class="form-control" data-val="true" data-val-required="Field is required." id="examDescription" name="examDescription" rows="3"></textarea>
                             <span class="invalid-message field-validation-valid" data-valmsg-for="Description" data-valmsg-replace="true"></span>
                         </div>
                     </div>
@@ -75,20 +79,18 @@
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="StartDate">Start Date &amp; Time</label> <i class="fa-solid fa-circle-info text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Student can sit for the exam starting from this date &amp; time." aria-label="Student can sit for the exam starting from this date &amp; time."></i>
-                            <div><input id="startdate" type="datetime-local" class="w-100 form-control" name="StartDateIsoString" value=""></div>
+                            <div><input id="examStartDate" type="datetime-local" class="w-100 form-control" name="examStartDate"  ></div>
                             <span class="invalid-message field-validation-valid" data-valmsg-for="StartDate" data-valmsg-replace="true"></span>
-                            <input type="text" class="invisible" id="startdate-utc" data-val="true" data-val-required="Field is required." name="StartDateIsoUtc" value="">
-                        </div>
+                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3 text-break">
                         <div class="form-group">
                             <label class="form-label required fw600" for="EndDate">End Date &amp; Time</label> <i class="fa-solid fa-circle-info text-info" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="This is the due date for the student to start the exam. After this date &amp; time, student will be unable to take the exam." aria-label="This is the due date for the student to start the exam. After this date &amp; time, student will be unable to take the exam."></i>
-                            <div><input id="enddate" type="datetime-local" class="w-100 form-control" name="EndDateIsoString" value=""></div>
+                            <div><input id="examenddate" type="datetime-local" class="w-100 form-control" name="examenddate" value=""></div>
                             <span class="invalid-message field-validation-valid" data-valmsg-for="EndDate" data-valmsg-replace="true"></span>
-                            <input type="text" class="invisible" id="enddate-utc" data-val="true" data-val-required="Field is required." name="EndDateIsoUtc" value="">
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -115,41 +117,27 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3 text-break">
-                        <div class="btn-group">
-                            <label class="form-label required fw600" for="Name">Subject</label>
-                            <button type="button" class="btn btn-sm btn-secondary Classclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Maths</a>
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">English</a>
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Computer Science</a>
-
-
-                            </div>
+                        <div class="form-group">
+                            <label class="form-label required fw600" for="Subject">Subject</label>
+                            <input id="Subject" name="Subject" />
                         </div>
+
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3 text-break">
-                        <div class="btn-group">
-                            <label class="form-label required fw600" for="Name">Class</label>
-                            <button type="button" class="btn btn-sm btn-secondary Classclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-I</a>
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-II</a>
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Class-III</a>
-
-
-                            </div>
+                        <div class="form-group">
+                            <label class="form-label required fw600" for="Class">Class</label>
+                            <input id="Class" name="Class" />
                         </div>
+
                     </div>
                 </div>
             </div>
             <hr class="my-5 text-muted">
             <h2 class="fs-20 fw600 mt-2 mb-4">Exam Settings</h2>
             <div class="row">
-                <div class="col-md-6">
+                @*<div class="col-md-6">
                     <div class="mb-3 text-break">
                         <div class="btn-group">
                             <label class="form-label required fw600" for="Name">Randomiz Exam</label>
@@ -158,30 +146,23 @@
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Yes</a>
                                 <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">No</a>
-                            
+
 
 
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*@
                 <div class="col-md-6">
                     <div class="mb-3 text-break">
-                        <div class="btn-group">
-                            <label class="form-label required fw600" for="Name">Status</label>
-                            <button type="button" class="btn btn-sm btn-secondary Classclass dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">Active</a>
-                                <a class="dropdown-item" href="#" onclick="updateClassSelectedValue(this)">InActive</a>
-                           
-
-
-                            </div>
+                        <div class="form-group">
+                            <label class="form-label required fw600" for="Status">Status</label>
+                            <input id="Status" name="Status" />
                         </div>
+
                     </div>
                 </div>
-     
+
             </div>
         </div>
         <div class="row mt-4">
@@ -189,7 +170,7 @@
 
                 <a class="btn form-btn btn-secondary hover-boxshadow me-1" href="/exam">Back To List</a>
                 <span class="btn form-btn btn-secondary hover-boxshadow me-1 text-muted opacity-50" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="You cannot publish the exam now as it doesn't have any questions, or, some questions have not yet saved their answers, or you have not yet allocated the marks for each question.">Publish Exam</span>
-                <button id="saveBtn" type="button" class="btn form-btn btn-primary hover-boxshadow">Save</button>
+                <button id="btnAddExam" class="btn form-btn btn-primary hover-boxshadow">Save</button>
                 <button id="submitBtn" type="submit" hidden=""></button>
 
                 <div class="modal fade" id="confirmPublishModal" tabindex="-1" aria-labelledby="confirmPublishModalLabel" aria-hidden="true">
@@ -240,10 +221,9 @@
 
             </div>
         </div>
-        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OJ0N0MQ0flFiaYaawsus7Oi58pg0z6MdcrRppSyiHQuOgFdkwp-Xia-u0DKQHuvfw3O_lTZWaYhcp7YKAh0EsMuXXm_zU03LqWZIh0BoFYnJwYR_QQoNXQib7k2dQ9Sodg8-xx1yXDM5D1fwp2klUIoKDHvqBl47bUI4IxAqoe036UKGyCGndokZyIpPD-C1w">
     </form>
 </div>
-
+<script src="~/Scripts/OESExam/OESAddExam.js"></script>
     @section FooterSection{
         @Html.Partial("_FooterView")
     }

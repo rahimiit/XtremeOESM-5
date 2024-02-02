@@ -135,6 +135,7 @@
     <Compile Include="Command\ApplicationCommand.cs" />
     <Compile Include="Command\AttachmentCommand.cs" />
     <Compile Include="Command\OESClassCommand.cs" />
+    <Compile Include="Command\OESExamCommand.cs" />
     <Compile Include="Command\OESQuestionBank.cs" />
     <Compile Include="Command\OESSubject.cs" />
     <Compile Include="Command\OESUserCommand.cs" />
