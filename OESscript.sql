@@ -1,6 +1,6 @@
  USE [master]
 GO
-/****** Object:  Database [XtremeOESM]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Database [XtremeOESM]    Script Date: 2/2/2024 1:56:55 AM ******/
 CREATE DATABASE [XtremeOESM]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -80,7 +80,7 @@ ALTER DATABASE [XtremeOESM] SET QUERY_STORE = OFF
 GO
 USE [XtremeOESM]
 GO
-/****** Object:  Table [dbo].[TblCategory]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblCategory]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -94,7 +94,7 @@ CREATE TABLE [dbo].[TblCategory](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblCLass]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblCLass]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -115,7 +115,7 @@ CREATE TABLE [dbo].[TblCLass](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblExamClass]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblExamClass]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -125,7 +125,7 @@ CREATE TABLE [dbo].[TblExamClass](
 	[ClassID] [bigint] NOT NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblExamQuestions]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblExamQuestions]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -140,7 +140,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblExams]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblExams]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -164,7 +164,7 @@ CREATE TABLE [dbo].[TblExams](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblExamSubject]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblExamSubject]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -174,7 +174,7 @@ CREATE TABLE [dbo].[TblExamSubject](
 	[SubjectID] [bigint] NOT NULL
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblMenues]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblMenues]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -192,23 +192,23 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblOptions]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblOptions]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[TblOptions](
-	[OptionID] [bigint] NOT NULL,
+	[OptionID] [bigint] IDENTITY(1,1) NOT NULL,
 	[QuestionID] [bigint] NULL,
 	[OptionText] [varchar](max) NOT NULL,
 	[IsCorrect] [bit] NOT NULL,
-PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK__TblOptio__92C7A1DF69FA7CDE] PRIMARY KEY CLUSTERED 
 (
 	[OptionID] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblQuestionAnswers]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblQuestionAnswers]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -227,7 +227,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblQuestions]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblQuestions]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -253,7 +253,7 @@ CREATE TABLE [dbo].[TblQuestions](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblQuestionTypes]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblQuestionTypes]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -271,7 +271,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblRoleMenues]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblRoleMenues]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -290,7 +290,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblRoles]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblRoles]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -308,7 +308,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblShortAnswerQuestions]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblShortAnswerQuestions]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -322,7 +322,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblSubCategory]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblSubCategory]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -337,7 +337,7 @@ CREATE TABLE [dbo].[TblSubCategory](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblSubjects]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblSubjects]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -358,7 +358,7 @@ CREATE TABLE [dbo].[TblSubjects](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblUserExamAssignedQuestions]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblUserExamAssignedQuestions]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -374,7 +374,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblUserExamAttempts]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblUserExamAttempts]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -391,7 +391,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblUserExamResponses]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblUserExamResponses]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -409,7 +409,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblUserRoles]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblUserRoles]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -427,7 +427,7 @@ PRIMARY KEY CLUSTERED
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[TblUsers]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  Table [dbo].[TblUsers]    Script Date: 2/2/2024 1:56:55 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -476,7 +476,7 @@ SET IDENTITY_INSERT [dbo].[TblCategory] OFF
 GO
 SET IDENTITY_INSERT [dbo].[TblCLass] ON 
 
-INSERT [dbo].[TblCLass] ([ClassID], [ClassName], [IsActive], [InsertedDate], [InsertedBy], [UpdateDate], [UpdateBy], [Notes], [IsDeleted]) VALUES (9, N'Class-I/', 1, NULL, NULL, CAST(N'2024-01-25T20:35:27.587' AS DateTime), NULL, N'SSFDSF', 1)
+INSERT [dbo].[TblCLass] ([ClassID], [ClassName], [IsActive], [InsertedDate], [InsertedBy], [UpdateDate], [UpdateBy], [Notes], [IsDeleted]) VALUES (9, N'Class-I', 1, NULL, NULL, CAST(N'2024-01-31T19:12:39.993' AS DateTime), NULL, N'SSFDSF', 1)
 INSERT [dbo].[TblCLass] ([ClassID], [ClassName], [IsActive], [InsertedDate], [InsertedBy], [UpdateDate], [UpdateBy], [Notes], [IsDeleted]) VALUES (10, N'Class-II', 1, NULL, NULL, CAST(N'2024-01-29T20:38:00.620' AS DateTime), NULL, N'FDSFS', 1)
 INSERT [dbo].[TblCLass] ([ClassID], [ClassName], [IsActive], [InsertedDate], [InsertedBy], [UpdateDate], [UpdateBy], [Notes], [IsDeleted]) VALUES (11, N'Class-III', 1, NULL, NULL, NULL, NULL, NULL, NULL)
 INSERT [dbo].[TblCLass] ([ClassID], [ClassName], [IsActive], [InsertedDate], [InsertedBy], [UpdateDate], [UpdateBy], [Notes], [IsDeleted]) VALUES (12, N'Class-IV', 1, NULL, NULL, NULL, NULL, NULL, NULL)
@@ -521,6 +521,8 @@ GO
 INSERT [dbo].[TblExamSubject] ([ExamID], [SubjectID]) VALUES (1, 9)
 INSERT [dbo].[TblExamSubject] ([ExamID], [SubjectID]) VALUES (2, 10)
 GO
+SET IDENTITY_INSERT [dbo].[TblOptions] ON 
+
 INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (1, 1, N'Paris', 1)
 INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (2, 1, N'London', 0)
 INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (3, 1, N'Berlin', 0)
@@ -529,19 +531,47 @@ INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) 
 INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (6, 3, N'Mars', 1)
 INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (7, 3, N'Venus', 0)
 INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (8, 3, N'Jupiter', 0)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (10, 1, N'A', 1)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (11, 1, N'B', 0)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (12, 1, N'C', 0)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (13, 1, N'D', 1)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (14, 2, N'sfdsf', 0)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (15, 2, N'sdfsdfds', 0)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (16, 3, N'sfdsfsd', 0)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (17, 3, N'sfdsf', 0)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (18, 3, N'fsdfdsf', 1)
+INSERT [dbo].[TblOptions] ([OptionID], [QuestionID], [OptionText], [IsCorrect]) VALUES (19, 3, N'sdfdsf', 0)
+SET IDENTITY_INSERT [dbo].[TblOptions] OFF
 GO
 SET IDENTITY_INSERT [dbo].[TblQuestions] ON 
 
-INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (1, 2, N'What is the capital of France?444', 1, 9, 10, 4, 1, 1, CAST(N'2023-11-20T10:00:00.000' AS DateTime), NULL, CAST(N'2024-01-29T21:31:25.383' AS DateTime), NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (1, 2, N'What is the capital of France?444', 3, 9, 10, 4, 1, 1, CAST(N'2023-11-20T10:00:00.000' AS DateTime), NULL, CAST(N'2024-02-01T23:36:55.157' AS DateTime), NULL, NULL)
 INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (2, 3, N'Solve for x: 2x + 5 = 15', 2, 9, 15, 4, 1, 1, CAST(N'2023-11-20T11:00:00.000' AS DateTime), NULL, NULL, NULL, NULL)
-INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (3, 2, N'Who wrote Romeo and Juliet?', 1, 10, 12, 4, 1, 1, CAST(N'2023-11-20T12:00:00.000' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (3, 2, N'Who wrote Romeo and Juliet?', 1, 10, 12, 4, 1, 1, CAST(N'2023-11-20T12:00:00.000' AS DateTime), NULL, CAST(N'2024-02-02T01:51:30.430' AS DateTime), NULL, NULL)
 INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (4, 3, N'What is the square root of 64?', 2, 10, 8, 4, 1, 1, CAST(N'2023-11-20T13:00:00.000' AS DateTime), NULL, NULL, NULL, NULL)
 INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (11, 1, N'test question', 1, 10, 10, 4, 1, NULL, CAST(N'2024-01-25T23:45:27.567' AS DateTime), NULL, NULL, NULL, NULL)
 INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (12, 1, N'TYTYYTY', 1, 10, 2000, 4, 1, NULL, CAST(N'2024-01-29T20:38:54.283' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (13, 1, N'Testasdsad', 1, 10, 20, NULL, 1, NULL, CAST(N'2024-01-30T23:13:43.587' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (14, 1, N'Testasdsad', 1, 10, 22, NULL, 1, NULL, CAST(N'2024-01-30T23:17:47.167' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (15, 1, N'asdas3www', 1, 10, 33, NULL, 1, NULL, CAST(N'2024-01-30T23:18:53.177' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (16, 1, N'Asd', 1, 10, 12, NULL, 1, NULL, CAST(N'2024-01-30T23:20:12.000' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (17, 1, N'jgjgj', 1, 10, 29, NULL, 1, NULL, CAST(N'2024-01-30T23:24:03.813' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (18, 1, N'wqerwerew', 1, 10, 99, NULL, 1, NULL, CAST(N'2024-01-30T23:27:19.100' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (19, 1, N'TYYYY', 1, 10, 212, NULL, 1, NULL, CAST(N'2024-01-30T23:30:48.857' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (20, 1, N'KKKKKK', 1, 10, 99, NULL, 1, NULL, CAST(N'2024-01-30T23:36:23.540' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (21, 1, N'QQWW', 2, 9, 33, NULL, 1, NULL, CAST(N'2024-01-30T23:40:44.793' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (22, 1, N'LKLK', 1, 9, 76, NULL, 1, NULL, CAST(N'2024-01-30T23:50:46.590' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (23, 1, N'FFFF', 2, 10, 20, NULL, 1, NULL, CAST(N'2024-01-30T23:56:24.620' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (24, 1, N'KLKLL', 2, 10, 20, NULL, 1, NULL, CAST(N'2024-01-31T00:02:48.533' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (25, 1, N'GGGGGGGG', 1, 10, 89, NULL, 1, NULL, CAST(N'2024-01-31T00:12:23.940' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (26, 1, N'KLK', 1, 10, 33, NULL, 1, NULL, CAST(N'2024-01-31T00:13:18.923' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (27, 1, N'JJJ', 1, 9, 77, NULL, 1, NULL, CAST(N'2024-01-31T00:16:29.407' AS DateTime), NULL, NULL, NULL, NULL)
+INSERT [dbo].[TblQuestions] ([QuestionID], [UserID], [QuestionText], [QuestionTypeID], [SubjectID], [Marks], [StatusID], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate], [IsDeleted], [Notes]) VALUES (28, 1, N'asfdsad', 1, 10, 323, NULL, 1, NULL, CAST(N'2024-01-31T00:28:14.907' AS DateTime), NULL, NULL, NULL, NULL)
 SET IDENTITY_INSERT [dbo].[TblQuestions] OFF
 GO
-INSERT [dbo].[TblQuestionTypes] ([QuestionTypeID], [QuestionTypeName], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'Multiple Choice', 1, CAST(N'2023-11-20T12:00:00.000' AS DateTime), NULL, NULL)
+INSERT [dbo].[TblQuestionTypes] ([QuestionTypeID], [QuestionTypeName], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'Radio Button Question', 1, CAST(N'2023-11-20T12:00:00.000' AS DateTime), NULL, NULL)
 INSERT [dbo].[TblQuestionTypes] ([QuestionTypeID], [QuestionTypeName], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'True/False', 1, CAST(N'2023-11-20T12:30:00.000' AS DateTime), NULL, NULL)
+INSERT [dbo].[TblQuestionTypes] ([QuestionTypeID], [QuestionTypeName], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'Multiple Checkbox Question', 1, CAST(N'2023-11-20T12:30:00.000' AS DateTime), NULL, NULL)
 GO
 INSERT [dbo].[TblRoles] ([RoleID], [RoleName], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'Admin', 1, CAST(N'2023-11-20T08:00:00.000' AS DateTime), NULL, NULL)
 INSERT [dbo].[TblRoles] ([RoleID], [RoleName], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'Student', 1, CAST(N'2023-11-20T09:00:00.000' AS DateTime), NULL, NULL)
@@ -578,13 +608,14 @@ GO
 SET IDENTITY_INSERT [dbo].[TblUsers] ON 
 
 INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (1, N'admin_user', N'SSFF', N'SS', N'FF', N'123', NULL, NULL, 1, 0, N'rahimiit44@gmail.com', 1, N'234324', N'343242423', NULL, NULL, NULL, N'', N'', CAST(N'1900-01-01T00:00:00.000' AS DateTime), CAST(N'2023-01-01' AS Date), N'44444', CAST(N'2023-11-20T08:30:00.000' AS DateTime), NULL, 0, NULL, NULL, NULL, CAST(N'2024-01-29T20:36:44.120' AS DateTime))
-INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'student1222', N'', N'', N'', N'1231', NULL, NULL, 2, 9, N'student1@example.com', NULL, N'', N'', NULL, NULL, NULL, N'', N'', CAST(N'1900-01-01T00:00:00.000' AS DateTime), NULL, N'', CAST(N'2023-11-20T10:00:00.000' AS DateTime), NULL, 4, NULL, NULL, NULL, CAST(N'2024-01-29T20:37:39.120' AS DateTime))
+INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (2, N'student1222', N'', N'', N'', N'1231', NULL, NULL, 2, 9, N'student1@example.com', NULL, N'324324324', N'', NULL, NULL, NULL, N'', N'', CAST(N'1900-01-01T00:00:00.000' AS DateTime), NULL, N'', CAST(N'2023-11-20T10:00:00.000' AS DateTime), NULL, 4, NULL, NULL, NULL, CAST(N'2024-02-01T22:20:59.340' AS DateTime))
 INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (3, N'student2', NULL, NULL, NULL, NULL, NULL, NULL, 2, NULL, N'student2@example.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, CAST(N'2023-11-20T11:00:00.000' AS DateTime), NULL, 4, NULL, NULL, NULL, NULL)
 INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (6, N'hamadiit44', N'hamad khan', N'hamad', N'khan', N'123', NULL, NULL, 2, 12, N'hamad@gmail.com', NULL, N'213213', N'123123', NULL, NULL, NULL, N'123213', N'UAE', CAST(N'1900-01-01T00:00:00.000' AS DateTime), NULL, N'12321123', CAST(N'2023-12-23T01:51:41.597' AS DateTime), NULL, 4, NULL, CAST(N'2023-12-23T01:51:41.597' AS DateTime), NULL, CAST(N'2024-01-25T22:58:42.553' AS DateTime))
 INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10004, N'salman22', N'Salman Khan', N'Salman', N'Khan', N'123', NULL, NULL, 2, 21, N'salman@gmail.com', 1, N'033222233', N'1122', NULL, NULL, NULL, N'223', N'Pkistan', CAST(N'1900-01-01T00:00:00.000' AS DateTime), NULL, N'10001', CAST(N'2024-01-23T18:33:56.120' AS DateTime), NULL, 4, NULL, CAST(N'2024-01-23T18:33:56.120' AS DateTime), NULL, CAST(N'2024-01-25T22:55:52.213' AS DateTime))
 INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10005, N'salman2266', N'Salman Khan', N'Salman', N'Khan', N'123', NULL, NULL, 2, 9, N'salman@gmail.com', 1, N'213213', N'100023', NULL, NULL, NULL, N'pakistan', N'pakistan', CAST(N'1900-01-01T00:00:00.000' AS DateTime), CAST(N'2022-01-01' AS Date), N'10002323', CAST(N'2024-01-23T18:45:46.080' AS DateTime), NULL, 4, NULL, CAST(N'2024-01-23T18:45:46.080' AS DateTime), NULL, CAST(N'2024-01-25T22:41:00.760' AS DateTime))
 INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10006, N'GGG', N'GG', N'HHHHH', N'KKK', N'44444', NULL, NULL, 1, 9, N'GG@gmail.com', 1, N'868687', N'876868687', NULL, NULL, NULL, N'7868', N'hjgjghjgh', CAST(N'2024-01-17T00:00:00.000' AS DateTime), CAST(N'0666-01-01' AS Date), N'868768', CAST(N'2024-01-24T22:09:16.050' AS DateTime), NULL, 4, NULL, CAST(N'2024-01-24T22:09:16.050' AS DateTime), NULL, NULL)
 INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10007, N'wwww', N'www', N'wwwee', N'eee', N'123', NULL, NULL, 1, 24, N'www@gmail.com', 1, N'213123123', N'123213213', NULL, NULL, NULL, N'123123', N'1dweewrew', CAST(N'1900-01-01T00:00:00.000' AS DateTime), NULL, N'3333324', CAST(N'2024-01-25T21:27:16.717' AS DateTime), NULL, 4, NULL, CAST(N'2024-01-25T21:27:16.717' AS DateTime), NULL, CAST(N'2024-01-29T20:35:54.343' AS DateTime))
+INSERT [dbo].[TblUsers] ([UserID], [UserName], [FullName], [FirstName], [LastName], [Password], [Password_Salt], [UniKey], [UserTypeId], [ClassID], [Email], [EmailConfirmed], [PhoneNumber], [IDCardNumber], [Gender], [CountryId], [CityId], [PostalCode], [FullAddress], [DateOfBirth], [EnrollmentYear], [Code], [RegistrationDate], [LastLogin], [IsActive], [CreatedBy], [CreatedDate], [UpdatedBy], [UpdatedDate]) VALUES (10008, N'', N'', N'', N'', N'', NULL, NULL, 0, 0, N'', 1, N'', N'', NULL, NULL, NULL, N'', N'', CAST(N'1900-01-01T00:00:00.000' AS DateTime), NULL, N'', CAST(N'2024-02-01T22:21:17.083' AS DateTime), NULL, 0, NULL, CAST(N'2024-02-01T22:21:17.083' AS DateTime), NULL, NULL)
 SET IDENTITY_INSERT [dbo].[TblUsers] OFF
 GO
 ALTER TABLE [dbo].[TblExamClass]  WITH CHECK ADD  CONSTRAINT [FK_TblExamClass_ClassID] FOREIGN KEY([ClassID])
@@ -694,7 +725,78 @@ REFERENCES [dbo].[TblUsers] ([UserID])
 GO
 ALTER TABLE [dbo].[TblUserRoles] CHECK CONSTRAINT [FK__TblUserRo__UserI__4F7CD00D]
 GO
-/****** Object:  StoredProcedure [dbo].[sp_AddEdit_QuestionsAnswers]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[OES_ADD_Bool_QuestionAnswer]    Script Date: 2/2/2024 1:56:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[OES_ADD_Bool_QuestionAnswer]
+    @QuestionID3 INT,
+    @AnswerboolOne VARCHAR(MAX),
+    @boolrdoOne VARCHAR(1),
+    @Answerbooltwo VARCHAR(MAX),
+    @boolrdotwo VARCHAR(1)
+ 
+AS
+BEGIN
+    INSERT INTO TblOptions (QuestionID, OptionText, IsCorrect)
+    VALUES (@QuestionID3, @AnswerboolOne, @boolrdoOne),
+           (@QuestionID3, @Answerbooltwo, @boolrdotwo)
+  
+END
+GO
+/****** Object:  StoredProcedure [dbo].[OES_ADD_CheckBox_QuestionAnswer]    Script Date: 2/2/2024 1:56:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[OES_ADD_CheckBox_QuestionAnswer]
+    @QuestionID2 INT,
+    @txtOneChkAnswer VARCHAR(MAX),
+    @IsOptionCorrectOne VARCHAR(1),
+    @txttwoChkAnswer VARCHAR(MAX),
+    @IsOptionCorrectTwo VARCHAR(1),
+    @txtthreeChkAnswer VARCHAR(MAX),
+    @IsOptionCorrecThree VARCHAR(1),
+    @txtChkAfournswer VARCHAR(MAX),
+    @IsOptionCorrectFour VARCHAR(1)
+AS
+BEGIN
+    INSERT INTO TblOptions (QuestionID, OptionText, IsCorrect)
+    VALUES (@QuestionID2, @txtOneChkAnswer, @IsOptionCorrectOne),
+           (@QuestionID2, @txttwoChkAnswer, @IsOptionCorrectTwo),
+           (@QuestionID2, @txtthreeChkAnswer, @IsOptionCorrecThree),
+           (@QuestionID2, @txtChkAfournswer, @IsOptionCorrectFour)
+END
+
+
+ 
+GO
+/****** Object:  StoredProcedure [dbo].[OES_ADD_RadioBox_QuestionAnswer]    Script Date: 2/2/2024 1:56:56 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[OES_ADD_RadioBox_QuestionAnswer]
+    @QuestionID INT,
+    @txtradioanswerOne VARCHAR(MAX),
+    @rdioOptionOne VARCHAR(1),
+    @txtradioanswertwo VARCHAR(MAX),
+    @rdioOptiontwo VARCHAR(1),
+    @txtradioanswerthree VARCHAR(MAX),
+    @rdioOptionthree VARCHAR(1),
+    @txtradioanswerfour VARCHAR(MAX),
+    @rdioOptionfour VARCHAR(1)
+AS
+BEGIN
+    INSERT INTO TblOptions (QuestionID, OptionText, IsCorrect)
+    VALUES (@QuestionID, @txtradioanswerOne, @rdioOptionOne),
+           (@QuestionID, @txtradioanswertwo, @rdioOptiontwo),
+           (@QuestionID, @txtradioanswerthree, @rdioOptionthree),
+           (@QuestionID, @txtradioanswerfour, @rdioOptionfour)
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sp_AddEdit_QuestionsAnswers]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -716,7 +818,7 @@ END
  
 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetAllClasses]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetAllClasses]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -740,7 +842,7 @@ Select *  from tblClass
 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetAllQuestions]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetAllQuestions]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -761,7 +863,7 @@ on t.QuestionTypeID=q.QuestionTypeID
 left join TblUsers u on u.UserID=q.UserID where q.IsActive=1					 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetAllSubjects]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetAllSubjects]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -780,7 +882,7 @@ Select *  from TblSubjects where IsActive=1
 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetAllUser]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetAllUser]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -806,7 +908,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetClassesById]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetClassesById]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -820,7 +922,7 @@ BEGIN
 Select ClassID,ClassName,IsActive from tblClass where ClassID=@ClassID
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetQuestionById]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetQuestionById]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -840,7 +942,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetQuestionType]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetQuestionType]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -858,7 +960,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetSubject]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetSubject]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -876,7 +978,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetSubjectById]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetSubjectById]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -890,7 +992,7 @@ BEGIN
 Select SubjectID,SubjectName,IsActive from TblSubjects where SubjectID=@SubjectID
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetUserById]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetUserById]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -905,7 +1007,7 @@ Select u.*,r.RoleName  from TblUsers u Inner join TblUserRoles ur on ur.RoleID=u
 where u.UserID=@UserID
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetUserClass]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetUserClass]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -923,7 +1025,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetUserRole]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetUserRole]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -941,7 +1043,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_GetUserStatus]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_GetUserStatus]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -960,7 +1062,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_OES_Add_Class]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_OES_Add_Class]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -986,7 +1088,7 @@ Insert into TblCLass(ClassName,IsActive,InsertedDate) values(@ClassName,@Status 
 end
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_OES_Add_Question]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_OES_Add_Question]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1004,20 +1106,25 @@ CREATE PROC [dbo].[sp_OES_Add_Question]
 AS
 BEGIN
 
- 
+ DECLARE @InsertedID bigint;
 if @QuestionID!=0
 begin
 update TblQuestions set QuestionText=@QuestionTitle,SubjectID=@Subject,QuestionTypeID=@QuestionType,IsActive=@Status,UpdatedDate=GETDATE() where QuestionID=@QuestionID
-
+select  @QuestionID as QuestionID
 end
 else
 begin
 Insert into TblQuestions(QuestionTypeID,QuestionText,SubjectID,Marks,IsActive,CreatedDate,UserID) 
+ 
 values(@QuestionType,@QuestionTitle,@Subject,@Marks,@Status ,GETDATE(),@UserID)
+    SET @InsertedID = SCOPE_IDENTITY();
 end
 END
+SELECT @InsertedID AS QuestionID;
+
+ 
 GO
-/****** Object:  StoredProcedure [dbo].[sp_OES_Add_Subject]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_OES_Add_Subject]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1045,7 +1152,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_OES_AddUpdate_User]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_OES_AddUpdate_User]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1108,7 +1215,7 @@ END
 
  
 GO
-/****** Object:  StoredProcedure [dbo].[sp_OES_Delete_Class]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_OES_Delete_Class]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1124,7 +1231,7 @@ BEGIN
 Update TblCLass set IsDeleted=1,IsActive=0,Notes=@ReasonOfDeletion,UpdateDate=getdate() where ClassID=@ClassID
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_OES_Delete_Question]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_OES_Delete_Question]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1151,7 +1258,7 @@ END
 select 1
 end
 GO
-/****** Object:  StoredProcedure [dbo].[sp_OES_Delete_Subject]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_OES_Delete_Subject]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1167,7 +1274,7 @@ BEGIN
 Update TblSubjects set IsDeleted=1,IsActive=0,Notes=@ReasonOfDeletion,UpdateDate=getdate() where SubjectID=@SubjectID
 END
 GO
-/****** Object:  StoredProcedure [dbo].[sp_VerifyUserAccountInformaion]    Script Date: 1/29/2024 10:44:54 PM ******/
+/****** Object:  StoredProcedure [dbo].[sp_VerifyUserAccountInformaion]    Script Date: 2/2/2024 1:56:56 AM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -1191,7 +1298,10 @@ TblUsers.Password_Salt,
                           TblUsers.UniKey, TblUsers.FullName AS EmplName
 FROM            TblUsers LEFT OUTER JOIN
                          tblRoles ON TblUsers.UserTypeId = tblRoles.RoleID
-					  where (TblUsers.Email = @userEmail) AND (TblUsers.EmailConfirmed = 1) 
+					  where (TblUsers.Email = @userEmail)
+					  
+					  --and Password=@password
+					  AND (TblUsers.EmailConfirmed = 1) 
  
 
 END
